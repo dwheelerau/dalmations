@@ -1,0 +1,6 @@
+# ignore everying
+*
+# but not these files
+!*.py
+!*.sh
+!.gitignore
