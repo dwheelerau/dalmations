@@ -17,7 +17,6 @@ target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
 sample_dirs = next(os.walk(sample_dir))[1]
 
 # main commands
-trim_cmd = "SolexaQA++ dynamictrim -p 0.05 %s -d %s"  # filepath,outdir
 aln_cmd = "bowtie2 -x %s -U %s -S %s"  # ref, infile, outfile.sam
 samtools1 = "samtools view -Sb %s > %s"  # in.sam , out.bam
 samtools2 = "samtools sort %s %s"  # in.bam, out.sorted.bam
@@ -41,19 +40,11 @@ for sample in sample_dirs:
     for pair in target_files:
         outdir = "%s/%s/" % (sample_dir, sample)  # sample/DIR/
 
-        # do quality trimming at p=0.05
-        targetf = outdir + pair[0]
-        cmd1 = trim_cmd % (targetf, outdir)
-        res = subprocess.check_output(["bash", "-c", cmd1])
-        targetr = outdir + pair[1]
-        cmd2 = trim_cmd % (targetr, outdir)
-        res = subprocess.check_output(["bash", "-c", cmd2])
-
         # aln with bowtie
-        targetf = targetf + ".trimmed"
+        targetf = outdir + pair[0]
         cmd3 = aln_cmd % (ref, targetf, targetf.split(".")[0]+".sam")
         res = subprocess.check_output(["bash", "-c", cmd3])
-        targetr = targetr + ".trimmed"
+        targetr = outdir + pair[1]
         cmd4 = aln_cmd % (ref, targetr, targetr.split(".")[0]+".sam")
         res = subprocess.check_output(["bash", "-c", cmd4])
 
