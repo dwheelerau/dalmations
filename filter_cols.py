@@ -2,6 +2,7 @@
 
 import sys
 import csv
+
 # Fitler param
 pos_limit = 230  # remove low quality seq
 
@@ -23,12 +24,14 @@ with open(left) as f:
         else:
             pos = int(bits[1])
             if pos <= pos_limit:
-                if len(bits) == 14:
-                    output = bits[:5] + bits[9:]
-                    # first gene, only want sample recorded once
-                    output.insert(0, sample)
-                    outfile_csv.writerow(output)
-                    final_csv.writerow(output)
+                # len(14) is if the a/t etc non-ref col is added
+                # turn this off and just output all data
+                # if len(bits) == 14:
+                output = bits[:5] + bits[9:]
+                # first gene, only want sample recorded once
+                output.insert(0, sample)
+                outfile_csv.writerow(output)
+                final_csv.writerow(output)
 right = sys.argv[2]
 with open(right) as f:
     for line in f:
@@ -38,11 +41,12 @@ with open(right) as f:
         else:
             pos = int(bits[1])
             if pos > pos_limit:
-                if len(bits) == 14:
-                    output = bits[:5] + bits[9:]
-                    output.insert(0, sample)
-                    outfile_csv.writerow(output)
-                    final_csv.writerow(output)
+                # as above
+                #if len(bits) == 14:
+                output = bits[:5] + bits[9:]
+                output.insert(0, sample)
+                outfile_csv.writerow(output)
+                final_csv.writerow(output)
 
 outfile.close()
 final_outfile.close()
