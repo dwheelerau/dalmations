@@ -4,7 +4,7 @@ import os
 import csv
 
 ref = "./reference_mlst/mlst"
-sample_dir = "samples"
+sample_dir = "samplesNZGL01799"
 
 target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
                 ('ACC1pft.fastq', 'ACC1prt.fastq'),
