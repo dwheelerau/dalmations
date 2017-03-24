@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import csv
 
 # this is the index, each row repressents a different genotypic outcome
 # I run each outcome against the freq of A going from 0 to 100.
@@ -82,13 +81,27 @@ for freq in range(0, 101):
 # freq_dict[50][2]
 # (50.0, 50.0)
 
+# parse through single table and get geneotype for each
+single_dict = {}
+
+with open('single.csv') as f:
+    for row in f:
+        row = row.strip().split(",")
+        # {'strain':{gene:{pos:genotype}}}
+        strain = row[0]
+        gene = row[1]
+        pos = row[2]
+        genotype = row[-1]
+        single_dict.setdefault(strain,
+                               {}).setdefault(gene, {})[pos] = genotype
+
 # lets do the same with the other data but only collect varients
 # (these are informative)
-# data_dict['MIX_STRAIN'][gene][pos] -> returns ('C/T',
+# mixed_dict['P1-9010_S81'][gene][pos] -> returns ('C/T',
 # ['0', '52', '0', '48'])
+mixed_dict = {}
 
-data_dict = {}
-with open('final_table_example.csv') as f:
+with open('mixed.csv') as f:
     for row in f:
         row = row.strip().split(",")
         # NOTE: if non-ref
@@ -98,17 +111,15 @@ with open('final_table_example.csv') as f:
             gene = row[1]
             pos = row[2]
             genotype = row[-1]
-            data_dict.setdefault(
+            mixed_dict.setdefault(
                 strain, {}).setdefault(gene, {})[pos] = (genotype, row[6:10])
-
-# set percent wiggle to accept or reject a genotpye solution
-WIGGLE = 5
-SINGLE_STRAIN = "HUN91-S_S18"
-MIX_STRAIN = "PP1-90-10_S37"
 
 # some variables for main script
 nucleotides = ["A", "C", "G", "T"]
 results = []
+
+# set percent wiggle to accept or reject a genotpye solution
+WIGGLE = 5
 
 log = open('data_log.txt', 'w')
 
@@ -120,19 +131,19 @@ for percent in range(100):
     # start looping through MLST one gene at a time
     remainder_counter = 0
     non_diploid_count = 0
-    for gene in data_dict[MIX_STRAIN]:
+    for gene in mixed_dict['P1-9010_S81']:
         log.write("gene: %s\n" % gene)
 
         # start loop through each gene
-        for pos in data_dict[MIX_STRAIN][gene]:
+        for pos in mixed_dict['P1-9010_S81'][gene]:
             log.write("position: %s\n" % pos)
 
             # set Single colony ID
-            single_colony_call = data_dict[
-                SINGLE_STRAIN][gene][pos].split('/')
+            single_colony_call = single_dict[
+                'hp11vw-S_S20'][gene][pos].split('/')
             mixed_colony_data = [
-                float(num) for num in data_dict[MIX_STRAIN][gene][pos][1]]
-            mixed_colony_call = data_dict[MIX_STRAIN][gene][pos][0]
+                float(num) for num in mixed_dict['P1-9010_S81'][gene][pos][1]]
+            mixed_colony_call = mixed_dict['P1-9010_S81'][gene][pos][0]
 
             log.write("single colony call: %s\n" % single_colony_call)
             log.write("Obs mixed data: %s\n" % mixed_colony_data)
