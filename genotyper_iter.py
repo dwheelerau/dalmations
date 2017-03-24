@@ -89,22 +89,23 @@ for freq in range(0, 101):
 
 data_dict = {}
 with open('final_table_example.csv') as f:
-    for row in f:
-        row = row.strip().split(",")
+    csv_reader = csv.reader(f)
+    for row in csv_reader:
         # NOTE: if non-ref
-        if row[-1].find("/") > 0:
-            # {'strain':{gene:{pos:genotype}}}
-            strain = row[0]
-            gene = row[1]
-            pos = row[2]
-            genotype = row[-1]
-            data_dict.setdefault(
-                strain, {}).setdefault(gene, {})[pos] = (genotype, row[6:10])
+        # ONLY LOOK AT non-ref VARS
+        # if row[-1].find("/") > 0:
+        # {'strain':{gene:{pos:genotype}}}
+        strain = row[0]
+        gene = row[1]
+        pos = row[2]
+        genotype = row[-1]
+        data_dict.setdefault(
+            strain, {}).setdefault(gene, {})[pos] = (genotype, row[6:10])
 
 # set percent wiggle to accept or reject a genotpye solution
 WIGGLE = 5
 SINGLE_STRAIN = "HUN91-S_S18"
-MIX_STRAIN = "PP1-90-10_S37"
+MIX_STRAIN = "P1-90-10_S37"
 
 # some variables for main script
 nucleotides = ["A", "C", "G", "T"]
@@ -124,12 +125,15 @@ for percent in range(100):
         log.write("gene: %s\n" % gene)
 
         # start loop through each gene
-        for pos in data_dict[MIX_STRAIN][gene]:
+        non_rev_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
+                       if data_dict[MIX_STRAIN][gene][ntpos][0].find('/')]
+
+        for pos in non_rev_var:  # data_dict[MIX_STRAIN][gene]
             log.write("position: %s\n" % pos)
 
             # set Single colony ID
             single_colony_call = data_dict[
-                SINGLE_STRAIN][gene][pos].split('/')
+                SINGLE_STRAIN][gene][pos][0].split('/')
             mixed_colony_data = [
                 float(num) for num in data_dict[MIX_STRAIN][gene][pos][1]]
             mixed_colony_call = data_dict[MIX_STRAIN][gene][pos][0]
@@ -188,11 +192,9 @@ for percent in range(100):
 
             # keep track of the number of differences for this percentage
             remainder_counter = remainder_counter + smallest_difference[0]
-            # non_diploid_count
 
             log.write("smallest difference: %s %s\n" % (
                 smallest_difference[0], index_key[smallest_difference[1]]))
-            # log.write("TTTT %s") % index_key[smallest_difference[1]]
 
     # this is the summary of the entire MLST for this percentage mix
     results.append((percent, pass10, remainder_counter, non_diploid_count))
