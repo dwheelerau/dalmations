@@ -26,8 +26,13 @@ with open(left) as f:
             if pos <= pos_limit:
                 # len(14) is if the a/t etc non-ref col is added
                 # turn this off and just output all data
-                # if len(bits) == 14:
-                output = bits[:5] + bits[9:]
+                if len(bits) == 14:
+                    output = bits[:5] + bits[9:]
+                else:
+                    # just add the reference call to the end
+                    bits.append(bits[2])
+                    output = bits[:5] + bits[9:]
+
                 # first gene, only want sample recorded once
                 output.insert(0, sample)
                 outfile_csv.writerow(output)
@@ -42,8 +47,11 @@ with open(right) as f:
             pos = int(bits[1])
             if pos > pos_limit:
                 # as above
-                #if len(bits) == 14:
-                output = bits[:5] + bits[9:]
+                if len(bits) == 14:
+                    output = bits[:5] + bits[9:]
+                else:
+                    bits.append(bits[2])
+                    output = bits[:5] + bits[9:]
                 output.insert(0, sample)
                 outfile_csv.writerow(output)
                 final_csv.writerow(output)

@@ -1,7 +1,16 @@
-# ignore everying
-*
-# but not these files
-!*.py
-!*.sh
-!.gitignore
-!README.md
+# ignore
+*.xlsx
+*.ppt
+*~
+backup/
+excell/
+reference_mlst/
+samplesNZGL02259/
+data/
+final_results/
+samples/
+targz_files/
+demultiplex/
+NZGL01799/
+samplesNZGL01799/
+testing/

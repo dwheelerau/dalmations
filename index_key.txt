@@ -1,0 +1,40 @@
+1/1	1/1	all diploid
+1/1	1/2	all diploid
+1/1	2/2	all diploid
+1/2	1/1	all diploid
+1/2	1/2	all diploid
+1/2	2/2	all diploid
+2/2	1/1	all diploid
+2/2	1/2	all diploid
+1/1	11/2	dip/tri
+1/1	1/22	dip/tri
+1/2	11/2	dip/tri
+1/2	1/22	dip/tri
+1/1	111/2	dip/tetra
+1/1	1/222	dip/tetra
+1/2	111/2	dip/tetra
+1/2	1/222	dip/tetra
+11/2	1/1	tri/dip
+11/2	1/2	tri/dip
+1/22	1/1	tri/dip
+1/22	1/2	tri/dip
+11/2	11/2	tri/tri
+11/2	1/22	tri/tri
+1/22	11/2	tri/tri
+1/22	1/22	tri/tri
+11/2	111/2	tri/tetra
+11/2	1/222	tri/tetra
+1/22	111/2	tri/tetra
+1/22	1/222	tri/tetra
+111/2	1/1	tetra/dip
+111/2	1/2	tetra/dip
+1/222	1/1	tetra/dip
+1/222	1/2	tetra/dip
+111/2	11/2	tetra/tri
+111/2	1/22	tetra/tri
+1/222	11/2	tetra/tri
+1/222	1/22	tetra/tri
+111/2	111/2	tetra/tetra
+111/2	1/222	tetra/tetra
+1/222	111/2	tetra/tetra
+1/222	1/222	tetra/tetra

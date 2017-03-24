@@ -1,0 +1,1160 @@
+Barcode	Count	Location
+AAT1apft	14472	fQsequences/12-0016_S8/AAT1apft.fastq
+ACC1pft	9179	fQsequences/12-0016_S8/ACC1pft.fastq
+ADP1pft	16266	fQsequences/12-0016_S8/ADP1pft.fastq
+MPIpft	14546	fQsequences/12-0016_S8/MPIpft.fastq
+SYA1pft	14003	fQsequences/12-0016_S8/SYA1pft.fastq
+VPS13pft	11150	fQsequences/12-0016_S8/VPS13pft.fastq
+ZWF1bpft	12953	fQsequences/12-0016_S8/ZWF1bpft.fastq
+unmatched	1638	fQsequences/12-0016_S8/unmatched.fastq
+total	94207
+Barcode	Count	Location
+AAT1aprt	14309	fQsequences/12-0016_S8/AAT1aprt.fastq
+ACC1prt	9061	fQsequences/12-0016_S8/ACC1prt.fastq
+ADP1prt	16198	fQsequences/12-0016_S8/ADP1prt.fastq
+MPIprt	14501	fQsequences/12-0016_S8/MPIprt.fastq
+SYA1prt	13877	fQsequences/12-0016_S8/SYA1prt.fastq
+VPS13prt	11139	fQsequences/12-0016_S8/VPS13prt.fastq
+ZWF1bprt	12848	fQsequences/12-0016_S8/ZWF1bprt.fastq
+unmatched	2274	fQsequences/12-0016_S8/unmatched.fastq
+total	94207
+Barcode	Count	Location
+AAT1apft	19739	fQsequences/12-0016-S_S28/AAT1apft.fastq
+ACC1pft	11589	fQsequences/12-0016-S_S28/ACC1pft.fastq
+ADP1pft	23128	fQsequences/12-0016-S_S28/ADP1pft.fastq
+MPIpft	21401	fQsequences/12-0016-S_S28/MPIpft.fastq
+SYA1pft	20724	fQsequences/12-0016-S_S28/SYA1pft.fastq
+VPS13pft	15864	fQsequences/12-0016-S_S28/VPS13pft.fastq
+ZWF1bpft	18434	fQsequences/12-0016-S_S28/ZWF1bpft.fastq
+unmatched	2399	fQsequences/12-0016-S_S28/unmatched.fastq
+total	133278
+Barcode	Count	Location
+AAT1aprt	19553	fQsequences/12-0016-S_S28/AAT1aprt.fastq
+ACC1prt	11395	fQsequences/12-0016-S_S28/ACC1prt.fastq
+ADP1prt	23046	fQsequences/12-0016-S_S28/ADP1prt.fastq
+MPIprt	21354	fQsequences/12-0016-S_S28/MPIprt.fastq
+SYA1prt	20569	fQsequences/12-0016-S_S28/SYA1prt.fastq
+VPS13prt	15854	fQsequences/12-0016-S_S28/VPS13prt.fastq
+ZWF1bprt	18319	fQsequences/12-0016-S_S28/ZWF1bprt.fastq
+unmatched	3188	fQsequences/12-0016-S_S28/unmatched.fastq
+total	133278
+Barcode	Count	Location
+AAT1apft	16925	fQsequences/12-0017_S9/AAT1apft.fastq
+ACC1pft	11630	fQsequences/12-0017_S9/ACC1pft.fastq
+ADP1pft	18846	fQsequences/12-0017_S9/ADP1pft.fastq
+MPIpft	19137	fQsequences/12-0017_S9/MPIpft.fastq
+SYA1pft	19590	fQsequences/12-0017_S9/SYA1pft.fastq
+VPS13pft	13258	fQsequences/12-0017_S9/VPS13pft.fastq
+ZWF1bpft	16406	fQsequences/12-0017_S9/ZWF1bpft.fastq
+unmatched	2059	fQsequences/12-0017_S9/unmatched.fastq
+total	117851
+Barcode	Count	Location
+AAT1aprt	16812	fQsequences/12-0017_S9/AAT1aprt.fastq
+ACC1prt	11488	fQsequences/12-0017_S9/ACC1prt.fastq
+ADP1prt	18742	fQsequences/12-0017_S9/ADP1prt.fastq
+MPIprt	19128	fQsequences/12-0017_S9/MPIprt.fastq
+SYA1prt	19434	fQsequences/12-0017_S9/SYA1prt.fastq
+VPS13prt	13285	fQsequences/12-0017_S9/VPS13prt.fastq
+ZWF1bprt	16293	fQsequences/12-0017_S9/ZWF1bprt.fastq
+unmatched	2669	fQsequences/12-0017_S9/unmatched.fastq
+total	117851
+Barcode	Count	Location
+AAT1apft	21797	fQsequences/12-0017-S_S29/AAT1apft.fastq
+ACC1pft	12273	fQsequences/12-0017-S_S29/ACC1pft.fastq
+ADP1pft	24503	fQsequences/12-0017-S_S29/ADP1pft.fastq
+MPIpft	20552	fQsequences/12-0017-S_S29/MPIpft.fastq
+SYA1pft	20956	fQsequences/12-0017-S_S29/SYA1pft.fastq
+VPS13pft	15929	fQsequences/12-0017-S_S29/VPS13pft.fastq
+ZWF1bpft	18301	fQsequences/12-0017-S_S29/ZWF1bpft.fastq
+unmatched	2398	fQsequences/12-0017-S_S29/unmatched.fastq
+total	136709
+Barcode	Count	Location
+AAT1aprt	21669	fQsequences/12-0017-S_S29/AAT1aprt.fastq
+ACC1prt	12103	fQsequences/12-0017-S_S29/ACC1prt.fastq
+ADP1prt	24408	fQsequences/12-0017-S_S29/ADP1prt.fastq
+MPIprt	20593	fQsequences/12-0017-S_S29/MPIprt.fastq
+SYA1prt	20833	fQsequences/12-0017-S_S29/SYA1prt.fastq
+VPS13prt	15935	fQsequences/12-0017-S_S29/VPS13prt.fastq
+ZWF1bprt	18206	fQsequences/12-0017-S_S29/ZWF1bprt.fastq
+unmatched	2962	fQsequences/12-0017-S_S29/unmatched.fastq
+total	136709
+Barcode	Count	Location
+AAT1apft	16568	fQsequences/12-0039_S10/AAT1apft.fastq
+ACC1pft	9290	fQsequences/12-0039_S10/ACC1pft.fastq
+ADP1pft	18955	fQsequences/12-0039_S10/ADP1pft.fastq
+MPIpft	18710	fQsequences/12-0039_S10/MPIpft.fastq
+SYA1pft	16390	fQsequences/12-0039_S10/SYA1pft.fastq
+VPS13pft	12870	fQsequences/12-0039_S10/VPS13pft.fastq
+ZWF1bpft	14297	fQsequences/12-0039_S10/ZWF1bpft.fastq
+unmatched	1952	fQsequences/12-0039_S10/unmatched.fastq
+total	109032
+Barcode	Count	Location
+AAT1aprt	16440	fQsequences/12-0039_S10/AAT1aprt.fastq
+ACC1prt	9156	fQsequences/12-0039_S10/ACC1prt.fastq
+ADP1prt	18840	fQsequences/12-0039_S10/ADP1prt.fastq
+MPIprt	18631	fQsequences/12-0039_S10/MPIprt.fastq
+SYA1prt	16250	fQsequences/12-0039_S10/SYA1prt.fastq
+VPS13prt	12896	fQsequences/12-0039_S10/VPS13prt.fastq
+ZWF1bprt	14239	fQsequences/12-0039_S10/ZWF1bprt.fastq
+unmatched	2580	fQsequences/12-0039_S10/unmatched.fastq
+total	109032
+Barcode	Count	Location
+AAT1apft	25422	fQsequences/12-0039-S_S30/AAT1apft.fastq
+ACC1pft	13712	fQsequences/12-0039-S_S30/ACC1pft.fastq
+ADP1pft	27423	fQsequences/12-0039-S_S30/ADP1pft.fastq
+MPIpft	23700	fQsequences/12-0039-S_S30/MPIpft.fastq
+SYA1pft	24022	fQsequences/12-0039-S_S30/SYA1pft.fastq
+VPS13pft	19461	fQsequences/12-0039-S_S30/VPS13pft.fastq
+ZWF1bpft	21896	fQsequences/12-0039-S_S30/ZWF1bpft.fastq
+unmatched	2822	fQsequences/12-0039-S_S30/unmatched.fastq
+total	158458
+Barcode	Count	Location
+AAT1aprt	25213	fQsequences/12-0039-S_S30/AAT1aprt.fastq
+ACC1prt	13570	fQsequences/12-0039-S_S30/ACC1prt.fastq
+ADP1prt	27272	fQsequences/12-0039-S_S30/ADP1prt.fastq
+MPIprt	23744	fQsequences/12-0039-S_S30/MPIprt.fastq
+SYA1prt	23922	fQsequences/12-0039-S_S30/SYA1prt.fastq
+VPS13prt	19525	fQsequences/12-0039-S_S30/VPS13prt.fastq
+ZWF1bprt	21755	fQsequences/12-0039-S_S30/ZWF1bprt.fastq
+unmatched	3457	fQsequences/12-0039-S_S30/unmatched.fastq
+total	158458
+Barcode	Count	Location
+AAT1apft	11832	fQsequences/12-0046_S1/AAT1apft.fastq
+ACC1pft	9673	fQsequences/12-0046_S1/ACC1pft.fastq
+ADP1pft	11544	fQsequences/12-0046_S1/ADP1pft.fastq
+MPIpft	11743	fQsequences/12-0046_S1/MPIpft.fastq
+SYA1pft	10180	fQsequences/12-0046_S1/SYA1pft.fastq
+VPS13pft	12022	fQsequences/12-0046_S1/VPS13pft.fastq
+ZWF1bpft	15313	fQsequences/12-0046_S1/ZWF1bpft.fastq
+unmatched	1511	fQsequences/12-0046_S1/unmatched.fastq
+total	83818
+Barcode	Count	Location
+AAT1aprt	11741	fQsequences/12-0046_S1/AAT1aprt.fastq
+ACC1prt	9538	fQsequences/12-0046_S1/ACC1prt.fastq
+ADP1prt	11481	fQsequences/12-0046_S1/ADP1prt.fastq
+MPIprt	11719	fQsequences/12-0046_S1/MPIprt.fastq
+SYA1prt	10125	fQsequences/12-0046_S1/SYA1prt.fastq
+VPS13prt	12036	fQsequences/12-0046_S1/VPS13prt.fastq
+ZWF1bprt	15215	fQsequences/12-0046_S1/ZWF1bprt.fastq
+unmatched	1963	fQsequences/12-0046_S1/unmatched.fastq
+total	83818
+Barcode	Count	Location
+AAT1apft	17897	fQsequences/12-0046-S_S21/AAT1apft.fastq
+ACC1pft	10469	fQsequences/12-0046-S_S21/ACC1pft.fastq
+ADP1pft	21425	fQsequences/12-0046-S_S21/ADP1pft.fastq
+MPIpft	18036	fQsequences/12-0046-S_S21/MPIpft.fastq
+SYA1pft	18529	fQsequences/12-0046-S_S21/SYA1pft.fastq
+VPS13pft	15046	fQsequences/12-0046-S_S21/VPS13pft.fastq
+ZWF1bpft	16653	fQsequences/12-0046-S_S21/ZWF1bpft.fastq
+unmatched	2125	fQsequences/12-0046-S_S21/unmatched.fastq
+total	120180
+Barcode	Count	Location
+AAT1aprt	17811	fQsequences/12-0046-S_S21/AAT1aprt.fastq
+ACC1prt	10294	fQsequences/12-0046-S_S21/ACC1prt.fastq
+ADP1prt	21324	fQsequences/12-0046-S_S21/ADP1prt.fastq
+MPIprt	18025	fQsequences/12-0046-S_S21/MPIprt.fastq
+SYA1prt	18426	fQsequences/12-0046-S_S21/SYA1prt.fastq
+VPS13prt	15041	fQsequences/12-0046-S_S21/VPS13prt.fastq
+ZWF1bprt	16611	fQsequences/12-0046-S_S21/ZWF1bprt.fastq
+unmatched	2648	fQsequences/12-0046-S_S21/unmatched.fastq
+total	120180
+Barcode	Count	Location
+AAT1apft	18856	fQsequences/12-0049_S2/AAT1apft.fastq
+ACC1pft	12670	fQsequences/12-0049_S2/ACC1pft.fastq
+ADP1pft	22556	fQsequences/12-0049_S2/ADP1pft.fastq
+MPIpft	24591	fQsequences/12-0049_S2/MPIpft.fastq
+SYA1pft	22120	fQsequences/12-0049_S2/SYA1pft.fastq
+VPS13pft	15247	fQsequences/12-0049_S2/VPS13pft.fastq
+ZWF1bpft	19712	fQsequences/12-0049_S2/ZWF1bpft.fastq
+unmatched	2464	fQsequences/12-0049_S2/unmatched.fastq
+total	138216
+Barcode	Count	Location
+AAT1aprt	18633	fQsequences/12-0049_S2/AAT1aprt.fastq
+ACC1prt	12452	fQsequences/12-0049_S2/ACC1prt.fastq
+ADP1prt	22359	fQsequences/12-0049_S2/ADP1prt.fastq
+MPIprt	24527	fQsequences/12-0049_S2/MPIprt.fastq
+SYA1prt	21918	fQsequences/12-0049_S2/SYA1prt.fastq
+VPS13prt	15197	fQsequences/12-0049_S2/VPS13prt.fastq
+ZWF1bprt	19498	fQsequences/12-0049_S2/ZWF1bprt.fastq
+unmatched	3632	fQsequences/12-0049_S2/unmatched.fastq
+total	138216
+Barcode	Count	Location
+AAT1apft	22109	fQsequences/12-0049-S_S22/AAT1apft.fastq
+ACC1pft	16975	fQsequences/12-0049-S_S22/ACC1pft.fastq
+ADP1pft	28648	fQsequences/12-0049-S_S22/ADP1pft.fastq
+MPIpft	29854	fQsequences/12-0049-S_S22/MPIpft.fastq
+SYA1pft	27463	fQsequences/12-0049-S_S22/SYA1pft.fastq
+VPS13pft	19634	fQsequences/12-0049-S_S22/VPS13pft.fastq
+ZWF1bpft	24404	fQsequences/12-0049-S_S22/ZWF1bpft.fastq
+unmatched	2976	fQsequences/12-0049-S_S22/unmatched.fastq
+total	172063
+Barcode	Count	Location
+AAT1aprt	21901	fQsequences/12-0049-S_S22/AAT1aprt.fastq
+ACC1prt	16708	fQsequences/12-0049-S_S22/ACC1prt.fastq
+ADP1prt	28448	fQsequences/12-0049-S_S22/ADP1prt.fastq
+MPIprt	29746	fQsequences/12-0049-S_S22/MPIprt.fastq
+SYA1prt	27241	fQsequences/12-0049-S_S22/SYA1prt.fastq
+VPS13prt	19671	fQsequences/12-0049-S_S22/VPS13prt.fastq
+ZWF1bprt	24263	fQsequences/12-0049-S_S22/ZWF1bprt.fastq
+unmatched	4085	fQsequences/12-0049-S_S22/unmatched.fastq
+total	172063
+Barcode	Count	Location
+AAT1apft	12884	fQsequences/12-0267_S6/AAT1apft.fastq
+ACC1pft	7942	fQsequences/12-0267_S6/ACC1pft.fastq
+ADP1pft	14103	fQsequences/12-0267_S6/ADP1pft.fastq
+MPIpft	15839	fQsequences/12-0267_S6/MPIpft.fastq
+SYA1pft	14522	fQsequences/12-0267_S6/SYA1pft.fastq
+VPS13pft	10411	fQsequences/12-0267_S6/VPS13pft.fastq
+ZWF1bpft	13635	fQsequences/12-0267_S6/ZWF1bpft.fastq
+unmatched	1597	fQsequences/12-0267_S6/unmatched.fastq
+total	90933
+Barcode	Count	Location
+AAT1aprt	12762	fQsequences/12-0267_S6/AAT1aprt.fastq
+ACC1prt	7853	fQsequences/12-0267_S6/ACC1prt.fastq
+ADP1prt	14103	fQsequences/12-0267_S6/ADP1prt.fastq
+MPIprt	15842	fQsequences/12-0267_S6/MPIprt.fastq
+SYA1prt	14399	fQsequences/12-0267_S6/SYA1prt.fastq
+VPS13prt	10428	fQsequences/12-0267_S6/VPS13prt.fastq
+ZWF1bprt	13533	fQsequences/12-0267_S6/ZWF1bprt.fastq
+unmatched	2013	fQsequences/12-0267_S6/unmatched.fastq
+total	90933
+Barcode	Count	Location
+AAT1apft	21620	fQsequences/12-0267-S_S26/AAT1apft.fastq
+ACC1pft	11992	fQsequences/12-0267-S_S26/ACC1pft.fastq
+ADP1pft	24090	fQsequences/12-0267-S_S26/ADP1pft.fastq
+MPIpft	25564	fQsequences/12-0267-S_S26/MPIpft.fastq
+SYA1pft	22340	fQsequences/12-0267-S_S26/SYA1pft.fastq
+VPS13pft	16049	fQsequences/12-0267-S_S26/VPS13pft.fastq
+ZWF1bpft	19822	fQsequences/12-0267-S_S26/ZWF1bpft.fastq
+unmatched	2566	fQsequences/12-0267-S_S26/unmatched.fastq
+total	144043
+Barcode	Count	Location
+AAT1aprt	21400	fQsequences/12-0267-S_S26/AAT1aprt.fastq
+ACC1prt	11815	fQsequences/12-0267-S_S26/ACC1prt.fastq
+ADP1prt	23946	fQsequences/12-0267-S_S26/ADP1prt.fastq
+MPIprt	25476	fQsequences/12-0267-S_S26/MPIprt.fastq
+SYA1prt	22160	fQsequences/12-0267-S_S26/SYA1prt.fastq
+VPS13prt	16025	fQsequences/12-0267-S_S26/VPS13prt.fastq
+ZWF1bprt	19683	fQsequences/12-0267-S_S26/ZWF1bprt.fastq
+unmatched	3538	fQsequences/12-0267-S_S26/unmatched.fastq
+total	144043
+Barcode	Count	Location
+AAT1apft	20578	fQsequences/12-0424_S13/AAT1apft.fastq
+ACC1pft	12267	fQsequences/12-0424_S13/ACC1pft.fastq
+ADP1pft	21394	fQsequences/12-0424_S13/ADP1pft.fastq
+MPIpft	19820	fQsequences/12-0424_S13/MPIpft.fastq
+SYA1pft	17652	fQsequences/12-0424_S13/SYA1pft.fastq
+VPS13pft	14258	fQsequences/12-0424_S13/VPS13pft.fastq
+ZWF1bpft	16235	fQsequences/12-0424_S13/ZWF1bpft.fastq
+unmatched	2119	fQsequences/12-0424_S13/unmatched.fastq
+total	124323
+Barcode	Count	Location
+AAT1aprt	20384	fQsequences/12-0424_S13/AAT1aprt.fastq
+ACC1prt	12098	fQsequences/12-0424_S13/ACC1prt.fastq
+ADP1prt	21321	fQsequences/12-0424_S13/ADP1prt.fastq
+MPIprt	19809	fQsequences/12-0424_S13/MPIprt.fastq
+SYA1prt	17480	fQsequences/12-0424_S13/SYA1prt.fastq
+VPS13prt	14296	fQsequences/12-0424_S13/VPS13prt.fastq
+ZWF1bprt	16130	fQsequences/12-0424_S13/ZWF1bprt.fastq
+unmatched	2805	fQsequences/12-0424_S13/unmatched.fastq
+total	124323
+Barcode	Count	Location
+AAT1apft	2885	fQsequences/12-0424-S_S33/AAT1apft.fastq
+ACC1pft	1918	fQsequences/12-0424-S_S33/ACC1pft.fastq
+ADP1pft	3528	fQsequences/12-0424-S_S33/ADP1pft.fastq
+MPIpft	3980	fQsequences/12-0424-S_S33/MPIpft.fastq
+SYA1pft	3736	fQsequences/12-0424-S_S33/SYA1pft.fastq
+VPS13pft	2327	fQsequences/12-0424-S_S33/VPS13pft.fastq
+ZWF1bpft	3238	fQsequences/12-0424-S_S33/ZWF1bpft.fastq
+unmatched	428	fQsequences/12-0424-S_S33/unmatched.fastq
+total	22040
+Barcode	Count	Location
+AAT1aprt	2858	fQsequences/12-0424-S_S33/AAT1aprt.fastq
+ACC1prt	1903	fQsequences/12-0424-S_S33/ACC1prt.fastq
+ADP1prt	3507	fQsequences/12-0424-S_S33/ADP1prt.fastq
+MPIprt	3989	fQsequences/12-0424-S_S33/MPIprt.fastq
+SYA1prt	3701	fQsequences/12-0424-S_S33/SYA1prt.fastq
+VPS13prt	2359	fQsequences/12-0424-S_S33/VPS13prt.fastq
+ZWF1bprt	3210	fQsequences/12-0424-S_S33/ZWF1bprt.fastq
+unmatched	513	fQsequences/12-0424-S_S33/unmatched.fastq
+total	22040
+Barcode	Count	Location
+AAT1apft	23798	fQsequences/12-0425_S14/AAT1apft.fastq
+ACC1pft	14225	fQsequences/12-0425_S14/ACC1pft.fastq
+ADP1pft	3245	fQsequences/12-0425_S14/ADP1pft.fastq
+MPIpft	28000	fQsequences/12-0425_S14/MPIpft.fastq
+SYA1pft	24290	fQsequences/12-0425_S14/SYA1pft.fastq
+VPS13pft	16535	fQsequences/12-0425_S14/VPS13pft.fastq
+ZWF1bpft	22044	fQsequences/12-0425_S14/ZWF1bpft.fastq
+unmatched	2405	fQsequences/12-0425_S14/unmatched.fastq
+total	134542
+Barcode	Count	Location
+AAT1aprt	23545	fQsequences/12-0425_S14/AAT1aprt.fastq
+ACC1prt	14035	fQsequences/12-0425_S14/ACC1prt.fastq
+ADP1prt	3217	fQsequences/12-0425_S14/ADP1prt.fastq
+MPIprt	27963	fQsequences/12-0425_S14/MPIprt.fastq
+SYA1prt	24085	fQsequences/12-0425_S14/SYA1prt.fastq
+VPS13prt	16522	fQsequences/12-0425_S14/VPS13prt.fastq
+ZWF1bprt	21880	fQsequences/12-0425_S14/ZWF1bprt.fastq
+unmatched	3295	fQsequences/12-0425_S14/unmatched.fastq
+total	134542
+Barcode	Count	Location
+AAT1apft	3192	fQsequences/12-0425-S_S34/AAT1apft.fastq
+ACC1pft	2016	fQsequences/12-0425-S_S34/ACC1pft.fastq
+ADP1pft	3717	fQsequences/12-0425-S_S34/ADP1pft.fastq
+MPIpft	3418	fQsequences/12-0425-S_S34/MPIpft.fastq
+SYA1pft	3151	fQsequences/12-0425-S_S34/SYA1pft.fastq
+VPS13pft	2261	fQsequences/12-0425-S_S34/VPS13pft.fastq
+ZWF1bpft	2267	fQsequences/12-0425-S_S34/ZWF1bpft.fastq
+unmatched	357	fQsequences/12-0425-S_S34/unmatched.fastq
+total	20379
+Barcode	Count	Location
+AAT1aprt	3167	fQsequences/12-0425-S_S34/AAT1aprt.fastq
+ACC1prt	1992	fQsequences/12-0425-S_S34/ACC1prt.fastq
+ADP1prt	3702	fQsequences/12-0425-S_S34/ADP1prt.fastq
+MPIprt	3416	fQsequences/12-0425-S_S34/MPIprt.fastq
+SYA1prt	3139	fQsequences/12-0425-S_S34/SYA1prt.fastq
+VPS13prt	2252	fQsequences/12-0425-S_S34/VPS13prt.fastq
+ZWF1bprt	2259	fQsequences/12-0425-S_S34/ZWF1bprt.fastq
+unmatched	452	fQsequences/12-0425-S_S34/unmatched.fastq
+total	20379
+Barcode	Count	Location
+AAT1apft	16715	fQsequences/13-0099_S7/AAT1apft.fastq
+ACC1pft	8904	fQsequences/13-0099_S7/ACC1pft.fastq
+ADP1pft	18086	fQsequences/13-0099_S7/ADP1pft.fastq
+MPIpft	16014	fQsequences/13-0099_S7/MPIpft.fastq
+SYA1pft	15096	fQsequences/13-0099_S7/SYA1pft.fastq
+VPS13pft	12020	fQsequences/13-0099_S7/VPS13pft.fastq
+ZWF1bpft	13973	fQsequences/13-0099_S7/ZWF1bpft.fastq
+unmatched	1837	fQsequences/13-0099_S7/unmatched.fastq
+total	102645
+Barcode	Count	Location
+AAT1aprt	16547	fQsequences/13-0099_S7/AAT1aprt.fastq
+ACC1prt	8748	fQsequences/13-0099_S7/ACC1prt.fastq
+ADP1prt	17907	fQsequences/13-0099_S7/ADP1prt.fastq
+MPIprt	16002	fQsequences/13-0099_S7/MPIprt.fastq
+SYA1prt	14974	fQsequences/13-0099_S7/SYA1prt.fastq
+VPS13prt	12062	fQsequences/13-0099_S7/VPS13prt.fastq
+ZWF1bprt	13830	fQsequences/13-0099_S7/ZWF1bprt.fastq
+unmatched	2575	fQsequences/13-0099_S7/unmatched.fastq
+total	102645
+Barcode	Count	Location
+AAT1apft	9889	fQsequences/13-0099-S_S27/AAT1apft.fastq
+ACC1pft	7152	fQsequences/13-0099-S_S27/ACC1pft.fastq
+ADP1pft	11555	fQsequences/13-0099-S_S27/ADP1pft.fastq
+MPIpft	10213	fQsequences/13-0099-S_S27/MPIpft.fastq
+SYA1pft	8679	fQsequences/13-0099-S_S27/SYA1pft.fastq
+VPS13pft	7384	fQsequences/13-0099-S_S27/VPS13pft.fastq
+ZWF1bpft	9057	fQsequences/13-0099-S_S27/ZWF1bpft.fastq
+unmatched	1179	fQsequences/13-0099-S_S27/unmatched.fastq
+total	65108
+Barcode	Count	Location
+AAT1aprt	9780	fQsequences/13-0099-S_S27/AAT1aprt.fastq
+ACC1prt	6993	fQsequences/13-0099-S_S27/ACC1prt.fastq
+ADP1prt	11459	fQsequences/13-0099-S_S27/ADP1prt.fastq
+MPIprt	10124	fQsequences/13-0099-S_S27/MPIprt.fastq
+SYA1prt	8614	fQsequences/13-0099-S_S27/SYA1prt.fastq
+VPS13prt	7365	fQsequences/13-0099-S_S27/VPS13prt.fastq
+ZWF1bprt	8924	fQsequences/13-0099-S_S27/ZWF1bprt.fastq
+unmatched	1849	fQsequences/13-0099-S_S27/unmatched.fastq
+total	65108
+Barcode	Count	Location
+AAT1apft	11377	fQsequences/13-0188_S3/AAT1apft.fastq
+ACC1pft	6475	fQsequences/13-0188_S3/ACC1pft.fastq
+ADP1pft	14346	fQsequences/13-0188_S3/ADP1pft.fastq
+MPIpft	9794	fQsequences/13-0188_S3/MPIpft.fastq
+SYA1pft	10080	fQsequences/13-0188_S3/SYA1pft.fastq
+VPS13pft	8629	fQsequences/13-0188_S3/VPS13pft.fastq
+ZWF1bpft	8630	fQsequences/13-0188_S3/ZWF1bpft.fastq
+unmatched	1224	fQsequences/13-0188_S3/unmatched.fastq
+total	70555
+Barcode	Count	Location
+AAT1aprt	11271	fQsequences/13-0188_S3/AAT1aprt.fastq
+ACC1prt	6405	fQsequences/13-0188_S3/ACC1prt.fastq
+ADP1prt	14242	fQsequences/13-0188_S3/ADP1prt.fastq
+MPIprt	9784	fQsequences/13-0188_S3/MPIprt.fastq
+SYA1prt	10001	fQsequences/13-0188_S3/SYA1prt.fastq
+VPS13prt	8623	fQsequences/13-0188_S3/VPS13prt.fastq
+ZWF1bprt	8613	fQsequences/13-0188_S3/ZWF1bprt.fastq
+unmatched	1616	fQsequences/13-0188_S3/unmatched.fastq
+total	70555
+Barcode	Count	Location
+AAT1apft	17229	fQsequences/13-0188-S_S23/AAT1apft.fastq
+ACC1pft	10443	fQsequences/13-0188-S_S23/ACC1pft.fastq
+ADP1pft	21143	fQsequences/13-0188-S_S23/ADP1pft.fastq
+MPIpft	20791	fQsequences/13-0188-S_S23/MPIpft.fastq
+SYA1pft	19760	fQsequences/13-0188-S_S23/SYA1pft.fastq
+VPS13pft	14725	fQsequences/13-0188-S_S23/VPS13pft.fastq
+ZWF1bpft	16605	fQsequences/13-0188-S_S23/ZWF1bpft.fastq
+unmatched	2102	fQsequences/13-0188-S_S23/unmatched.fastq
+total	122798
+Barcode	Count	Location
+AAT1aprt	17116	fQsequences/13-0188-S_S23/AAT1aprt.fastq
+ACC1prt	10305	fQsequences/13-0188-S_S23/ACC1prt.fastq
+ADP1prt	21008	fQsequences/13-0188-S_S23/ADP1prt.fastq
+MPIprt	20783	fQsequences/13-0188-S_S23/MPIprt.fastq
+SYA1prt	19640	fQsequences/13-0188-S_S23/SYA1prt.fastq
+VPS13prt	14742	fQsequences/13-0188-S_S23/VPS13prt.fastq
+ZWF1bprt	16516	fQsequences/13-0188-S_S23/ZWF1bprt.fastq
+unmatched	2688	fQsequences/13-0188-S_S23/unmatched.fastq
+total	122798
+Barcode	Count	Location
+AAT1apft	14238	fQsequences/13-0189_S4/AAT1apft.fastq
+ACC1pft	9102	fQsequences/13-0189_S4/ACC1pft.fastq
+ADP1pft	15913	fQsequences/13-0189_S4/ADP1pft.fastq
+MPIpft	17061	fQsequences/13-0189_S4/MPIpft.fastq
+SYA1pft	16235	fQsequences/13-0189_S4/SYA1pft.fastq
+VPS13pft	11364	fQsequences/13-0189_S4/VPS13pft.fastq
+ZWF1bpft	14166	fQsequences/13-0189_S4/ZWF1bpft.fastq
+unmatched	1822	fQsequences/13-0189_S4/unmatched.fastq
+total	99901
+Barcode	Count	Location
+AAT1aprt	14132	fQsequences/13-0189_S4/AAT1aprt.fastq
+ACC1prt	8988	fQsequences/13-0189_S4/ACC1prt.fastq
+ADP1prt	15812	fQsequences/13-0189_S4/ADP1prt.fastq
+MPIprt	17075	fQsequences/13-0189_S4/MPIprt.fastq
+SYA1prt	16100	fQsequences/13-0189_S4/SYA1prt.fastq
+VPS13prt	11375	fQsequences/13-0189_S4/VPS13prt.fastq
+ZWF1bprt	14124	fQsequences/13-0189_S4/ZWF1bprt.fastq
+unmatched	2295	fQsequences/13-0189_S4/unmatched.fastq
+total	99901
+Barcode	Count	Location
+AAT1apft	20930	fQsequences/13-0189-S_S24/AAT1apft.fastq
+ACC1pft	12405	fQsequences/13-0189-S_S24/ACC1pft.fastq
+ADP1pft	23231	fQsequences/13-0189-S_S24/ADP1pft.fastq
+MPIpft	21164	fQsequences/13-0189-S_S24/MPIpft.fastq
+SYA1pft	20714	fQsequences/13-0189-S_S24/SYA1pft.fastq
+VPS13pft	16103	fQsequences/13-0189-S_S24/VPS13pft.fastq
+ZWF1bpft	18664	fQsequences/13-0189-S_S24/ZWF1bpft.fastq
+unmatched	2348	fQsequences/13-0189-S_S24/unmatched.fastq
+total	135559
+Barcode	Count	Location
+AAT1aprt	20818	fQsequences/13-0189-S_S24/AAT1aprt.fastq
+ACC1prt	12256	fQsequences/13-0189-S_S24/ACC1prt.fastq
+ADP1prt	23060	fQsequences/13-0189-S_S24/ADP1prt.fastq
+MPIprt	21157	fQsequences/13-0189-S_S24/MPIprt.fastq
+SYA1prt	20537	fQsequences/13-0189-S_S24/SYA1prt.fastq
+VPS13prt	16139	fQsequences/13-0189-S_S24/VPS13prt.fastq
+ZWF1bprt	18607	fQsequences/13-0189-S_S24/ZWF1bprt.fastq
+unmatched	2985	fQsequences/13-0189-S_S24/unmatched.fastq
+total	135559
+Barcode	Count	Location
+AAT1apft	11829	fQsequences/13-0190_S5/AAT1apft.fastq
+ACC1pft	7352	fQsequences/13-0190_S5/ACC1pft.fastq
+ADP1pft	14164	fQsequences/13-0190_S5/ADP1pft.fastq
+MPIpft	12986	fQsequences/13-0190_S5/MPIpft.fastq
+SYA1pft	12779	fQsequences/13-0190_S5/SYA1pft.fastq
+VPS13pft	9732	fQsequences/13-0190_S5/VPS13pft.fastq
+ZWF1bpft	11062	fQsequences/13-0190_S5/ZWF1bpft.fastq
+unmatched	1511	fQsequences/13-0190_S5/unmatched.fastq
+total	81415
+Barcode	Count	Location
+AAT1aprt	11741	fQsequences/13-0190_S5/AAT1aprt.fastq
+ACC1prt	7246	fQsequences/13-0190_S5/ACC1prt.fastq
+ADP1prt	14126	fQsequences/13-0190_S5/ADP1prt.fastq
+MPIprt	12935	fQsequences/13-0190_S5/MPIprt.fastq
+SYA1prt	12718	fQsequences/13-0190_S5/SYA1prt.fastq
+VPS13prt	9730	fQsequences/13-0190_S5/VPS13prt.fastq
+ZWF1bprt	11022	fQsequences/13-0190_S5/ZWF1bprt.fastq
+unmatched	1897	fQsequences/13-0190_S5/unmatched.fastq
+total	81415
+Barcode	Count	Location
+AAT1apft	22361	fQsequences/13-0190-S_S25/AAT1apft.fastq
+ACC1pft	13006	fQsequences/13-0190-S_S25/ACC1pft.fastq
+ADP1pft	24896	fQsequences/13-0190-S_S25/ADP1pft.fastq
+MPIpft	24211	fQsequences/13-0190-S_S25/MPIpft.fastq
+SYA1pft	24755	fQsequences/13-0190-S_S25/SYA1pft.fastq
+VPS13pft	17163	fQsequences/13-0190-S_S25/VPS13pft.fastq
+ZWF1bpft	21317	fQsequences/13-0190-S_S25/ZWF1bpft.fastq
+unmatched	2663	fQsequences/13-0190-S_S25/unmatched.fastq
+total	150372
+Barcode	Count	Location
+AAT1aprt	22220	fQsequences/13-0190-S_S25/AAT1aprt.fastq
+ACC1prt	12847	fQsequences/13-0190-S_S25/ACC1prt.fastq
+ADP1prt	24833	fQsequences/13-0190-S_S25/ADP1prt.fastq
+MPIprt	24222	fQsequences/13-0190-S_S25/MPIprt.fastq
+SYA1prt	24573	fQsequences/13-0190-S_S25/SYA1prt.fastq
+VPS13prt	17222	fQsequences/13-0190-S_S25/VPS13prt.fastq
+ZWF1bprt	21172	fQsequences/13-0190-S_S25/ZWF1bprt.fastq
+unmatched	3283	fQsequences/13-0190-S_S25/unmatched.fastq
+total	150372
+Barcode	Count	Location
+AAT1apft	18823	fQsequences/14-MB2484_S12/AAT1apft.fastq
+ACC1pft	10458	fQsequences/14-MB2484_S12/ACC1pft.fastq
+ADP1pft	17934	fQsequences/14-MB2484_S12/ADP1pft.fastq
+MPIpft	18135	fQsequences/14-MB2484_S12/MPIpft.fastq
+SYA1pft	16676	fQsequences/14-MB2484_S12/SYA1pft.fastq
+VPS13pft	13093	fQsequences/14-MB2484_S12/VPS13pft.fastq
+ZWF1bpft	14547	fQsequences/14-MB2484_S12/ZWF1bpft.fastq
+unmatched	1951	fQsequences/14-MB2484_S12/unmatched.fastq
+total	111617
+Barcode	Count	Location
+AAT1aprt	18646	fQsequences/14-MB2484_S12/AAT1aprt.fastq
+ACC1prt	10273	fQsequences/14-MB2484_S12/ACC1prt.fastq
+ADP1prt	17882	fQsequences/14-MB2484_S12/ADP1prt.fastq
+MPIprt	18139	fQsequences/14-MB2484_S12/MPIprt.fastq
+SYA1prt	16541	fQsequences/14-MB2484_S12/SYA1prt.fastq
+VPS13prt	13096	fQsequences/14-MB2484_S12/VPS13prt.fastq
+ZWF1bprt	14472	fQsequences/14-MB2484_S12/ZWF1bprt.fastq
+unmatched	2568	fQsequences/14-MB2484_S12/unmatched.fastq
+total	111617
+Barcode	Count	Location
+AAT1apft	2469	fQsequences/14-MB2484-S_S32/AAT1apft.fastq
+ACC1pft	1462	fQsequences/14-MB2484-S_S32/ACC1pft.fastq
+ADP1pft	2540	fQsequences/14-MB2484-S_S32/ADP1pft.fastq
+MPIpft	2355	fQsequences/14-MB2484-S_S32/MPIpft.fastq
+SYA1pft	2544	fQsequences/14-MB2484-S_S32/SYA1pft.fastq
+VPS13pft	1746	fQsequences/14-MB2484-S_S32/VPS13pft.fastq
+ZWF1bpft	2087	fQsequences/14-MB2484-S_S32/ZWF1bpft.fastq
+unmatched	277	fQsequences/14-MB2484-S_S32/unmatched.fastq
+total	15480
+Barcode	Count	Location
+AAT1aprt	2454	fQsequences/14-MB2484-S_S32/AAT1aprt.fastq
+ACC1prt	1436	fQsequences/14-MB2484-S_S32/ACC1prt.fastq
+ADP1prt	2516	fQsequences/14-MB2484-S_S32/ADP1prt.fastq
+MPIprt	2353	fQsequences/14-MB2484-S_S32/MPIprt.fastq
+SYA1prt	2518	fQsequences/14-MB2484-S_S32/SYA1prt.fastq
+VPS13prt	1757	fQsequences/14-MB2484-S_S32/VPS13prt.fastq
+ZWF1bprt	2078	fQsequences/14-MB2484-S_S32/ZWF1bprt.fastq
+unmatched	368	fQsequences/14-MB2484-S_S32/unmatched.fastq
+total	15480
+Barcode	Count	Location
+AAT1apft	2	fQsequences/BS1_S57/AAT1apft.fastq
+ACC1pft	2	fQsequences/BS1_S57/ACC1pft.fastq
+ADP1pft	1	fQsequences/BS1_S57/ADP1pft.fastq
+MPIpft	4	fQsequences/BS1_S57/MPIpft.fastq
+SYA1pft	3	fQsequences/BS1_S57/SYA1pft.fastq
+VPS13pft	2	fQsequences/BS1_S57/VPS13pft.fastq
+ZWF1bpft	6	fQsequences/BS1_S57/ZWF1bpft.fastq
+unmatched	174753	fQsequences/BS1_S57/unmatched.fastq
+total	174773
+Barcode	Count	Location
+AAT1aprt	7	fQsequences/BS1_S57/AAT1aprt.fastq
+ACC1prt	3	fQsequences/BS1_S57/ACC1prt.fastq
+ADP1prt	3	fQsequences/BS1_S57/ADP1prt.fastq
+MPIprt	3	fQsequences/BS1_S57/MPIprt.fastq
+SYA1prt	10	fQsequences/BS1_S57/SYA1prt.fastq
+VPS13prt	3	fQsequences/BS1_S57/VPS13prt.fastq
+ZWF1bprt	7	fQsequences/BS1_S57/ZWF1bprt.fastq
+unmatched	174737	fQsequences/BS1_S57/unmatched.fastq
+total	174773
+Barcode	Count	Location
+AAT1apft	5	fQsequences/BS2_S58/AAT1apft.fastq
+ACC1pft	1	fQsequences/BS2_S58/ACC1pft.fastq
+ADP1pft	3	fQsequences/BS2_S58/ADP1pft.fastq
+MPIpft	3	fQsequences/BS2_S58/MPIpft.fastq
+SYA1pft	4	fQsequences/BS2_S58/SYA1pft.fastq
+VPS13pft	1	fQsequences/BS2_S58/VPS13pft.fastq
+ZWF1bpft	2	fQsequences/BS2_S58/ZWF1bpft.fastq
+unmatched	206944	fQsequences/BS2_S58/unmatched.fastq
+total	206963
+Barcode	Count	Location
+AAT1aprt	8	fQsequences/BS2_S58/AAT1aprt.fastq
+ACC1prt	4	fQsequences/BS2_S58/ACC1prt.fastq
+ADP1prt	3	fQsequences/BS2_S58/ADP1prt.fastq
+MPIprt	4	fQsequences/BS2_S58/MPIprt.fastq
+SYA1prt	13	fQsequences/BS2_S58/SYA1prt.fastq
+VPS13prt	2	fQsequences/BS2_S58/VPS13prt.fastq
+ZWF1bprt	3	fQsequences/BS2_S58/ZWF1bprt.fastq
+unmatched	206926	fQsequences/BS2_S58/unmatched.fastq
+total	206963
+Barcode	Count	Location
+AAT1apft	15570	fQsequences/FJ12-S_S17/AAT1apft.fastq
+ACC1pft	9989	fQsequences/FJ12-S_S17/ACC1pft.fastq
+ADP1pft	17189	fQsequences/FJ12-S_S17/ADP1pft.fastq
+MPIpft	16301	fQsequences/FJ12-S_S17/MPIpft.fastq
+SYA1pft	15113	fQsequences/FJ12-S_S17/SYA1pft.fastq
+VPS13pft	12365	fQsequences/FJ12-S_S17/VPS13pft.fastq
+ZWF1bpft	14943	fQsequences/FJ12-S_S17/ZWF1bpft.fastq
+unmatched	1841	fQsequences/FJ12-S_S17/unmatched.fastq
+total	103311
+Barcode	Count	Location
+AAT1aprt	15453	fQsequences/FJ12-S_S17/AAT1aprt.fastq
+ACC1prt	9856	fQsequences/FJ12-S_S17/ACC1prt.fastq
+ADP1prt	17058	fQsequences/FJ12-S_S17/ADP1prt.fastq
+MPIprt	16311	fQsequences/FJ12-S_S17/MPIprt.fastq
+SYA1prt	15069	fQsequences/FJ12-S_S17/SYA1prt.fastq
+VPS13prt	12396	fQsequences/FJ12-S_S17/VPS13prt.fastq
+ZWF1bprt	14892	fQsequences/FJ12-S_S17/ZWF1bprt.fastq
+unmatched	2276	fQsequences/FJ12-S_S17/unmatched.fastq
+total	103311
+Barcode	Count	Location
+AAT1apft	19264	fQsequences/FJ9-S_S16/AAT1apft.fastq
+ACC1pft	11637	fQsequences/FJ9-S_S16/ACC1pft.fastq
+ADP1pft	19767	fQsequences/FJ9-S_S16/ADP1pft.fastq
+MPIpft	21875	fQsequences/FJ9-S_S16/MPIpft.fastq
+SYA1pft	19841	fQsequences/FJ9-S_S16/SYA1pft.fastq
+VPS13pft	14626	fQsequences/FJ9-S_S16/VPS13pft.fastq
+ZWF1bpft	19149	fQsequences/FJ9-S_S16/ZWF1bpft.fastq
+unmatched	2290	fQsequences/FJ9-S_S16/unmatched.fastq
+total	128449
+Barcode	Count	Location
+AAT1aprt	19158	fQsequences/FJ9-S_S16/AAT1aprt.fastq
+ACC1prt	11494	fQsequences/FJ9-S_S16/ACC1prt.fastq
+ADP1prt	19667	fQsequences/FJ9-S_S16/ADP1prt.fastq
+MPIprt	21842	fQsequences/FJ9-S_S16/MPIprt.fastq
+SYA1prt	19680	fQsequences/FJ9-S_S16/SYA1prt.fastq
+VPS13prt	14633	fQsequences/FJ9-S_S16/VPS13prt.fastq
+ZWF1bprt	19038	fQsequences/FJ9-S_S16/ZWF1bprt.fastq
+unmatched	2937	fQsequences/FJ9-S_S16/unmatched.fastq
+total	128449
+Barcode	Count	Location
+AAT1apft	18479	fQsequences/gaymc-c-S_S15/AAT1apft.fastq
+ACC1pft	10761	fQsequences/gaymc-c-S_S15/ACC1pft.fastq
+ADP1pft	28739	fQsequences/gaymc-c-S_S15/ADP1pft.fastq
+MPIpft	16955	fQsequences/gaymc-c-S_S15/MPIpft.fastq
+SYA1pft	15341	fQsequences/gaymc-c-S_S15/SYA1pft.fastq
+VPS13pft	11892	fQsequences/gaymc-c-S_S15/VPS13pft.fastq
+ZWF1bpft	14431	fQsequences/gaymc-c-S_S15/ZWF1bpft.fastq
+unmatched	2073	fQsequences/gaymc-c-S_S15/unmatched.fastq
+total	118671
+Barcode	Count	Location
+AAT1aprt	18352	fQsequences/gaymc-c-S_S15/AAT1aprt.fastq
+ACC1prt	10621	fQsequences/gaymc-c-S_S15/ACC1prt.fastq
+ADP1prt	28592	fQsequences/gaymc-c-S_S15/ADP1prt.fastq
+MPIprt	16932	fQsequences/gaymc-c-S_S15/MPIprt.fastq
+SYA1prt	15245	fQsequences/gaymc-c-S_S15/SYA1prt.fastq
+VPS13prt	11903	fQsequences/gaymc-c-S_S15/VPS13prt.fastq
+ZWF1bprt	14392	fQsequences/gaymc-c-S_S15/ZWF1bprt.fastq
+unmatched	2634	fQsequences/gaymc-c-S_S15/unmatched.fastq
+total	118671
+Barcode	Count	Location
+AAT1apft	21088	fQsequences/hp11vw-S_S20/AAT1apft.fastq
+ACC1pft	12221	fQsequences/hp11vw-S_S20/ACC1pft.fastq
+ADP1pft	21579	fQsequences/hp11vw-S_S20/ADP1pft.fastq
+MPIpft	16896	fQsequences/hp11vw-S_S20/MPIpft.fastq
+SYA1pft	16654	fQsequences/hp11vw-S_S20/SYA1pft.fastq
+VPS13pft	15059	fQsequences/hp11vw-S_S20/VPS13pft.fastq
+ZWF1bpft	15408	fQsequences/hp11vw-S_S20/ZWF1bpft.fastq
+unmatched	1995	fQsequences/hp11vw-S_S20/unmatched.fastq
+total	120900
+Barcode	Count	Location
+AAT1aprt	20925	fQsequences/hp11vw-S_S20/AAT1aprt.fastq
+ACC1prt	12086	fQsequences/hp11vw-S_S20/ACC1prt.fastq
+ADP1prt	21408	fQsequences/hp11vw-S_S20/ADP1prt.fastq
+MPIprt	16887	fQsequences/hp11vw-S_S20/MPIprt.fastq
+SYA1prt	16572	fQsequences/hp11vw-S_S20/SYA1prt.fastq
+VPS13prt	15043	fQsequences/hp11vw-S_S20/VPS13prt.fastq
+ZWF1bprt	15316	fQsequences/hp11vw-S_S20/ZWF1bprt.fastq
+unmatched	2663	fQsequences/hp11vw-S_S20/unmatched.fastq
+total	120900
+Barcode	Count	Location
+AAT1apft	15579	fQsequences/HUN91-S_S18/AAT1apft.fastq
+ACC1pft	9636	fQsequences/HUN91-S_S18/ACC1pft.fastq
+ADP1pft	16843	fQsequences/HUN91-S_S18/ADP1pft.fastq
+MPIpft	15256	fQsequences/HUN91-S_S18/MPIpft.fastq
+SYA1pft	13852	fQsequences/HUN91-S_S18/SYA1pft.fastq
+VPS13pft	11030	fQsequences/HUN91-S_S18/VPS13pft.fastq
+ZWF1bpft	13235	fQsequences/HUN91-S_S18/ZWF1bpft.fastq
+unmatched	1637	fQsequences/HUN91-S_S18/unmatched.fastq
+total	97068
+Barcode	Count	Location
+AAT1aprt	15528	fQsequences/HUN91-S_S18/AAT1aprt.fastq
+ACC1prt	9494	fQsequences/HUN91-S_S18/ACC1prt.fastq
+ADP1prt	16735	fQsequences/HUN91-S_S18/ADP1prt.fastq
+MPIprt	15217	fQsequences/HUN91-S_S18/MPIprt.fastq
+SYA1prt	13762	fQsequences/HUN91-S_S18/SYA1prt.fastq
+VPS13prt	11056	fQsequences/HUN91-S_S18/VPS13prt.fastq
+ZWF1bprt	13163	fQsequences/HUN91-S_S18/ZWF1bprt.fastq
+unmatched	2113	fQsequences/HUN91-S_S18/unmatched.fastq
+total	97068
+Barcode	Count	Location
+AAT1apft	10181	fQsequences/M05-OR_S11/AAT1apft.fastq
+ACC1pft	7844	fQsequences/M05-OR_S11/ACC1pft.fastq
+ADP1pft	16029	fQsequences/M05-OR_S11/ADP1pft.fastq
+MPIpft	17126	fQsequences/M05-OR_S11/MPIpft.fastq
+SYA1pft	16255	fQsequences/M05-OR_S11/SYA1pft.fastq
+VPS13pft	11170	fQsequences/M05-OR_S11/VPS13pft.fastq
+ZWF1bpft	12525	fQsequences/M05-OR_S11/ZWF1bpft.fastq
+unmatched	1598	fQsequences/M05-OR_S11/unmatched.fastq
+total	92728
+Barcode	Count	Location
+AAT1aprt	10085	fQsequences/M05-OR_S11/AAT1aprt.fastq
+ACC1prt	7774	fQsequences/M05-OR_S11/ACC1prt.fastq
+ADP1prt	15910	fQsequences/M05-OR_S11/ADP1prt.fastq
+MPIprt	17141	fQsequences/M05-OR_S11/MPIprt.fastq
+SYA1prt	16190	fQsequences/M05-OR_S11/SYA1prt.fastq
+VPS13prt	11192	fQsequences/M05-OR_S11/VPS13prt.fastq
+ZWF1bprt	12453	fQsequences/M05-OR_S11/ZWF1bprt.fastq
+unmatched	1983	fQsequences/M05-OR_S11/unmatched.fastq
+total	92728
+Barcode	Count	Location
+AAT1apft	3047	fQsequences/M05-OR-S_S31/AAT1apft.fastq
+ACC1pft	1757	fQsequences/M05-OR-S_S31/ACC1pft.fastq
+ADP1pft	3310	fQsequences/M05-OR-S_S31/ADP1pft.fastq
+MPIpft	2991	fQsequences/M05-OR-S_S31/MPIpft.fastq
+SYA1pft	2898	fQsequences/M05-OR-S_S31/SYA1pft.fastq
+VPS13pft	2012	fQsequences/M05-OR-S_S31/VPS13pft.fastq
+ZWF1bpft	2632	fQsequences/M05-OR-S_S31/ZWF1bpft.fastq
+unmatched	345	fQsequences/M05-OR-S_S31/unmatched.fastq
+total	18992
+Barcode	Count	Location
+AAT1aprt	3033	fQsequences/M05-OR-S_S31/AAT1aprt.fastq
+ACC1prt	1731	fQsequences/M05-OR-S_S31/ACC1prt.fastq
+ADP1prt	3291	fQsequences/M05-OR-S_S31/ADP1prt.fastq
+MPIprt	3005	fQsequences/M05-OR-S_S31/MPIprt.fastq
+SYA1prt	2878	fQsequences/M05-OR-S_S31/SYA1prt.fastq
+VPS13prt	2001	fQsequences/M05-OR-S_S31/VPS13prt.fastq
+ZWF1bprt	2611	fQsequences/M05-OR-S_S31/ZWF1bprt.fastq
+unmatched	442	fQsequences/M05-OR-S_S31/unmatched.fastq
+total	18992
+Barcode	Count	Location
+AAT1apft	17806	fQsequences/N1B_S43/AAT1apft.fastq
+ACC1pft	10144	fQsequences/N1B_S43/ACC1pft.fastq
+ADP1pft	19570	fQsequences/N1B_S43/ADP1pft.fastq
+MPIpft	15590	fQsequences/N1B_S43/MPIpft.fastq
+SYA1pft	15978	fQsequences/N1B_S43/SYA1pft.fastq
+VPS13pft	12909	fQsequences/N1B_S43/VPS13pft.fastq
+ZWF1bpft	15103	fQsequences/N1B_S43/ZWF1bpft.fastq
+unmatched	165911	fQsequences/N1B_S43/unmatched.fastq
+total	273011
+Barcode	Count	Location
+AAT1aprt	17604	fQsequences/N1B_S43/AAT1aprt.fastq
+ACC1prt	9968	fQsequences/N1B_S43/ACC1prt.fastq
+ADP1prt	19470	fQsequences/N1B_S43/ADP1prt.fastq
+MPIprt	15564	fQsequences/N1B_S43/MPIprt.fastq
+SYA1prt	15867	fQsequences/N1B_S43/SYA1prt.fastq
+VPS13prt	12921	fQsequences/N1B_S43/VPS13prt.fastq
+ZWF1bprt	15047	fQsequences/N1B_S43/ZWF1bprt.fastq
+unmatched	166570	fQsequences/N1B_S43/unmatched.fastq
+total	273011
+Barcode	Count	Location
+AAT1apft	15639	fQsequences/N1R_S44/AAT1apft.fastq
+ACC1pft	8714	fQsequences/N1R_S44/ACC1pft.fastq
+ADP1pft	15712	fQsequences/N1R_S44/ADP1pft.fastq
+MPIpft	13331	fQsequences/N1R_S44/MPIpft.fastq
+SYA1pft	13998	fQsequences/N1R_S44/SYA1pft.fastq
+VPS13pft	11351	fQsequences/N1R_S44/VPS13pft.fastq
+ZWF1bpft	12253	fQsequences/N1R_S44/ZWF1bpft.fastq
+unmatched	1811	fQsequences/N1R_S44/unmatched.fastq
+total	92809
+Barcode	Count	Location
+AAT1aprt	15536	fQsequences/N1R_S44/AAT1aprt.fastq
+ACC1prt	8611	fQsequences/N1R_S44/ACC1prt.fastq
+ADP1prt	15580	fQsequences/N1R_S44/ADP1prt.fastq
+MPIprt	13308	fQsequences/N1R_S44/MPIprt.fastq
+SYA1prt	13936	fQsequences/N1R_S44/SYA1prt.fastq
+VPS13prt	11356	fQsequences/N1R_S44/VPS13prt.fastq
+ZWF1bprt	12185	fQsequences/N1R_S44/ZWF1bprt.fastq
+unmatched	2297	fQsequences/N1R_S44/unmatched.fastq
+total	92809
+Barcode	Count	Location
+AAT1apft	17233	fQsequences/N2B_S47/AAT1apft.fastq
+ACC1pft	10502	fQsequences/N2B_S47/ACC1pft.fastq
+ADP1pft	18350	fQsequences/N2B_S47/ADP1pft.fastq
+MPIpft	19851	fQsequences/N2B_S47/MPIpft.fastq
+SYA1pft	18081	fQsequences/N2B_S47/SYA1pft.fastq
+VPS13pft	13171	fQsequences/N2B_S47/VPS13pft.fastq
+ZWF1bpft	17558	fQsequences/N2B_S47/ZWF1bpft.fastq
+unmatched	193223	fQsequences/N2B_S47/unmatched.fastq
+total	307969
+Barcode	Count	Location
+AAT1aprt	17136	fQsequences/N2B_S47/AAT1aprt.fastq
+ACC1prt	10359	fQsequences/N2B_S47/ACC1prt.fastq
+ADP1prt	18247	fQsequences/N2B_S47/ADP1prt.fastq
+MPIprt	19839	fQsequences/N2B_S47/MPIprt.fastq
+SYA1prt	17943	fQsequences/N2B_S47/SYA1prt.fastq
+VPS13prt	13216	fQsequences/N2B_S47/VPS13prt.fastq
+ZWF1bprt	17417	fQsequences/N2B_S47/ZWF1bprt.fastq
+unmatched	193812	fQsequences/N2B_S47/unmatched.fastq
+total	307969
+Barcode	Count	Location
+AAT1apft	18562	fQsequences/N2R_S48/AAT1apft.fastq
+ACC1pft	11097	fQsequences/N2R_S48/ACC1pft.fastq
+ADP1pft	19126	fQsequences/N2R_S48/ADP1pft.fastq
+MPIpft	17926	fQsequences/N2R_S48/MPIpft.fastq
+SYA1pft	16998	fQsequences/N2R_S48/SYA1pft.fastq
+VPS13pft	13484	fQsequences/N2R_S48/VPS13pft.fastq
+ZWF1bpft	16417	fQsequences/N2R_S48/ZWF1bpft.fastq
+unmatched	2532	fQsequences/N2R_S48/unmatched.fastq
+total	116142
+Barcode	Count	Location
+AAT1aprt	18505	fQsequences/N2R_S48/AAT1aprt.fastq
+ACC1prt	10965	fQsequences/N2R_S48/ACC1prt.fastq
+ADP1prt	19045	fQsequences/N2R_S48/ADP1prt.fastq
+MPIprt	17868	fQsequences/N2R_S48/MPIprt.fastq
+SYA1prt	16862	fQsequences/N2R_S48/SYA1prt.fastq
+VPS13prt	13555	fQsequences/N2R_S48/VPS13prt.fastq
+ZWF1bprt	16284	fQsequences/N2R_S48/ZWF1bprt.fastq
+unmatched	3058	fQsequences/N2R_S48/unmatched.fastq
+total	116142
+Barcode	Count	Location
+AAT1apft	1	fQsequences/N3B_S51/AAT1apft.fastq
+ACC1pft	2	fQsequences/N3B_S51/ACC1pft.fastq
+ADP1pft	5	fQsequences/N3B_S51/ADP1pft.fastq
+MPIpft	4	fQsequences/N3B_S51/MPIpft.fastq
+SYA1pft	0	fQsequences/N3B_S51/SYA1pft.fastq
+VPS13pft	1	fQsequences/N3B_S51/VPS13pft.fastq
+ZWF1bpft	4	fQsequences/N3B_S51/ZWF1bpft.fastq
+unmatched	27921	fQsequences/N3B_S51/unmatched.fastq
+total	27938
+Barcode	Count	Location
+AAT1aprt	3	fQsequences/N3B_S51/AAT1aprt.fastq
+ACC1prt	3	fQsequences/N3B_S51/ACC1prt.fastq
+ADP1prt	7	fQsequences/N3B_S51/ADP1prt.fastq
+MPIprt	4	fQsequences/N3B_S51/MPIprt.fastq
+SYA1prt	0	fQsequences/N3B_S51/SYA1prt.fastq
+VPS13prt	0	fQsequences/N3B_S51/VPS13prt.fastq
+ZWF1bprt	3	fQsequences/N3B_S51/ZWF1bprt.fastq
+unmatched	27918	fQsequences/N3B_S51/unmatched.fastq
+total	27938
+Barcode	Count	Location
+AAT1apft	9	fQsequences/N3R_S52/AAT1apft.fastq
+ACC1pft	2	fQsequences/N3R_S52/ACC1pft.fastq
+ADP1pft	3	fQsequences/N3R_S52/ADP1pft.fastq
+MPIpft	6	fQsequences/N3R_S52/MPIpft.fastq
+SYA1pft	13	fQsequences/N3R_S52/SYA1pft.fastq
+VPS13pft	4	fQsequences/N3R_S52/VPS13pft.fastq
+ZWF1bpft	13	fQsequences/N3R_S52/ZWF1bpft.fastq
+unmatched	165020	fQsequences/N3R_S52/unmatched.fastq
+total	165070
+Barcode	Count	Location
+AAT1aprt	13	fQsequences/N3R_S52/AAT1aprt.fastq
+ACC1prt	3	fQsequences/N3R_S52/ACC1prt.fastq
+ADP1prt	7	fQsequences/N3R_S52/ADP1prt.fastq
+MPIprt	7	fQsequences/N3R_S52/MPIprt.fastq
+SYA1prt	16	fQsequences/N3R_S52/SYA1prt.fastq
+VPS13prt	5	fQsequences/N3R_S52/VPS13prt.fastq
+ZWF1bprt	15	fQsequences/N3R_S52/ZWF1bprt.fastq
+unmatched	165004	fQsequences/N3R_S52/unmatched.fastq
+total	165070
+Barcode	Count	Location
+AAT1apft	1	fQsequences/N4B_S55/AAT1apft.fastq
+ACC1pft	4	fQsequences/N4B_S55/ACC1pft.fastq
+ADP1pft	4	fQsequences/N4B_S55/ADP1pft.fastq
+MPIpft	6	fQsequences/N4B_S55/MPIpft.fastq
+SYA1pft	2	fQsequences/N4B_S55/SYA1pft.fastq
+VPS13pft	3	fQsequences/N4B_S55/VPS13pft.fastq
+ZWF1bpft	5	fQsequences/N4B_S55/ZWF1bpft.fastq
+unmatched	158798	fQsequences/N4B_S55/unmatched.fastq
+total	158823
+Barcode	Count	Location
+AAT1aprt	2	fQsequences/N4B_S55/AAT1aprt.fastq
+ACC1prt	7	fQsequences/N4B_S55/ACC1prt.fastq
+ADP1prt	6	fQsequences/N4B_S55/ADP1prt.fastq
+MPIprt	8	fQsequences/N4B_S55/MPIprt.fastq
+SYA1prt	6	fQsequences/N4B_S55/SYA1prt.fastq
+VPS13prt	5	fQsequences/N4B_S55/VPS13prt.fastq
+ZWF1bprt	6	fQsequences/N4B_S55/ZWF1bprt.fastq
+unmatched	158783	fQsequences/N4B_S55/unmatched.fastq
+total	158823
+Barcode	Count	Location
+AAT1apft	4	fQsequences/N4R_S56/AAT1apft.fastq
+ACC1pft	4	fQsequences/N4R_S56/ACC1pft.fastq
+ADP1pft	7	fQsequences/N4R_S56/ADP1pft.fastq
+MPIpft	5	fQsequences/N4R_S56/MPIpft.fastq
+SYA1pft	4	fQsequences/N4R_S56/SYA1pft.fastq
+VPS13pft	2	fQsequences/N4R_S56/VPS13pft.fastq
+ZWF1bpft	6	fQsequences/N4R_S56/ZWF1bpft.fastq
+unmatched	128515	fQsequences/N4R_S56/unmatched.fastq
+total	128547
+Barcode	Count	Location
+AAT1aprt	5	fQsequences/N4R_S56/AAT1aprt.fastq
+ACC1prt	7	fQsequences/N4R_S56/ACC1prt.fastq
+ADP1prt	7	fQsequences/N4R_S56/ADP1prt.fastq
+MPIprt	6	fQsequences/N4R_S56/MPIprt.fastq
+SYA1prt	8	fQsequences/N4R_S56/SYA1prt.fastq
+VPS13prt	2	fQsequences/N4R_S56/VPS13prt.fastq
+ZWF1bprt	6	fQsequences/N4R_S56/ZWF1bprt.fastq
+unmatched	128506	fQsequences/N4R_S56/unmatched.fastq
+total	128547
+Barcode	Count	Location
+AAT1apft	3520	fQsequences/P1-50-50_S35/AAT1apft.fastq
+ACC1pft	2332	fQsequences/P1-50-50_S35/ACC1pft.fastq
+ADP1pft	3690	fQsequences/P1-50-50_S35/ADP1pft.fastq
+MPIpft	3913	fQsequences/P1-50-50_S35/MPIpft.fastq
+SYA1pft	3811	fQsequences/P1-50-50_S35/SYA1pft.fastq
+VPS13pft	2500	fQsequences/P1-50-50_S35/VPS13pft.fastq
+ZWF1bpft	3420	fQsequences/P1-50-50_S35/ZWF1bpft.fastq
+unmatched	435	fQsequences/P1-50-50_S35/unmatched.fastq
+total	23621
+Barcode	Count	Location
+AAT1aprt	3479	fQsequences/P1-50-50_S35/AAT1aprt.fastq
+ACC1prt	2307	fQsequences/P1-50-50_S35/ACC1prt.fastq
+ADP1prt	3664	fQsequences/P1-50-50_S35/ADP1prt.fastq
+MPIprt	3918	fQsequences/P1-50-50_S35/MPIprt.fastq
+SYA1prt	3793	fQsequences/P1-50-50_S35/SYA1prt.fastq
+VPS13prt	2517	fQsequences/P1-50-50_S35/VPS13prt.fastq
+ZWF1bprt	3394	fQsequences/P1-50-50_S35/ZWF1bprt.fastq
+unmatched	549	fQsequences/P1-50-50_S35/unmatched.fastq
+total	23621
+Barcode	Count	Location
+AAT1apft	3632	fQsequences/P1-80-20_S36/AAT1apft.fastq
+ACC1pft	2316	fQsequences/P1-80-20_S36/ACC1pft.fastq
+ADP1pft	3665	fQsequences/P1-80-20_S36/ADP1pft.fastq
+MPIpft	3391	fQsequences/P1-80-20_S36/MPIpft.fastq
+SYA1pft	3420	fQsequences/P1-80-20_S36/SYA1pft.fastq
+VPS13pft	2522	fQsequences/P1-80-20_S36/VPS13pft.fastq
+ZWF1bpft	3137	fQsequences/P1-80-20_S36/ZWF1bpft.fastq
+unmatched	386	fQsequences/P1-80-20_S36/unmatched.fastq
+total	22469
+Barcode	Count	Location
+AAT1aprt	3606	fQsequences/P1-80-20_S36/AAT1aprt.fastq
+ACC1prt	2279	fQsequences/P1-80-20_S36/ACC1prt.fastq
+ADP1prt	3651	fQsequences/P1-80-20_S36/ADP1prt.fastq
+MPIprt	3384	fQsequences/P1-80-20_S36/MPIprt.fastq
+SYA1prt	3403	fQsequences/P1-80-20_S36/SYA1prt.fastq
+VPS13prt	2516	fQsequences/P1-80-20_S36/VPS13prt.fastq
+ZWF1bprt	3125	fQsequences/P1-80-20_S36/ZWF1bprt.fastq
+unmatched	505	fQsequences/P1-80-20_S36/unmatched.fastq
+total	22469
+Barcode	Count	Location
+AAT1apft	19590	fQsequences/P1-90-10_S37/AAT1apft.fastq
+ACC1pft	11374	fQsequences/P1-90-10_S37/ACC1pft.fastq
+ADP1pft	20305	fQsequences/P1-90-10_S37/ADP1pft.fastq
+MPIpft	20319	fQsequences/P1-90-10_S37/MPIpft.fastq
+SYA1pft	19452	fQsequences/P1-90-10_S37/SYA1pft.fastq
+VPS13pft	13945	fQsequences/P1-90-10_S37/VPS13pft.fastq
+ZWF1bpft	18527	fQsequences/P1-90-10_S37/ZWF1bpft.fastq
+unmatched	2436	fQsequences/P1-90-10_S37/unmatched.fastq
+total	125948
+Barcode	Count	Location
+AAT1aprt	19445	fQsequences/P1-90-10_S37/AAT1aprt.fastq
+ACC1prt	11228	fQsequences/P1-90-10_S37/ACC1prt.fastq
+ADP1prt	20232	fQsequences/P1-90-10_S37/ADP1prt.fastq
+MPIprt	20262	fQsequences/P1-90-10_S37/MPIprt.fastq
+SYA1prt	19246	fQsequences/P1-90-10_S37/SYA1prt.fastq
+VPS13prt	13994	fQsequences/P1-90-10_S37/VPS13prt.fastq
+ZWF1bprt	18357	fQsequences/P1-90-10_S37/ZWF1bprt.fastq
+unmatched	3184	fQsequences/P1-90-10_S37/unmatched.fastq
+total	125948
+Barcode	Count	Location
+AAT1apft	29	fQsequences/P1B_S41/AAT1apft.fastq
+ACC1pft	13	fQsequences/P1B_S41/ACC1pft.fastq
+ADP1pft	30	fQsequences/P1B_S41/ADP1pft.fastq
+MPIpft	32	fQsequences/P1B_S41/MPIpft.fastq
+SYA1pft	25	fQsequences/P1B_S41/SYA1pft.fastq
+VPS13pft	12	fQsequences/P1B_S41/VPS13pft.fastq
+ZWF1bpft	31	fQsequences/P1B_S41/ZWF1bpft.fastq
+unmatched	150340	fQsequences/P1B_S41/unmatched.fastq
+total	150512
+Barcode	Count	Location
+AAT1aprt	27	fQsequences/P1B_S41/AAT1aprt.fastq
+ACC1prt	14	fQsequences/P1B_S41/ACC1prt.fastq
+ADP1prt	29	fQsequences/P1B_S41/ADP1prt.fastq
+MPIprt	27	fQsequences/P1B_S41/MPIprt.fastq
+SYA1prt	22	fQsequences/P1B_S41/SYA1prt.fastq
+VPS13prt	11	fQsequences/P1B_S41/VPS13prt.fastq
+ZWF1bprt	31	fQsequences/P1B_S41/ZWF1bprt.fastq
+unmatched	150351	fQsequences/P1B_S41/unmatched.fastq
+total	150512
+Barcode	Count	Location
+AAT1apft	203	fQsequences/P1R_S42/AAT1apft.fastq
+ACC1pft	87	fQsequences/P1R_S42/ACC1pft.fastq
+ADP1pft	12	fQsequences/P1R_S42/ADP1pft.fastq
+MPIpft	228	fQsequences/P1R_S42/MPIpft.fastq
+SYA1pft	183	fQsequences/P1R_S42/SYA1pft.fastq
+VPS13pft	150	fQsequences/P1R_S42/VPS13pft.fastq
+ZWF1bpft	137	fQsequences/P1R_S42/ZWF1bpft.fastq
+unmatched	153053	fQsequences/P1R_S42/unmatched.fastq
+total	154053
+Barcode	Count	Location
+AAT1aprt	201	fQsequences/P1R_S42/AAT1aprt.fastq
+ACC1prt	84	fQsequences/P1R_S42/ACC1prt.fastq
+ADP1prt	11	fQsequences/P1R_S42/ADP1prt.fastq
+MPIprt	229	fQsequences/P1R_S42/MPIprt.fastq
+SYA1prt	179	fQsequences/P1R_S42/SYA1prt.fastq
+VPS13prt	149	fQsequences/P1R_S42/VPS13prt.fastq
+ZWF1bprt	139	fQsequences/P1R_S42/ZWF1bprt.fastq
+unmatched	153061	fQsequences/P1R_S42/unmatched.fastq
+total	154053
+Barcode	Count	Location
+AAT1apft	18926	fQsequences/P2-50-50_S38/AAT1apft.fastq
+ACC1pft	11071	fQsequences/P2-50-50_S38/ACC1pft.fastq
+ADP1pft	21196	fQsequences/P2-50-50_S38/ADP1pft.fastq
+MPIpft	20900	fQsequences/P2-50-50_S38/MPIpft.fastq
+SYA1pft	19247	fQsequences/P2-50-50_S38/SYA1pft.fastq
+VPS13pft	14162	fQsequences/P2-50-50_S38/VPS13pft.fastq
+ZWF1bpft	18642	fQsequences/P2-50-50_S38/ZWF1bpft.fastq
+unmatched	2487	fQsequences/P2-50-50_S38/unmatched.fastq
+total	126631
+Barcode	Count	Location
+AAT1aprt	18664	fQsequences/P2-50-50_S38/AAT1aprt.fastq
+ACC1prt	10865	fQsequences/P2-50-50_S38/ACC1prt.fastq
+ADP1prt	21018	fQsequences/P2-50-50_S38/ADP1prt.fastq
+MPIprt	20777	fQsequences/P2-50-50_S38/MPIprt.fastq
+SYA1prt	19095	fQsequences/P2-50-50_S38/SYA1prt.fastq
+VPS13prt	14111	fQsequences/P2-50-50_S38/VPS13prt.fastq
+ZWF1bprt	18490	fQsequences/P2-50-50_S38/ZWF1bprt.fastq
+unmatched	3611	fQsequences/P2-50-50_S38/unmatched.fastq
+total	126631
+Barcode	Count	Location
+AAT1apft	18869	fQsequences/P2-80-20_S39/AAT1apft.fastq
+ACC1pft	11319	fQsequences/P2-80-20_S39/ACC1pft.fastq
+ADP1pft	21585	fQsequences/P2-80-20_S39/ADP1pft.fastq
+MPIpft	17474	fQsequences/P2-80-20_S39/MPIpft.fastq
+SYA1pft	17000	fQsequences/P2-80-20_S39/SYA1pft.fastq
+VPS13pft	13989	fQsequences/P2-80-20_S39/VPS13pft.fastq
+ZWF1bpft	15397	fQsequences/P2-80-20_S39/ZWF1bpft.fastq
+unmatched	2228	fQsequences/P2-80-20_S39/unmatched.fastq
+total	117861
+Barcode	Count	Location
+AAT1aprt	18747	fQsequences/P2-80-20_S39/AAT1aprt.fastq
+ACC1prt	11178	fQsequences/P2-80-20_S39/ACC1prt.fastq
+ADP1prt	21510	fQsequences/P2-80-20_S39/ADP1prt.fastq
+MPIprt	17490	fQsequences/P2-80-20_S39/MPIprt.fastq
+SYA1prt	16857	fQsequences/P2-80-20_S39/SYA1prt.fastq
+VPS13prt	14058	fQsequences/P2-80-20_S39/VPS13prt.fastq
+ZWF1bprt	15329	fQsequences/P2-80-20_S39/ZWF1bprt.fastq
+unmatched	2692	fQsequences/P2-80-20_S39/unmatched.fastq
+total	117861
+Barcode	Count	Location
+AAT1apft	26704	fQsequences/P2-90-10_S40/AAT1apft.fastq
+ACC1pft	14737	fQsequences/P2-90-10_S40/ACC1pft.fastq
+ADP1pft	27413	fQsequences/P2-90-10_S40/ADP1pft.fastq
+MPIpft	27690	fQsequences/P2-90-10_S40/MPIpft.fastq
+SYA1pft	25009	fQsequences/P2-90-10_S40/SYA1pft.fastq
+VPS13pft	18464	fQsequences/P2-90-10_S40/VPS13pft.fastq
+ZWF1bpft	17644	fQsequences/P2-90-10_S40/ZWF1bpft.fastq
+unmatched	3153	fQsequences/P2-90-10_S40/unmatched.fastq
+total	160814
+Barcode	Count	Location
+AAT1aprt	26496	fQsequences/P2-90-10_S40/AAT1aprt.fastq
+ACC1prt	14548	fQsequences/P2-90-10_S40/ACC1prt.fastq
+ADP1prt	27222	fQsequences/P2-90-10_S40/ADP1prt.fastq
+MPIprt	27659	fQsequences/P2-90-10_S40/MPIprt.fastq
+SYA1prt	24820	fQsequences/P2-90-10_S40/SYA1prt.fastq
+VPS13prt	18528	fQsequences/P2-90-10_S40/VPS13prt.fastq
+ZWF1bprt	17522	fQsequences/P2-90-10_S40/ZWF1bprt.fastq
+unmatched	4019	fQsequences/P2-90-10_S40/unmatched.fastq
+total	160814
+Barcode	Count	Location
+AAT1apft	16398	fQsequences/P2B_S45/AAT1apft.fastq
+ACC1pft	10497	fQsequences/P2B_S45/ACC1pft.fastq
+ADP1pft	19042	fQsequences/P2B_S45/ADP1pft.fastq
+MPIpft	22442	fQsequences/P2B_S45/MPIpft.fastq
+SYA1pft	20909	fQsequences/P2B_S45/SYA1pft.fastq
+VPS13pft	13630	fQsequences/P2B_S45/VPS13pft.fastq
+ZWF1bpft	19114	fQsequences/P2B_S45/ZWF1bpft.fastq
+unmatched	94245	fQsequences/P2B_S45/unmatched.fastq
+total	216277
+Barcode	Count	Location
+AAT1aprt	16280	fQsequences/P2B_S45/AAT1aprt.fastq
+ACC1prt	10375	fQsequences/P2B_S45/ACC1prt.fastq
+ADP1prt	18907	fQsequences/P2B_S45/ADP1prt.fastq
+MPIprt	22439	fQsequences/P2B_S45/MPIprt.fastq
+SYA1prt	20786	fQsequences/P2B_S45/SYA1prt.fastq
+VPS13prt	13670	fQsequences/P2B_S45/VPS13prt.fastq
+ZWF1bprt	18923	fQsequences/P2B_S45/ZWF1bprt.fastq
+unmatched	94897	fQsequences/P2B_S45/unmatched.fastq
+total	216277
+Barcode	Count	Location
+AAT1apft	21386	fQsequences/P2R_S46/AAT1apft.fastq
+ACC1pft	12714	fQsequences/P2R_S46/ACC1pft.fastq
+ADP1pft	24700	fQsequences/P2R_S46/ADP1pft.fastq
+MPIpft	23567	fQsequences/P2R_S46/MPIpft.fastq
+SYA1pft	20721	fQsequences/P2R_S46/SYA1pft.fastq
+VPS13pft	15668	fQsequences/P2R_S46/VPS13pft.fastq
+ZWF1bpft	15861	fQsequences/P2R_S46/ZWF1bpft.fastq
+unmatched	187788	fQsequences/P2R_S46/unmatched.fastq
+total	322405
+Barcode	Count	Location
+AAT1aprt	21220	fQsequences/P2R_S46/AAT1aprt.fastq
+ACC1prt	12576	fQsequences/P2R_S46/ACC1prt.fastq
+ADP1prt	24527	fQsequences/P2R_S46/ADP1prt.fastq
+MPIprt	23622	fQsequences/P2R_S46/MPIprt.fastq
+SYA1prt	20633	fQsequences/P2R_S46/SYA1prt.fastq
+VPS13prt	15670	fQsequences/P2R_S46/VPS13prt.fastq
+ZWF1bprt	15752	fQsequences/P2R_S46/ZWF1bprt.fastq
+unmatched	188405	fQsequences/P2R_S46/unmatched.fastq
+total	322405
+Barcode	Count	Location
+AAT1apft	8	fQsequences/P3B_S49/AAT1apft.fastq
+ACC1pft	4	fQsequences/P3B_S49/ACC1pft.fastq
+ADP1pft	5	fQsequences/P3B_S49/ADP1pft.fastq
+MPIpft	8	fQsequences/P3B_S49/MPIpft.fastq
+SYA1pft	14	fQsequences/P3B_S49/SYA1pft.fastq
+VPS13pft	6	fQsequences/P3B_S49/VPS13pft.fastq
+ZWF1bpft	11	fQsequences/P3B_S49/ZWF1bpft.fastq
+unmatched	158421	fQsequences/P3B_S49/unmatched.fastq
+total	158477
+Barcode	Count	Location
+AAT1aprt	9	fQsequences/P3B_S49/AAT1aprt.fastq
+ACC1prt	4	fQsequences/P3B_S49/ACC1prt.fastq
+ADP1prt	9	fQsequences/P3B_S49/ADP1prt.fastq
+MPIprt	10	fQsequences/P3B_S49/MPIprt.fastq
+SYA1prt	15	fQsequences/P3B_S49/SYA1prt.fastq
+VPS13prt	6	fQsequences/P3B_S49/VPS13prt.fastq
+ZWF1bprt	12	fQsequences/P3B_S49/ZWF1bprt.fastq
+unmatched	158412	fQsequences/P3B_S49/unmatched.fastq
+total	158477
+Barcode	Count	Location
+AAT1apft	5	fQsequences/P3R_S50/AAT1apft.fastq
+ACC1pft	3	fQsequences/P3R_S50/ACC1pft.fastq
+ADP1pft	8	fQsequences/P3R_S50/ADP1pft.fastq
+MPIpft	9	fQsequences/P3R_S50/MPIpft.fastq
+SYA1pft	6	fQsequences/P3R_S50/SYA1pft.fastq
+VPS13pft	4	fQsequences/P3R_S50/VPS13pft.fastq
+ZWF1bpft	11	fQsequences/P3R_S50/ZWF1bpft.fastq
+unmatched	204188	fQsequences/P3R_S50/unmatched.fastq
+total	204234
+Barcode	Count	Location
+AAT1aprt	10	fQsequences/P3R_S50/AAT1aprt.fastq
+ACC1prt	5	fQsequences/P3R_S50/ACC1prt.fastq
+ADP1prt	10	fQsequences/P3R_S50/ADP1prt.fastq
+MPIprt	15	fQsequences/P3R_S50/MPIprt.fastq
+SYA1prt	13	fQsequences/P3R_S50/SYA1prt.fastq
+VPS13prt	6	fQsequences/P3R_S50/VPS13prt.fastq
+ZWF1bprt	11	fQsequences/P3R_S50/ZWF1bprt.fastq
+unmatched	204164	fQsequences/P3R_S50/unmatched.fastq
+total	204234
+Barcode	Count	Location
+AAT1apft	6	fQsequences/P4B_S53/AAT1apft.fastq
+ACC1pft	2	fQsequences/P4B_S53/ACC1pft.fastq
+ADP1pft	6	fQsequences/P4B_S53/ADP1pft.fastq
+MPIpft	8	fQsequences/P4B_S53/MPIpft.fastq
+SYA1pft	6	fQsequences/P4B_S53/SYA1pft.fastq
+VPS13pft	4	fQsequences/P4B_S53/VPS13pft.fastq
+ZWF1bpft	3	fQsequences/P4B_S53/ZWF1bpft.fastq
+unmatched	159344	fQsequences/P4B_S53/unmatched.fastq
+total	159379
+Barcode	Count	Location
+AAT1aprt	8	fQsequences/P4B_S53/AAT1aprt.fastq
+ACC1prt	2	fQsequences/P4B_S53/ACC1prt.fastq
+ADP1prt	6	fQsequences/P4B_S53/ADP1prt.fastq
+MPIprt	13	fQsequences/P4B_S53/MPIprt.fastq
+SYA1prt	11	fQsequences/P4B_S53/SYA1prt.fastq
+VPS13prt	4	fQsequences/P4B_S53/VPS13prt.fastq
+ZWF1bprt	4	fQsequences/P4B_S53/ZWF1bprt.fastq
+unmatched	159331	fQsequences/P4B_S53/unmatched.fastq
+total	159379
+Barcode	Count	Location
+AAT1apft	0	fQsequences/P4R_S54/AAT1apft.fastq
+ACC1pft	0	fQsequences/P4R_S54/ACC1pft.fastq
+ADP1pft	0	fQsequences/P4R_S54/ADP1pft.fastq
+MPIpft	1	fQsequences/P4R_S54/MPIpft.fastq
+SYA1pft	0	fQsequences/P4R_S54/SYA1pft.fastq
+VPS13pft	1	fQsequences/P4R_S54/VPS13pft.fastq
+ZWF1bpft	2	fQsequences/P4R_S54/ZWF1bpft.fastq
+unmatched	128513	fQsequences/P4R_S54/unmatched.fastq
+total	128517
+Barcode	Count	Location
+AAT1aprt	1	fQsequences/P4R_S54/AAT1aprt.fastq
+ACC1prt	2	fQsequences/P4R_S54/ACC1prt.fastq
+ADP1prt	2	fQsequences/P4R_S54/ADP1prt.fastq
+MPIprt	2	fQsequences/P4R_S54/MPIprt.fastq
+SYA1prt	4	fQsequences/P4R_S54/SYA1prt.fastq
+VPS13prt	0	fQsequences/P4R_S54/VPS13prt.fastq
+ZWF1bprt	1	fQsequences/P4R_S54/ZWF1bprt.fastq
+unmatched	128505	fQsequences/P4R_S54/unmatched.fastq
+total	128517
+Barcode	Count	Location
+AAT1apft	20653	fQsequences/RIHO9-S_S19/AAT1apft.fastq
+ACC1pft	11293	fQsequences/RIHO9-S_S19/ACC1pft.fastq
+ADP1pft	23027	fQsequences/RIHO9-S_S19/ADP1pft.fastq
+MPIpft	17830	fQsequences/RIHO9-S_S19/MPIpft.fastq
+SYA1pft	17039	fQsequences/RIHO9-S_S19/SYA1pft.fastq
+VPS13pft	13445	fQsequences/RIHO9-S_S19/VPS13pft.fastq
+ZWF1bpft	15101	fQsequences/RIHO9-S_S19/ZWF1bpft.fastq
+unmatched	1988	fQsequences/RIHO9-S_S19/unmatched.fastq
+total	120376
+Barcode	Count	Location
+AAT1aprt	20416	fQsequences/RIHO9-S_S19/AAT1aprt.fastq
+ACC1prt	11109	fQsequences/RIHO9-S_S19/ACC1prt.fastq
+ADP1prt	22845	fQsequences/RIHO9-S_S19/ADP1prt.fastq
+MPIprt	17746	fQsequences/RIHO9-S_S19/MPIprt.fastq
+SYA1prt	16901	fQsequences/RIHO9-S_S19/SYA1prt.fastq
+VPS13prt	13448	fQsequences/RIHO9-S_S19/VPS13prt.fastq
+ZWF1bprt	14993	fQsequences/RIHO9-S_S19/ZWF1bprt.fastq
+unmatched	2918	fQsequences/RIHO9-S_S19/unmatched.fastq
+total	120376
