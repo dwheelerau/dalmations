@@ -7,7 +7,9 @@ import csv
 # each genotype (row) and each frequency (0-100). The index_key dict
 # lets you calcualte the best genotype for a given frequency based
 # on difference between O - E.
-# Unused: from collections import defaultdict
+# TODO: 
+# 1. hock this up to a GUI that allows strain selections
+# 2. ATM only non-ref alleles in the mix are explored
 
 index_key = {}
 counter = 0
@@ -88,7 +90,7 @@ for freq in range(0, 101):
 # ['0', '52', '0', '48'])
 
 data_dict = {}
-with open('final_table_example.csv') as f:
+with open('NZGL02259_final_table.csv') as f:
     csv_reader = csv.reader(f)
     for row in csv_reader:
         # NOTE: if non-ref
@@ -120,13 +122,14 @@ for percent in range(100):
 
     # start looping through MLST one gene at a time
     remainder_counter = 0
-    non_diploid_count = 0
+    non_diploid_record = []
+    diploid_counter = 0
     for gene in data_dict[MIX_STRAIN]:
         log.write("gene: %s\n" % gene)
 
         # start loop through each gene
         non_rev_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
-                       if data_dict[MIX_STRAIN][gene][ntpos][0].find('/')]
+                       if data_dict[MIX_STRAIN][gene][ntpos][0].find('/') > 0]
 
         for pos in non_rev_var:  # data_dict[MIX_STRAIN][gene]
             log.write("position: %s\n" % pos)
@@ -188,7 +191,9 @@ for percent in range(100):
             if smallest_difference[0] < WIGGLE:
                 pass10 += 1
             if smallest_difference[1] > 7:
-                non_diploid_count += 1
+                non_diploid_record.append(smallest_difference[1])
+            else:
+                diploid_counter += 1
 
             # keep track of the number of differences for this percentage
             remainder_counter = remainder_counter + smallest_difference[0]
@@ -196,8 +201,18 @@ for percent in range(100):
             log.write("smallest difference: %s %s\n" % (
                 smallest_difference[0], index_key[smallest_difference[1]]))
 
+    # scan through non-diploids and record how many of each type
+    found = []
+    genotypes = [("normal", diploid_counter)]
+    for idx in non_diploid_record:
+        if idx not in found:
+            count = non_diploid_record.count(idx)
+            found.append(idx)
+            genotype = index_key[idx][-1]
+            genotypes.append((genotype, count))
+
     # this is the summary of the entire MLST for this percentage mix
-    results.append((percent, pass10, remainder_counter, non_diploid_count))
+    results.append((percent, pass10, remainder_counter, genotypes))
     log.write("Number that passed 10%% threshold: %s\n" % pass10)
     log.write("-----------------\n")
 

@@ -14,6 +14,11 @@ outfile_csv = csv.writer(outfile)
 final_outfile = open('final_results/final_table.csv', 'a')
 final_csv = csv.writer(final_outfile)
 
+# add header
+#with open('final_results/final_table.csv') as f:
+#    csv_reader = csv.reader(f)
+#    final_csv.writerow(csv_reader.next())
+
 with open(left) as f:
     for line in f:
         bits = line.strip().split("\t")

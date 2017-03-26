@@ -4,7 +4,7 @@ import os
 import csv
 
 ref = "./reference_mlst/mlst"
-sample_dir = "samplesNZGL01799"
+sample_dir = "samplesNZGL02259"
 
 target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
                 ('ACC1pft.fastq', 'ACC1prt.fastq'),
@@ -27,6 +27,8 @@ filttab = "python filter_cols.py %s %s"
 
 # make a directory for final data
 res = subprocess.check_output(['mkdir', '-p', 'final_results'])
+
+# add header, close, then filter_cols.py will append to this
 outfile = open('final_results/final_table.csv', 'w')
 csv_writer = csv.writer(outfile)
 csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
