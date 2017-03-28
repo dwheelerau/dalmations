@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys
 
-noise = 5.0
+noise = 6.0
 
 
 def cal_percents(count_list):
@@ -30,7 +30,8 @@ def filter_data(data):
     # if 100% non-ref call will still show ref/alt
     result = []
     for per in data[8:]:
-        if float(per) > noise:
+        # must be at last 6 (allows for floating pt ie 5.2 will be ignored
+        if float(per) >= noise:
             call = choice[counter]
             if call not in result:
                 result.append(call)
