@@ -65,14 +65,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 80.0 ['1/2', '1/1', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -303,15 +303,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 90.0 ['1/2', '1/1', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 99
@@ -381,14 +372,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 14.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 79.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 20.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -619,15 +610,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 16.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 89.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 98
@@ -697,14 +679,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 12.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 78.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 18.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -935,15 +917,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 14.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 88.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 97
@@ -1013,14 +986,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 10.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 77.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 16.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -1251,15 +1224,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 12.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 87.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 96
@@ -1329,14 +1293,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 8.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 76.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 14.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -1567,15 +1531,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 10.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 86.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 95
@@ -1645,14 +1600,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 75.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 12.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -1883,15 +1838,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 8.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 85.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 94
@@ -1961,14 +1907,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 4.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 74.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 10.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -2199,15 +2145,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 84.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 93
@@ -2277,14 +2214,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 73.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 8.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -2515,15 +2452,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 4.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 83.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 20
 -----------------
 Percent strain 1: 92
@@ -2593,14 +2521,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 72.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -2831,15 +2759,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 82.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 23
 -----------------
 Percent strain 1: 91
@@ -2909,14 +2828,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0 ['1/1', '2/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 71.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -3147,15 +3066,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 81.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 23
 -----------------
 Percent strain 1: 90
@@ -3225,14 +3135,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.0 ['1/1', '1/222', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 70.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -3463,15 +3373,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.0 ['1/1', '2/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 80.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 23
 -----------------
 Percent strain 1: 89
@@ -3541,14 +3442,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.5 ['1/1', '1/222', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 69.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -3779,15 +3680,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.5 ['1/1', '1/222', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 79.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 23
 -----------------
 Percent strain 1: 88
@@ -3857,14 +3749,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.0012 ['1/1', '1/22', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 68.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '2/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -4095,15 +3987,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.0 ['1/1', '1/222', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 78.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 25
 -----------------
 Percent strain 1: 87
@@ -4173,14 +4056,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.3329 ['1/1', '1/22', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 67.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9987 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -4411,15 +4294,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.6671 ['1/1', '1/22', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 77.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 29
 -----------------
 Percent strain 1: 86
@@ -4489,14 +4363,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0 ['1/1', '1/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 66.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9986 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -4727,15 +4601,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.6662 ['1/1', '1/22', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 76.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 85
@@ -4805,14 +4670,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.0 ['1/1', '1/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 65.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9985 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -5043,15 +4908,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.9995 ['1/1', '1/22', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 75.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 84
@@ -5121,14 +4977,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.0 ['1/1', '1/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 64.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9984 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -5359,15 +5215,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.0 ['1/1', '1/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 74.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 83
@@ -5437,14 +5284,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.0 ['1/1', '1/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 63.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9983 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -5675,15 +5522,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.0 ['1/1', '1/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 73.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 82
@@ -5753,14 +5591,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0 ['1/1', '1/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 62.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9982 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -5991,15 +5829,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.0 ['1/1', '1/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 72.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 81
@@ -6069,14 +5898,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 3.0 ['1/1', '1/2', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 61.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9981 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -6307,15 +6136,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.0 ['1/1', '1/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 71.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 80
@@ -6385,14 +6205,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.666 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 60.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.998 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -6623,15 +6443,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.0 ['1/1', '1/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 70.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 79
@@ -6701,14 +6512,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.9993 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 59.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9993 ['1/1', '1/22', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -6939,15 +6750,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 3.0 ['1/1', '1/2', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 69.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 29
 -----------------
 Percent strain 1: 78
@@ -7017,14 +6819,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.3326 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 58.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '1/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -7255,15 +7057,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 3.3326 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 68.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 29
 -----------------
 Percent strain 1: 77
@@ -7333,14 +7126,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.6659 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 57.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '1/2', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -7571,15 +7364,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.6659 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 67.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 76
@@ -7649,14 +7433,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.0024 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 56.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9992 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -7887,15 +7671,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.9992 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 66.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 75
@@ -7965,14 +7740,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.6675 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 55.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9975 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -8203,15 +7978,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.3325 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 65.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 74
@@ -8281,14 +8047,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.3342 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 54.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9974 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -8519,15 +8285,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.6658 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 64.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 73
@@ -8597,14 +8354,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0009 ['1/1', '11/2', 'dip/tri']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 53.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9973 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -8835,15 +8592,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.0027 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 63.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 72
@@ -8913,14 +8661,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 52.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9972 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -9151,15 +8899,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.6676 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 62.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 71
@@ -9229,14 +8968,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 51.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9971 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -9467,15 +9206,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.3343 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 61.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 70
@@ -9545,14 +9275,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 50.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.997 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -9783,15 +9513,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.001 ['1/1', '11/2', 'dip/tri']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 60.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 69
@@ -9861,14 +9582,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 49.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9969 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -10099,15 +9820,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 59.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 68
@@ -10177,14 +9889,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 48.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9968 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -10415,15 +10127,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 58.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 67
@@ -10493,14 +10196,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 0.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 47.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9967 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -10731,15 +10434,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 57.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 31
 -----------------
 Percent strain 1: 66
@@ -10809,14 +10503,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 46.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9966 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -11047,15 +10741,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 56.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 30
 -----------------
 Percent strain 1: 65
@@ -11125,14 +10810,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 1.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 45.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9965 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -11363,15 +11048,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 55.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 26
 -----------------
 Percent strain 1: 64
@@ -11441,14 +11117,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 44.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9964 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -11679,15 +11355,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 54.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 26
 -----------------
 Percent strain 1: 63
@@ -11757,14 +11424,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 2.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 43.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9963 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -11995,15 +11662,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 0.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 53.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 24
 -----------------
 Percent strain 1: 62
@@ -12073,14 +11731,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 3.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 42.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9962 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -12311,15 +11969,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 52.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 28
 -----------------
 Percent strain 1: 61
@@ -12389,14 +12038,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 3.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 41.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9961 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -12627,15 +12276,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 1.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 51.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 28
 -----------------
 Percent strain 1: 60
@@ -12705,14 +12345,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 4.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 40.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.996 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -12943,15 +12583,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 50.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 27
 -----------------
 Percent strain 1: 59
@@ -13021,14 +12652,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 4.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 39.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 5.9959 ['1/1', '11/2', 'dip/tri']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -13259,15 +12890,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 2.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 49.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 29
 -----------------
 Percent strain 1: 58
@@ -13337,14 +12959,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 5.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 38.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -13575,15 +13197,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 3.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 48.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 20
 -----------------
 Percent strain 1: 57
@@ -13653,14 +13266,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 5.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 37.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -13891,15 +13504,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 3.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 47.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 20
 -----------------
 Percent strain 1: 56
@@ -13969,14 +13573,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 36.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -14207,15 +13811,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 4.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 46.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 14
 -----------------
 Percent strain 1: 55
@@ -14285,14 +13880,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 6.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 35.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -14523,15 +14118,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 4.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 45.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 14
 -----------------
 Percent strain 1: 54
@@ -14601,14 +14187,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 7.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 34.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -14839,15 +14425,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 5.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 44.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 53
@@ -14917,14 +14494,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 7.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 33.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -15155,15 +14732,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 5.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 43.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 52
@@ -15233,14 +14801,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 8.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 32.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -15471,15 +15039,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 42.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 51
@@ -15549,14 +15108,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 8.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 31.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -15787,15 +15346,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 6.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 41.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 50
@@ -15865,14 +15415,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 9.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 30.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -16103,15 +15653,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 7.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 40.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 49
@@ -16181,14 +15722,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 9.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 29.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -16419,15 +15960,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 7.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 39.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 13
 -----------------
 Percent strain 1: 48
@@ -16497,14 +16029,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 10.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 28.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -16735,15 +16267,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 8.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 38.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 47
@@ -16813,14 +16336,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 10.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 27.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -17051,15 +16574,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 8.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 37.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 46
@@ -17129,14 +16643,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 11.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 26.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -17367,15 +16881,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 9.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 36.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 45
@@ -17445,14 +16950,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 11.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 25.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -17683,15 +17188,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 9.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 35.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 44
@@ -17761,14 +17257,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 12.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 24.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -17999,15 +17495,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 10.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 34.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 43
@@ -18077,14 +17564,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 12.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 23.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 6.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -18315,15 +17802,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 10.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 33.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 42
@@ -18393,14 +17871,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 13.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 22.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 7.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -18631,15 +18109,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 11.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 32.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 41
@@ -18709,14 +18178,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 13.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 21.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 7.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -18947,15 +18416,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 11.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 31.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 40
@@ -19025,14 +18485,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 14.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 20.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 8.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -19263,15 +18723,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 12.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 30.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 39
@@ -19341,14 +18792,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 14.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 19.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 8.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -19579,15 +19030,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 12.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 29.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 38
@@ -19657,14 +19099,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 15.0 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 18.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 9.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -19895,15 +19337,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 13.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 28.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 37
@@ -19973,14 +19406,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 15.5 ['1/1', '111/2', 'dip/tetra']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 17.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 9.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -20211,15 +19644,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 13.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 27.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 10
 -----------------
 Percent strain 1: 36
@@ -20289,14 +19713,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 16.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 10.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -20527,15 +19951,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 14.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 26.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 8
 -----------------
 Percent strain 1: 35
@@ -20605,14 +20020,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 15.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 10.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -20843,15 +20258,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 14.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 25.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 8
 -----------------
 Percent strain 1: 34
@@ -20921,14 +20327,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 14.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 11.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -21159,15 +20565,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 15.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 24.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 8
 -----------------
 Percent strain 1: 33
@@ -21237,14 +20634,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 13.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 11.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -21475,15 +20872,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 15.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 23.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 8
 -----------------
 Percent strain 1: 32
@@ -21553,14 +20941,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 12.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 12.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -21791,15 +21179,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 16.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 22.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 8
 -----------------
 Percent strain 1: 31
@@ -21869,14 +21248,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 11.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 12.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -22107,15 +21486,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 16.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 21.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 8
 -----------------
 Percent strain 1: 30
@@ -22185,14 +21555,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 10.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 13.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -22423,15 +21793,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 17.0 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 20.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 4
 -----------------
 Percent strain 1: 29
@@ -22501,14 +21862,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 9.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 13.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -22739,15 +22100,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 17.5 ['1/1', '111/2', 'dip/tetra']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 19.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 5
 -----------------
 Percent strain 1: 28
@@ -22817,14 +22169,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 14.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -23055,15 +22407,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 18.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 5
 -----------------
 Percent strain 1: 27
@@ -23133,14 +22476,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 14.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -23371,15 +22714,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 17.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 5
 -----------------
 Percent strain 1: 26
@@ -23449,14 +22783,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 15.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -23687,15 +23021,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 16.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 25
@@ -23765,14 +23090,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 15.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -24003,15 +23328,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 15.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 24
@@ -24081,14 +23397,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 16.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -24319,15 +23635,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 14.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 23
@@ -24397,14 +23704,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 16.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -24635,15 +23942,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 13.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 22
@@ -24713,14 +24011,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 17.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -24951,15 +24249,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 12.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 21
@@ -25029,14 +24318,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 17.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -25267,15 +24556,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 11.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 3
 -----------------
 Percent strain 1: 20
@@ -25345,14 +24625,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 18.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -25583,15 +24863,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 10.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 19
@@ -25661,14 +24932,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 18.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -25899,15 +25170,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 9.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 18
@@ -25977,14 +25239,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 19.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -26215,15 +25477,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 17
@@ -26293,14 +25546,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 19.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -26531,15 +25784,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 7.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 16
@@ -26609,14 +25853,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 20.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -26847,15 +26091,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 6.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 15
@@ -26925,14 +26160,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 20.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -27163,15 +26398,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 5.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 14
@@ -27241,14 +26467,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 21.0 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -27479,16 +26705,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 4.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 13
 gene: ZWF1b
@@ -27557,14 +26774,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 21.5 ['1/1', '111/2', 'dip/tetra']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -27795,16 +27012,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 3.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 12
 gene: ZWF1b
@@ -27873,14 +27081,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -28111,16 +27319,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 2.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 11
 gene: ZWF1b
@@ -28189,14 +27388,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 9.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -28427,16 +27626,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 1.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 10
 gene: ZWF1b
@@ -28505,14 +27695,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 10.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -28743,16 +27933,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 0.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 9
 gene: ZWF1b
@@ -28821,14 +28002,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 11.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -29059,16 +28240,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 1.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 8
 gene: ZWF1b
@@ -29137,14 +28309,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 12.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -29375,16 +28547,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 2.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 7
 gene: ZWF1b
@@ -29453,14 +28616,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 13.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -29691,16 +28854,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 3.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 6
 gene: ZWF1b
@@ -29769,14 +28923,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 14.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -30007,16 +29161,7 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 4.0 ['1/2', '2/2', 'all diploid']
-Number that passed 10% threshold: 3
+Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 5
 gene: ZWF1b
@@ -30085,14 +29230,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 15.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -30323,15 +29468,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 5.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 4
@@ -30401,14 +29537,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 16.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -30639,15 +29775,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 6.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 3
@@ -30717,14 +29844,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 17.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -30955,15 +30082,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 7.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 2
@@ -31033,14 +30151,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 18.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -31271,15 +30389,6 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 8.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------
 Percent strain 1: 1
@@ -31349,14 +30458,14 @@ allele 1 obs: 92.0
 allele 2 obs: 8.0
 smallest difference: 16.0 ['1/1', '1/1', 'all diploid']
 position: 386
-single colony call: ['A', 'C']
+single colony call: ['C']
 Obs mixed data: [6.0, 86.0, 0.0, 8.0]
-mixed data genotype: A/C/T
-allele 1: A
-allele 2: C
-allele 1 obs: 6.0
-allele 2 obs: 86.0
-smallest difference: 19.0 ['1/2', '2/2', 'all diploid']
+mixed data genotype: C/T
+allele 1: C
+allele 2: T
+allele 1 obs: 86.0
+allele 2 obs: 8.0
+smallest difference: 22.0 ['1/1', '1/1', 'all diploid']
 position: 228
 single colony call: ['T']
 Obs mixed data: [0.0, 8.0, 0.0, 92.0]
@@ -31587,14 +30696,5 @@ allele 2: T
 allele 1 obs: 91.0
 allele 2 obs: 9.0
 smallest difference: 18.0 ['1/1', '1/1', 'all diploid']
-position: 399
-single colony call: ['A', 'C']
-Obs mixed data: [5.0, 95.0, 0.0, 0.0]
-mixed data genotype: A/C
-allele 1: A
-allele 2: C
-allele 1 obs: 5.0
-allele 2 obs: 95.0
-smallest difference: 9.0 ['1/2', '2/2', 'all diploid']
 Number that passed 10% threshold: 2
 -----------------

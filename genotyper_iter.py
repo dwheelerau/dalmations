@@ -114,6 +114,12 @@ nucleotides = ["A", "C", "G", "T"]
 results = []
 
 log = open('data_log.txt', 'w')
+jan_output = open('jan_output.csv', 'w')
+jan_writer = csv.writer(jan_output)
+
+header = ["percent", "single", "mix", "gene", "pos", "single_call",
+          "A", "C", "G", "T", "mix_call", "remainder","best"]
+jan_writer.writerow(header)
 
 for percent in range(100):
     percent = 100 - percent
@@ -200,7 +206,15 @@ for percent in range(100):
 
             log.write("smallest difference: %s %s\n" % (
                 smallest_difference[0], index_key[smallest_difference[1]]))
+            # log the data in a format that Jan recognises
+            jan_data = [percent, SINGLE_STRAIN, MIX_STRAIN, gene, pos,
+                        '/'.join(single_colony_call), mixed_colony_data[0],
+                        mixed_colony_data[1], mixed_colony_data[2],
+                        mixed_colony_data[3], mixed_colony_call,
+                        smallest_difference[0],
+                        ';'.join(index_key[smallest_difference[1]])]
 
+            jan_writer.writerow(jan_data)
     # scan through non-diploids and record how many of each type
     found = []
     genotypes = [("normal", diploid_counter)]
@@ -218,3 +232,4 @@ for percent in range(100):
 
 # close logfile
 log.close()
+jan_output.close()
