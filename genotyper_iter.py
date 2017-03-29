@@ -113,12 +113,10 @@ MIX_STRAIN = "P1-90-10_S37"
 nucleotides = ["A", "C", "G", "T"]
 results = []
 
-log = open('data_log.txt', 'w')
 percent_log = {}
 
 for percent in range(100):
     percent = 100 - percent
-    log.write("Percent strain 1: %s\n" % percent)
     pass10 = 0
 
     # start looping through MLST one gene at a time
@@ -128,7 +126,6 @@ for percent in range(100):
     mlst_log = []
     for gene in data_dict[MIX_STRAIN]:
         gene_log = []
-        log.write("gene: %s\n" % gene)
 
         # start loop through each gene
         non_rev_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
@@ -136,7 +133,6 @@ for percent in range(100):
         non_rev_var.sort(key=int)
 
         for pos in non_rev_var:  # data_dict[MIX_STRAIN][gene]
-            log.write("position: %s\n" % pos)
 
             # set Single colony ID
             single_colony_call = data_dict[
@@ -144,10 +140,6 @@ for percent in range(100):
             mixed_colony_data = [
                 float(num) for num in data_dict[MIX_STRAIN][gene][pos][1]]
             mixed_colony_call = data_dict[MIX_STRAIN][gene][pos][0]
-
-            log.write("single colony call: %s\n" % single_colony_call)
-            log.write("Obs mixed data: %s\n" % mixed_colony_data)
-            log.write("mixed data genotype: %s\n" % mixed_colony_call)
 
             if len(single_colony_call) == 2:
                 allele1, allele2 = single_colony_call
@@ -163,14 +155,9 @@ for percent in range(100):
 
             # throw exception: I don't think this should ever fail
             assert allele2
-            log.write("allele 1: %s\n" % allele1)
-            log.write("allele 2: %s\n" % allele2)
 
             allele1_obs = mixed_colony_data[nucleotides.index(allele1)]
             allele2_obs = mixed_colony_data[nucleotides.index(allele2)]
-            log.write("allele 1 obs: %s\n" % allele1_obs)
-            log.write("allele 2 obs: %s\n" % allele2_obs)
-
             possible_genotypes = []
 
             # test all genotypes to find best fit with Obs
@@ -202,8 +189,6 @@ for percent in range(100):
             # keep track of the number of differences for this percentage
             remainder_counter = remainder_counter + smallest_difference[0]
 
-            log.write("smallest difference: %s %s\n" % (
-                smallest_difference[0], index_key[smallest_difference[1]]))
             # log the data in a format that Jan recognises
             jan_data = [percent, SINGLE_STRAIN, MIX_STRAIN, gene, pos,
                         '/'.join(single_colony_call), mixed_colony_data[0],
@@ -228,8 +213,6 @@ for percent in range(100):
     # this is the summary of the entire MLST for this percentage mix
     results.append((percent, pass10, remainder_counter))
     final_scores = (percent, pass10, remainder_counter, genotypes)
-    log.write("Number that passed 10%% threshold: %s\n" % pass10)
-    log.write("-----------------\n")
     percent_log[percent] = [final_scores, mlst_log]
 
 # now process the results, sort by most wins, then by least remander
@@ -254,6 +237,3 @@ for result in results:
             gene += [pass_cut, remainder, final_genotypes]
             jan_writer.writerow(gene)
 jan_output.close()
-
-# close logfiles
-log.close()
