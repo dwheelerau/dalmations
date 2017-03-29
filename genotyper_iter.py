@@ -114,12 +114,7 @@ nucleotides = ["A", "C", "G", "T"]
 results = []
 
 log = open('data_log.txt', 'w')
-jan_output = open('jan_output.csv', 'w')
-jan_writer = csv.writer(jan_output)
-
-header = ["percent", "single", "mix", "gene", "pos", "single_call",
-          "A", "C", "G", "T", "mix_call", "remainder","best"]
-jan_writer.writerow(header)
+percent_log = {}
 
 for percent in range(100):
     percent = 100 - percent
@@ -130,12 +125,15 @@ for percent in range(100):
     remainder_counter = 0
     non_diploid_record = []
     diploid_counter = 0
+    mlst_log = []
     for gene in data_dict[MIX_STRAIN]:
+        gene_log = []
         log.write("gene: %s\n" % gene)
 
         # start loop through each gene
         non_rev_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
                        if data_dict[MIX_STRAIN][gene][ntpos][0].find('/') > 0]
+        non_rev_var.sort(key=int)
 
         for pos in non_rev_var:  # data_dict[MIX_STRAIN][gene]
             log.write("position: %s\n" % pos)
@@ -213,8 +211,10 @@ for percent in range(100):
                         mixed_colony_data[3], mixed_colony_call,
                         smallest_difference[0],
                         ';'.join(index_key[smallest_difference[1]])]
+            gene_log.append(jan_data)
+            # jan_writer.writerow(jan_data)
+        mlst_log.append(gene_log)
 
-            jan_writer.writerow(jan_data)
     # scan through non-diploids and record how many of each type
     found = []
     genotypes = [("normal", diploid_counter)]
@@ -226,10 +226,34 @@ for percent in range(100):
             genotypes.append((genotype, count))
 
     # this is the summary of the entire MLST for this percentage mix
-    results.append((percent, pass10, remainder_counter, genotypes))
+    results.append((percent, pass10, remainder_counter))
+    final_scores = (percent, pass10, remainder_counter, genotypes)
     log.write("Number that passed 10%% threshold: %s\n" % pass10)
     log.write("-----------------\n")
+    percent_log[percent] = [final_scores, mlst_log]
 
-# close logfile
-log.close()
+# now process the results, sort by most wins, then by least remander
+results = sorted(results, key=lambda x: (-x[1], x[2]))
+
+# iterate through results and write out data (best will be at top of file)
+jan_output = open('jan_output.csv', 'w')
+jan_writer = csv.writer(jan_output)
+header = ["percent", "single", "mix", "gene", "pos", "single_call",
+          "A", "C", "G", "T", "mix_call", "remainder", "best",
+          "pass_cut", "tot_unexplained", "genotypes"]
+jan_writer.writerow(header)
+
+for result in results:
+    percent = result[0]
+    percent_data = percent_log[percent]
+    pass_cut = percent_data[0][1]
+    remainder = percent_data[0][2]
+    final_genotypes = percent_data[0][3]
+    for mlst in percent_data[1]:
+        for gene in mlst:
+            gene += [pass_cut, remainder, final_genotypes]
+            jan_writer.writerow(gene)
 jan_output.close()
+
+# close logfiles
+log.close()
