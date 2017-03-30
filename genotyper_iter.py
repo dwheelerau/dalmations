@@ -103,10 +103,17 @@ with open('NZGL02259_final_table.csv') as f:
         data_dict.setdefault(
             strain, {}).setdefault(gene, {})[pos] = (genotype, row[6:10])
 
-def genotyper(mix_call, geneotypes):
+
+def genotyper(single_call, mix_call, geneotypes):
     strain2 = geneotypes.split(";")[1]
     assert len(mix_call) == 3
-    call1, call2 = mix_call.split("/")
+    if single_call.find("/") > 0:
+        call1, call2 = single_call.split("/")
+    else:
+        call1 = single_call
+        for letter in mix_call.split("/"):
+            if letter != call1:
+                call2 = letter
     strain2 = strain2.replace('1', call1)
     strain2 = strain2.replace('2', call2)
     return strain2
@@ -201,12 +208,14 @@ for percent in range(100):
             # grab the string genotypes for strain1 and strain2
             genotypes = ';'.join(index_key[smallest_difference[1]])
             # log the data in a format that Jan recognises
-            strain2_genotype = genotyper(mixed_colony_call, genotypes)
+            single_colony_call = '/'.join(single_colony_call)
+            strain2_genotype = genotyper(single_colony_call, mixed_colony_call,
+                                         genotypes)
             jan_data = [percent, gene, pos, " ",
                         mixed_colony_data[0],
                         mixed_colony_data[1], mixed_colony_data[2],
                         mixed_colony_data[3], mixed_colony_call,
-                        " ", '/'.join(single_colony_call), percent,
+                        " ", single_colony_call, percent,
                         smallest_difference[0],
                         strain2_genotype]
             gene_log.append(jan_data)
