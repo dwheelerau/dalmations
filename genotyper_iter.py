@@ -7,7 +7,6 @@ import csv
 # each genotype (row) and each frequency (0-100). The index_key dict
 # lets you calcualte the best genotype for a given frequency based
 # on difference between O - E.
-# TODO: 
 # 1. hock this up to a GUI that allows strain selections
 # 2. ATM only non-ref alleles in the mix are explored
 
@@ -104,6 +103,14 @@ with open('NZGL02259_final_table.csv') as f:
         data_dict.setdefault(
             strain, {}).setdefault(gene, {})[pos] = (genotype, row[6:10])
 
+def genotyper(mix_call, geneotypes):
+    strain2 = geneotypes.split(";")[1]
+    assert len(mix_call) == 3
+    call1, call2 = mix_call.split("/")
+    strain2 = strain2.replace('1', call1)
+    strain2 = strain2.replace('2', call2)
+    return strain2
+
 # set percent wiggle to accept or reject a genotpye solution
 WIGGLE = 5
 SINGLE_STRAIN = "HUN91-S_S18"
@@ -123,17 +130,19 @@ for percent in range(100):
     remainder_counter = 0
     non_diploid_record = []
     diploid_counter = 0
+    usefull_allele_counter = 0
     mlst_log = []
-    for gene in data_dict[MIX_STRAIN]:
+    genes = sorted(data_dict[MIX_STRAIN].keys())
+    for gene in genes:
         gene_log = []
 
         # start loop through each gene
-        non_rev_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
+        non_ref_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
                        if data_dict[MIX_STRAIN][gene][ntpos][0].find('/') > 0]
-        non_rev_var.sort(key=int)
+        non_ref_var.sort(key=int)
 
-        for pos in non_rev_var:  # data_dict[MIX_STRAIN][gene]
-
+        for pos in non_ref_var:  # data_dict[MIX_STRAIN][gene]
+            usefull_allele_counter += 1
             # set Single colony ID
             single_colony_call = data_dict[
                 SINGLE_STRAIN][gene][pos][0].split('/')
@@ -189,30 +198,34 @@ for percent in range(100):
             # keep track of the number of differences for this percentage
             remainder_counter = remainder_counter + smallest_difference[0]
 
+            # grab the string genotypes for strain1 and strain2
+            genotypes = ';'.join(index_key[smallest_difference[1]])
             # log the data in a format that Jan recognises
-            jan_data = [percent, SINGLE_STRAIN, MIX_STRAIN, gene, pos,
-                        '/'.join(single_colony_call), mixed_colony_data[0],
+            strain2_genotype = genotyper(mixed_colony_call, genotypes)
+            jan_data = [percent, gene, pos, " ",
+                        mixed_colony_data[0],
                         mixed_colony_data[1], mixed_colony_data[2],
                         mixed_colony_data[3], mixed_colony_call,
+                        " ", '/'.join(single_colony_call), percent,
                         smallest_difference[0],
-                        ';'.join(index_key[smallest_difference[1]])]
+                        strain2_genotype]
             gene_log.append(jan_data)
-            # jan_writer.writerow(jan_data)
+
         mlst_log.append(gene_log)
 
     # scan through non-diploids and record how many of each type
     found = []
-    genotypes = [("normal", diploid_counter)]
+    genotype_counts = [("normal", diploid_counter)]
     for idx in non_diploid_record:
         if idx not in found:
             count = non_diploid_record.count(idx)
             found.append(idx)
             genotype = index_key[idx][-1]
-            genotypes.append((genotype, count))
+            genotype_counts.append((genotype, count))
 
     # this is the summary of the entire MLST for this percentage mix
     results.append((percent, pass10, remainder_counter))
-    final_scores = (percent, pass10, remainder_counter, genotypes)
+    final_scores = (percent, pass10, remainder_counter, genotype_counts)
     percent_log[percent] = [final_scores, mlst_log]
 
 # now process the results, sort by most wins, then by least remander
@@ -220,10 +233,26 @@ results = sorted(results, key=lambda x: (-x[1], x[2]))
 
 # iterate through results and write out data (best will be at top of file)
 jan_output = open('jan_output.csv', 'w')
+
+# formatting header information
 jan_writer = csv.writer(jan_output)
-header = ["percent", "single", "mix", "gene", "pos", "single_call",
-          "A", "C", "G", "T", "mix_call", "remainder", "best",
-          "pass_cut", "tot_unexplained", "genotypes"]
+jan_writer.writerow(["mix:", MIX_STRAIN, " ", usefull_allele_counter, "loci"])
+jan_writer.writerow(["single:", SINGLE_STRAIN])
+jan_writer.writerow([])
+jan_writer.writerow([])
+# insert subheading
+sub_header = [" "] * 18
+sub_header.insert(1, "loci")
+sub_header.insert(4, "sequencing")
+sub_header.insert(10, "strain1(SC)")
+sub_header.insert(13, "strain2(INF)")
+sub_header.insert(18, "inference scores across all loci")
+jan_writer.writerow(sub_header)
+
+header = ["percent", "gene", "pos", " ",
+          "A", "C", "G", "T", "mix_call", " ", "single_call",
+          "%", " ", "INF_call", "%", " ", "unexplained", " ",
+          "pass_cut", "tot_unexplained", " ", "genotype"]
 jan_writer.writerow(header)
 
 for result in results:
@@ -234,6 +263,9 @@ for result in results:
     final_genotypes = percent_data[0][3]
     for mlst in percent_data[1]:
         for gene in mlst:
-            gene += [pass_cut, remainder, final_genotypes]
+            gene += [100-percent, " ", gene.pop(12), " ",
+                     "%s/%s" % (pass_cut, usefull_allele_counter),
+                     remainder, " ", final_genotypes]
+            gene.insert(12, " ")
             jan_writer.writerow(gene)
 jan_output.close()
