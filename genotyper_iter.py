@@ -88,6 +88,12 @@ for freq in range(0, 101):
 # data_dict['MIX_STRAIN'][gene][pos] -> returns ('C/T',
 # ['0', '52', '0', '48'])
 
+# set percent wiggle to accept or reject a genotpye solution
+WIGGLE = 5
+
+SINGLE_STRAIN = "FJ9-S_S16"
+MIX_STRAIN = "P1-50-50_S35"
+
 data_dict = {}
 with open('NZGL02259_final_table.csv') as f:
     csv_reader = csv.reader(f)
@@ -118,10 +124,18 @@ def genotyper(single_call, mix_call, geneotypes):
     strain2 = strain2.replace('2', call2)
     return strain2
 
-# set percent wiggle to accept or reject a genotpye solution
-WIGGLE = 5
-SINGLE_STRAIN = "HUN91-S_S18"
-MIX_STRAIN = "P1-90-10_S37"
+
+def calculate_diff(possible_genotypes, allele1_obs, allele2_obs):
+    """O-E get get the smallest difference"""
+    smallest_difference = (1000000.0, [])
+    for row in possible_genotypes:
+        allele1_exp, allele2_exp = freq_dict[percent][row]
+        difference = abs(
+            allele1_obs - allele1_exp) + abs(allele2_obs - allele2_exp)
+        if difference < smallest_difference[0]:
+            smallest_difference = (difference, row)
+    return smallest_difference
+
 
 # some variables for main script
 nucleotides = ["A", "C", "G", "T"]
@@ -175,28 +189,38 @@ for percent in range(100):
             allele1_obs = mixed_colony_data[nucleotides.index(allele1)]
             allele2_obs = mixed_colony_data[nucleotides.index(allele2)]
             possible_genotypes = []
-
+            alt_genotypes = []
             # test all genotypes to find best fit with Obs
             for row in index_key:
                 # TMP: limit to diploids: row 8 is "8
                 # ['1/1', '11/2', 'dip/tri']" see index_key[8]
-                # if row < 8:
-                if index_key[row][0] == '1/2' and diploid_ref == True:
-                    possible_genotypes.append(row)
-                else:
-                    if index_key[row][0] == '1/1' and diploid_ref == False:
+                if row < 8:
+                    if index_key[row][0] == '1/2' and diploid_ref == True:
                         possible_genotypes.append(row)
-            smallest_difference = (1000000.0, [])
-            for row in possible_genotypes:
-                allele1_exp, allele2_exp = freq_dict[percent][row]
-                difference = abs(
-                    allele1_obs - allele1_exp) + abs(allele2_obs - allele2_exp)
-                if difference < smallest_difference[0]:
-                    smallest_difference = (difference, row)
+                    else:
+                        if index_key[row][0] == '1/1' and diploid_ref == False:
+                            possible_genotypes.append(row)
+                else:
+                    # these are triploid and other unlikely genotpyes
+                    assert row >= 8
+                    if index_key[row][0] == '1/2' and diploid_ref == True:
+                        alt_genotypes.append(row)
+                    else:
+                        if index_key[row][0] == '1/1' and diploid_ref == False:
+                            alt_genotypes.append(row)
+
+            smallest_difference = calculate_diff(possible_genotypes,
+                                                 allele1_obs, allele2_obs)
 
             # PASS: if smallest difference is WIGGLE%
-            if smallest_difference[0] < WIGGLE:
+            if smallest_difference[0] <= WIGGLE:
                 pass10 += 1
+            else:
+                # try some rarer genotypes to see if can get better result
+                any_better = calculate_diff(alt_genotypes,
+                                            allele1_obs, allele2_obs)
+                if any_better[0] < smallest_difference[0]:
+                    smallest_difference = any_better
             if smallest_difference[1] > 7:
                 non_diploid_record.append(smallest_difference[1])
             else:
