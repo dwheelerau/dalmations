@@ -82,6 +82,7 @@ for freq in range(0, 101):
         index_dict[index] = (allele1_sum, allele2_sum)
     freq_dict[freq] = index_dict
 
+##########
 # now you can get the allala1 sum and allele2 sums for
 # strain A freq = 40 and row 0 by doing this
 # freq_dict[40][0]
@@ -94,14 +95,15 @@ for freq in range(0, 101):
 # (these are informative)
 # data_dict['MIX_STRAIN'][gene][pos] -> returns ('C/T',
 # ['0', '52', '0', '48'])
+##########
 
 # set percent wiggle to accept or reject a genotpye solution
 WIGGLE = 5
 
-SINGLE_STRAIN = sys.argv[1]
-# SINGLE_STRAIN = "FJ9-S_S16"
-MIX_STRAIN = sys.argv[2]
-# MIX_STRAIN = "P1-50-50_S35"
+# SINGLE_STRAIN = sys.argv[1]
+SINGLE_STRAIN = "FJ9-S_S16"
+# MIX_STRAIN = sys.argv[2]
+MIX_STRAIN = "P1-50-50_S35"
 
 data_dict = {}
 with open('./final_results/final_table.csv') as f:
@@ -276,7 +278,7 @@ results = sorted(results, key=lambda x: (-x[1], x[2]))
 # iterate through results and write out data (best will be at top of file)
 # add check to make sure file DOESNOT Exists.
 # jan_output = open(sys.argv[3]', 'w')
-output_name = "./final_genotypes/%s_&_%s.csv" % (SINGLE_STRAIN, MIX_STRAIN)
+output_name = "./genotype_data/%s_&_%s.csv" % (SINGLE_STRAIN, MIX_STRAIN)
 jan_output = open(output_name, 'w')
 
 # formatting header information
@@ -300,8 +302,20 @@ header = ["percent", "gene", "pos", " ",
           "pass_cut", "tot_unexplained", " ", "genotype"]
 jan_writer.writerow(header)
 
+# file to write out best result for reading by other scripts
+script_output = "./final_genotypes/%s_&_%s.csv" % (SINGLE_STRAIN, MIX_STRAIN)
+script_output_h = open(script_output, 'w')
+script_writer = csv.writer(script_output_h)
+
+flag = 0
+best = 0
+
 for result in results:
     percent = result[0]
+    if flag == 0:
+        # capture best result and write this to script_writer
+        best = result[0]
+        flag = 1
     percent_data = percent_log[percent]
     pass_cut = percent_data[0][1]
     remainder = percent_data[0][2]
@@ -313,4 +327,7 @@ for result in results:
                      remainder, " ", final_genotypes]
             gene.insert(12, " ")
             jan_writer.writerow(gene)
+            if percent == best:
+                script_writer.writerow(gene)
 jan_output.close()
+script_output_h.close()
