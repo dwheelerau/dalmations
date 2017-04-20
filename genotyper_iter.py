@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import csv
+import sys
 
 # this is the index, each row repressents a different genotypic outcome
 # I run each outcome against the freq of A going from 0 to 100.
@@ -9,6 +10,12 @@ import csv
 # on difference between O - E.
 # 1. hock this up to a GUI that allows strain selections
 # 2. ATM only non-ref alleles in the mix are explored
+
+try:
+    assert len(sys.argv) == 3
+except AssertionError:
+    print "usage: python2 genotyper_iter.py <SINGLE_COL_NAME> <MIX_COL_NAME>"
+    exit(1)
 
 index_key = {}
 counter = 0
@@ -91,11 +98,13 @@ for freq in range(0, 101):
 # set percent wiggle to accept or reject a genotpye solution
 WIGGLE = 5
 
-SINGLE_STRAIN = "FJ9-S_S16"
-MIX_STRAIN = "P1-50-50_S35"
+SINGLE_STRAIN = sys.argv[1]
+# SINGLE_STRAIN = "FJ9-S_S16"
+MIX_STRAIN = sys.argv[2]
+# MIX_STRAIN = "P1-50-50_S35"
 
 data_dict = {}
-with open('NZGL02259_final_table.csv') as f:
+with open('./final_results/final_table.csv') as f:
     csv_reader = csv.reader(f)
     for row in csv_reader:
         # NOTE: if non-ref
@@ -265,7 +274,10 @@ for percent in range(100):
 results = sorted(results, key=lambda x: (-x[1], x[2]))
 
 # iterate through results and write out data (best will be at top of file)
-jan_output = open('jan_output.csv', 'w')
+# add check to make sure file DOESNOT Exists.
+# jan_output = open(sys.argv[3]', 'w')
+output_name = "./final_genotypes/%s_&_%s.csv" % (SINGLE_STRAIN, MIX_STRAIN)
+jan_output = open(output_name, 'w')
 
 # formatting header information
 jan_writer = csv.writer(jan_output)
