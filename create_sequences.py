@@ -60,11 +60,21 @@ def make_confidence_score(scores):
 
 def evolve_ref(modification):
     # ie 'T/A' or 'T/A/C' need to sort
-    modification = list(set(modification.split('/')))
-    modification.sort()
-    modification = "".join(modification)
-    modification = IUPAC_dict[modification]
-    return modification
+    modification = modification.split('/')
+    letters = []
+    for letter in modification:
+        # deal with AGG type geneotypes for triploids
+        if len(letter) > 1:
+            for l in letter:
+                letters.append(l)
+        else:
+            letters.append(letter)
+
+    letters = list(set(letters))
+    letters.sort()
+    letters = "".join(letters)
+    modifications = IUPAC_dict[letters]
+    return modifications
 
 
 def remove_primers(gene, seq):
@@ -79,7 +89,8 @@ with open('./reference_mlst/mlst.fa') as f:
         if line[0] == '>':
             key = line.strip()[1:]
             continue
-        seq_dict[key] = list(line.strip())
+        elif len(line) > 1:
+            seq_dict[key] = list(line.strip())
 
 # it might be better to run this on single files through
 # sys.argv and just loop through file list instead
@@ -101,7 +112,9 @@ refseq = write_seq("refMLST", "".join(refseq))
 seq_outfile = open('./final_sequences/sequenes.fa', 'w')
 seq_outfile.write(refseq)
 
+
 for fil in sample_files:
+    print fil
     result_dict = {}
     target_csv = "%s/%s" % (genotype_dir, fil)
     with open(target_csv) as f:
