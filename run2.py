@@ -49,8 +49,53 @@ def nuc_counter(col):
     depth = A + C + G + T
     return (A, C, G, T, depth)
 
-def trim_seq(seq, number):
-    return seq[:number]
+noise = 6.0
+
+
+def cal_percents(count_list):
+    """loci,pos,ref,depth,A,C,G,T"""
+    depth = float(count_list[3])
+    if depth > 0:
+        count_list.append(str(100*(int(count_list[4])/depth)))  # perA
+        count_list.append(str(100*(int(count_list[5])/depth)))  # perC
+        count_list.append(str(100*(int(count_list[6])/depth)))  # perG
+        count_list.append(str(100*(int(count_list[7])/depth)))  # perT
+    else:
+        # div by zero error
+        count_list.append('0.0')
+        count_list.append('0.0')
+        count_list.append('0.0')
+        count_list.append('0.0')
+    return count_list
+
+
+def filter_data(data):
+    """filter out noise and if greater than noise collect nt call"""
+    # ACGT
+    ref = data[2]
+    choice = ["A", "C", "G", "T"]
+    counter = 0
+    # if 100% non-ref call will still show ref/alt
+    result = []
+    for per in data[8:]:
+        # must be at last 6 (allows for floating pt ie 5.2 will be ignored
+        if float(per) >= noise:
+            call = choice[counter]
+            if call not in result:
+                result.append(call)
+        else:
+            pass
+        # modify float in case it will be returned
+        data[8+counter] = "%.0f" % (float(per))
+        counter += 1
+    if len(result) > 1:
+        result = "/".join(result)
+        data.append(result)
+    elif len(result) == 1 and result[0] != ref:
+        result = "".join(result)
+        data.append(result)
+    return data
+
 
 # colect reference sequences in a dictionary
 ref_dict = {}
@@ -89,6 +134,7 @@ csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
 # write header once then close off, will append results from filter_col.py
 outfile.close()
 
+# this dict contains cords to splice so ft---><---RT == reference
 aln_slicer_dict = {'AAT1a': (224, 166),
                    'ACC1': (225, 176),
                    'ADP1': (225, 171),
@@ -97,6 +143,16 @@ aln_slicer_dict = {'AAT1a': (224, 166),
                    'VPS13': (225, 190),
                    'ZWF1b': (225, 179)}
 
+# use this dict to remove alnments that don't include all of re
+# this will prevent frameshift snps
+reflen_dict = {'AAT1a': 390,
+               'ACC1': 401,
+               'ADP1': 396,
+               'MPI': 396,
+               'SYA1': 383,
+               'VPS13': 415,
+               'ZWF1b': 404}
+
 for sample in sample_dirs:
     for pair in target_files:
         outdir = "%s/%s/" % (sample_dir, sample)  # sample/DIR/
@@ -104,7 +160,7 @@ for sample in sample_dirs:
         locus = pair[0].split('.fastq')[0][:-3]
         targetf = outdir + pair[0]
         # get gene name so can slice seqs for proper aln
-        key = targetf.split('/')[-1].split('pft')[0] 
+        key = targetf.split('/')[-1].split('pft')[0]
         fseq_length, rseq_length = aln_slicer_dict[key]
         seqf = [f[:fseq_length] + "\n" for f in read_fastq(targetf)]
         targetr = outdir + pair[1]
@@ -121,18 +177,20 @@ for sample in sample_dirs:
             for seq in seqrc:
                 f.write(seq)
 
-        # BROCKEN: can't use zip
-        with open(alnf) as f:
-            data = f.read().strip().split('\n')
-            alnf_cols = zip(*data)
-        with open(alnr) as f:
-            data = f.read().strip().split('\n')
-            alnr_cols = zip(*data)
-        '''
-        alnf_data = alnf.replace("aln", "aln_data")
-        with open(alnf_data, "w") as f:
+        # zip should pair up the sequences again in tuples, watch newline
+        aln_seqs = [part[0][:-1] + part[1]
+                    for part in zip(seqf, seqrc)
+                    if len(part[0][:-1] + part[1][:-1]) == reflen_dict[key]]
+        aln_data = alnf.replace("pft.aln", ".aln_data")
+        with open(aln_data, 'w') as f:
+            for seq in aln_seqs:
+                f.write(seq)
+        # transpose cols into lists ['aaaaa','tttttt','ggggggg']
+        aln_cols = map(list, zip(*aln_seqs))[:-1]
+        aln_info = alnf.replace("pft.aln", ".aln_info")
+        with open(aln_info, "w") as f:
             pos_counter = 0
-            for col in alnf_cols:
+            for col in aln_cols:
                 data = nuc_counter(col)
                 ref = ref_dict[locus][pos_counter]
                 line = "%s\t%s\t%s\t%s\tA:%s\tC:%s\tG:%s\tT:%s\n" % (
@@ -140,18 +198,7 @@ for sample in sample_dirs:
                     data[2], data[3])
                 pos_counter += 1
                 f.write(line)
-        # BROCKEN: how to deal with reference calls in reverse?
-        alnr_data = alnr.replace("aln", "aln_data")
-        with open(alnr_data, "w") as f:
-            pos_counter = 1
-            for col in alnr_cols:
-                data = nuc_counter(col)
-                line = "%s\t%s\t%s\t%s\tA:%s\tC:%s\tG:%s\tT:%s\n" % (
-                    locus, pos_counter, "N", data[-1], data[0], data[1],
-                    data[2], data[3])
-                pos_counter += 1
-                f.write(line)
-        '''
+
 print "done"
 """
         # readcount command infile, locus, outfile
