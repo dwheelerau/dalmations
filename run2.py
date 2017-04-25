@@ -49,6 +49,9 @@ def nuc_counter(col):
     depth = A + C + G + T
     return (A, C, G, T, depth)
 
+def trim_seq(seq, number):
+    return seq[:number]
+
 # colect reference sequences in a dictionary
 ref_dict = {}
 gene = ""
@@ -86,24 +89,38 @@ csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
 # write header once then close off, will append results from filter_col.py
 outfile.close()
 
+aln_slicer_dict = {'AAT1a': (224, 166),
+                   'ACC1': (225, 176),
+                   'ADP1': (225, 171),
+                   'MPI': (225, 171),
+                   'SYA1': (224, 159),
+                   'VPS13': (225, 190),
+                   'ZWF1b': (225, 179)}
+
 for sample in sample_dirs:
     for pair in target_files:
         outdir = "%s/%s/" % (sample_dir, sample)  # sample/DIR/
         # do text based alnment
         locus = pair[0].split('.fastq')[0][:-3]
         targetf = outdir + pair[0]
-        seqf = read_fastq(targetf)
+        # get gene name so can slice seqs for proper aln
+        key = targetf.split('/')[-1].split('pft')[0] 
+        fseq_length, rseq_length = aln_slicer_dict[key]
+        seqf = [f[:fseq_length] + "\n" for f in read_fastq(targetf)]
         targetr = outdir + pair[1]
-        seqr = read_fastq(targetr)
+        seqr = [r[:rseq_length] + "\n" for r in read_fastq(targetr)]
         seqrc = [rev_comp(read) for read in seqr]
         alnf = targetf.replace("fastq", "aln")
         with open(alnf, "w") as f:
             for seq in seqf:
                 f.write(seq)
+        # I need to slice the alignment before doing the RC
+        # otherwise they are all different lenghts
         alnr = targetr.replace("fastq", "aln")
         with open(alnr, "w") as f:
-            for seq in seqr:
+            for seq in seqrc:
                 f.write(seq)
+
         # BROCKEN: can't use zip
         with open(alnf) as f:
             data = f.read().strip().split('\n')
@@ -111,7 +128,7 @@ for sample in sample_dirs:
         with open(alnr) as f:
             data = f.read().strip().split('\n')
             alnr_cols = zip(*data)
-
+        '''
         alnf_data = alnf.replace("aln", "aln_data")
         with open(alnf_data, "w") as f:
             pos_counter = 0
@@ -134,7 +151,7 @@ for sample in sample_dirs:
                     data[2], data[3])
                 pos_counter += 1
                 f.write(line)
-
+        '''
 print "done"
 """
         # readcount command infile, locus, outfile
