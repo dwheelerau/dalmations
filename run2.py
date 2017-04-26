@@ -1,8 +1,6 @@
 #!/usr/bin/env python
-import subprocess
 import os
 import csv
-#from Bio import SeqIO
 
 
 def read_fastq(fname):
@@ -35,7 +33,10 @@ def rev_comp(seq_string):
                 rc.insert(0, "A")
             else:
                 # add new line to the end
-                assert letter == "\n"
+                try:
+                    assert letter == "\n"
+                except AssertionError:
+                    print "Warning, non-normal nucleotide found: %s" % letter
                 rc.append(letter)
     assert len(rc) == len(seq_string)
     return "".join(rc)
@@ -47,19 +48,17 @@ def nuc_counter(col):
     G = col.count('G')
     T = col.count('T')
     depth = A + C + G + T
-    return (A, C, G, T, depth)
-
-noise = 6.0
+    return [depth, A, C, G, T]
 
 
 def cal_percents(count_list):
-    """loci,pos,ref,depth,A,C,G,T"""
-    depth = float(count_list[3])
+    """A,C,G,T, depth"""
+    depth = float(count_list[0])
     if depth > 0:
-        count_list.append(str(100*(int(count_list[4])/depth)))  # perA
-        count_list.append(str(100*(int(count_list[5])/depth)))  # perC
-        count_list.append(str(100*(int(count_list[6])/depth)))  # perG
-        count_list.append(str(100*(int(count_list[7])/depth)))  # perT
+        count_list.append(str(100*(int(count_list[1])/depth)))  # perA
+        count_list.append(str(100*(int(count_list[2])/depth)))  # perC
+        count_list.append(str(100*(int(count_list[3])/depth)))  # perG
+        count_list.append(str(100*(int(count_list[4])/depth)))  # perT
     else:
         # div by zero error
         count_list.append('0.0')
@@ -72,13 +71,13 @@ def cal_percents(count_list):
 def filter_data(data):
     """filter out noise and if greater than noise collect nt call"""
     # ACGT
-    ref = data[2]
+    noise = 6.0
     choice = ["A", "C", "G", "T"]
     counter = 0
     # if 100% non-ref call will still show ref/alt
     result = []
-    for per in data[8:]:
-        # must be at last 6 (allows for floating pt ie 5.2 will be ignored
+    for per in data[7:]:
+        # allows for floating pt ie 5.2 will be ignored
         if float(per) >= noise:
             call = choice[counter]
             if call not in result:
@@ -86,12 +85,12 @@ def filter_data(data):
         else:
             pass
         # modify float in case it will be returned
-        data[8+counter] = "%.0f" % (float(per))
+        data[7+counter] = "%.0f" % (float(per))
         counter += 1
     if len(result) > 1:
         result = "/".join(result)
         data.append(result)
-    elif len(result) == 1 and result[0] != ref:
+    elif len(result) == 1:
         result = "".join(result)
         data.append(result)
     return data
@@ -100,7 +99,7 @@ def filter_data(data):
 # colect reference sequences in a dictionary
 ref_dict = {}
 gene = ""
-with open('./reference_mlst/mlst.fa')as f:
+with open('./reference_mlst/mlst.fa') as f:
     data = f.read().strip().split('\n')
     for line in data:
         if line[0] == ">":
@@ -108,7 +107,6 @@ with open('./reference_mlst/mlst.fa')as f:
         else:
             ref_dict[gene] = line.strip()
 
-sample_dir = "samples_test"
 
 target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
                 ('ACC1pft.fastq', 'ACC1prt.fastq'),
@@ -118,21 +116,17 @@ target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
                 ('VPS13pft.fastq', 'VPS13prt.fastq'),
                 ('ZWF1bpft.fastq', 'ZWF1bprt.fastq')]
 
+# sample_dir = "samples_test"
+sample_dir = "samples"
 sample_dirs = next(os.walk(sample_dir))[1]
 
-# main commands
-#readcount = '/home/dwheeler/software_tools/bam-readcount-master/bin/bam-readcount --max-warnings 0 -f reference_mlst/mlst.fa %s %s | cut -f1,2,3,4,6-9 > %s'
-#proctab = "python process_tables.py %s %s"
-#filttab = "python filter_cols.py %s %s"
-
-# add header, close, then filter_cols.py will append to this
+# add header
+# final_outfile = open('final_results/final_table.csv', 'a')
 outfile = open('final_results/test_table.csv', 'w')
 csv_writer = csv.writer(outfile)
 csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
                      'read', 'depth', 'A_freq', 'C_freq',
-                     'G_freq', 'T_freq', 'non_ref'])
-# write header once then close off, will append results from filter_col.py
-outfile.close()
+                     'G_freq', 'T_freq', 'call'])
 
 # this dict contains cords to splice so ft---><---RT == reference
 aln_slicer_dict = {'AAT1a': (224, 166),
@@ -153,16 +147,25 @@ reflen_dict = {'AAT1a': 390,
                'VPS13': 415,
                'ZWF1b': 404}
 
+primer_dict = {'AAT1a': (21, 370),
+               'ACC1': (20, 382),
+               'ADP1': (22, 375),
+               'MPI': (21, 377),
+               'SYA1': (20, 363),
+               'VPS13': (20, 395),
+               'ZWF1b': (22, 385)}
+
+
 for sample in sample_dirs:
     for pair in target_files:
+        print "Processing %s" % sample
         outdir = "%s/%s/" % (sample_dir, sample)  # sample/DIR/
         # do text based alnment
         locus = pair[0].split('.fastq')[0][:-3]
         targetf = outdir + pair[0]
         # get gene name so can slice seqs for proper aln
-        key = targetf.split('/')[-1].split('pft')[0]
-        fseq_length, rseq_length = aln_slicer_dict[key]
-        seqf = [f[:fseq_length] + "\n" for f in read_fastq(targetf)]
+        fseq_length, rseq_length = aln_slicer_dict[locus]
+        seqf = [sf[:fseq_length] + "\n" for sf in read_fastq(targetf)]
         targetr = outdir + pair[1]
         seqr = [r[:rseq_length] + "\n" for r in read_fastq(targetr)]
         seqrc = [rev_comp(read) for read in seqr]
@@ -180,47 +183,35 @@ for sample in sample_dirs:
         # zip should pair up the sequences again in tuples, watch newline
         aln_seqs = [part[0][:-1] + part[1]
                     for part in zip(seqf, seqrc)
-                    if len(part[0][:-1] + part[1][:-1]) == reflen_dict[key]]
+                    if len(part[0][:-1] + part[1][:-1]) == reflen_dict[locus]]
         aln_data = alnf.replace("pft.aln", ".aln_data")
         with open(aln_data, 'w') as f:
             for seq in aln_seqs:
                 f.write(seq)
         # transpose cols into lists ['aaaaa','tttttt','ggggggg']
         aln_cols = map(list, zip(*aln_seqs))[:-1]
-        aln_info = alnf.replace("pft.aln", ".aln_info")
+        aln_info = alnf.replace("pft.aln", ".aln_info.txt")
         with open(aln_info, "w") as f:
-            pos_counter = 0
+            aln_info_writer = csv.writer(f)
+            pos_counter = 1
+            primers = primer_dict[locus]
+            ref_seq = ref_dict[locus]
             for col in aln_cols:
-                data = nuc_counter(col)
-                ref = ref_dict[locus][pos_counter]
-                line = "%s\t%s\t%s\t%s\tA:%s\tC:%s\tG:%s\tT:%s\n" % (
-                    locus, pos_counter + 1, ref, data[-1], data[0], data[1],
-                    data[2], data[3])
+                if pos_counter > primers[0] and pos_counter < primers[1]:
+                    data = nuc_counter(col)
+                    per_data = cal_percents(data)
+                    ref = ref_seq[pos_counter-1]
+                    per_data.insert(0, ref)
+                    per_data.insert(0, pos_counter)
+                    # [pos,ref,depth,countA,countC,countG,countT,perA..,perT]
+                    filter_per = filter_data(per_data)
+                    filter_per.insert(0, locus)
+                    aln_info_writer.writerow(filter_per)
+                    filter_per.insert(0, sample)
+                    filter_per.insert(4, " ")
+                    final_data = filter_per[:6] + filter_per[-5:]
+                    csv_writer.writerow(final_data)
                 pos_counter += 1
-                f.write(line)
 
 print "done"
-"""
-        # readcount command infile, locus, outfile
-        print pair[0][:-9]
-        readcountcmd1 = readcount % (targetf.split(".")[0]+".sorted.bam",
-                                     pair[0][:-9],
-                                     targetf.split(".")[0]+".counts")
-        res = subprocess.check_output(readcountcmd1, shell=True)
-        readcountcmd2 = readcount % (targetr.split(".")[0]+".sorted.bam",
-                                     pair[0][:-9],
-                                     targetr.split(".")[0]+".counts")
-        res = subprocess.check_output(readcountcmd2, shell=True)
-
-        # run process_table.py on frw and rev reads, py handles output
-        proctabcmd = proctab % (targetf.split(".")[0]+".counts",
-                                targetr.split(".")[0]+".counts")
-        res = subprocess.check_output(proctabcmd, shell=True)
-
-        # filter cols using python script, py handles output
-        filttabcmd = filttab % (targetf.split(".")[0]+".counts.table",
-                                targetr.split(".")[0]+".counts.table")
-        res = subprocess.check_output(filttabcmd, shell=True)
-
-print "done"
-"""
+outfile.close()
