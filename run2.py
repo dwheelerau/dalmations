@@ -126,7 +126,12 @@ except IndexError:
     print 'usage: python2 run2.py <sample_dir>'
     sys.exit(1)
 
-sample_dirs = next(os.walk(sample_dir))[1]
+try:
+    sample_dirs = next(os.walk(sample_dir))[1]
+except StopIteration:
+    print 'Is the samples directory %s empty?' % sample_dir
+    print 'usage: python2 run2.py <sample_dir>'
+    sys.exit(1)
 
 # add header overwrite and write header
 outfile = open('final_results/final_table_python.csv', 'w')
