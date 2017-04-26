@@ -120,9 +120,8 @@ target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
 sample_dir = "samples"
 sample_dirs = next(os.walk(sample_dir))[1]
 
-# add header
-# final_outfile = open('final_results/final_table.csv', 'a')
-outfile = open('final_results/test_table.csv', 'w')
+# add header overwrite and write header
+outfile = open('final_results/final_table_python.csv', 'w')
 csv_writer = csv.writer(outfile)
 csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
                      'read', 'depth', 'A_freq', 'C_freq',
