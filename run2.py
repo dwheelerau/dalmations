@@ -156,8 +156,8 @@ primer_dict = {'AAT1a': (21, 370),
 
 
 for sample in sample_dirs:
+    print "Processing %s" % sample
     for pair in target_files:
-        print "Processing %s" % sample
         outdir = "%s/%s/" % (sample_dir, sample)  # sample/DIR/
         # do text based alnment
         locus = pair[0].split('.fastq')[0][:-3]
@@ -189,7 +189,7 @@ for sample in sample_dirs:
                 f.write(seq)
         # transpose cols into lists ['aaaaa','tttttt','ggggggg']
         aln_cols = map(list, zip(*aln_seqs))[:-1]
-        aln_info = alnf.replace("pft.aln", ".aln_info.txt")
+        aln_info = alnf.replace("pft.aln", ".aln_info.csv")
         with open(aln_info, "w") as f:
             aln_info_writer = csv.writer(f)
             pos_counter = 1
