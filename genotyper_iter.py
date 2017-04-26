@@ -117,7 +117,8 @@ with open(datafile) as f:
         strain = row[0]
         gene = row[1]
         pos = row[2]
-        genotype = row[-1]
+        # genotype = row[-1] added sample to end so now this is genotype
+        genotype = row[-2]
         data_dict.setdefault(
             strain, {}).setdefault(gene, {})[pos] = (genotype, row[6:10])
 
