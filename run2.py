@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import csv
+import sys
 
 
 def read_fastq(fname):
@@ -117,7 +118,14 @@ target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
                 ('ZWF1bpft.fastq', 'ZWF1bprt.fastq')]
 
 # sample_dir = "samples_test"
-sample_dir = "samples"
+try:
+    sample_dir = sys.argv[1]
+except IndexError:
+    print 'Missing samples directory that contains the sequence files for'
+    print ' your samples?'
+    print 'usage: python2 run2.py <sample_dir>'
+    sys.exit(1)
+
 sample_dirs = next(os.walk(sample_dir))[1]
 
 # add header overwrite and write header
@@ -125,7 +133,7 @@ outfile = open('final_results/final_table_python.csv', 'w')
 csv_writer = csv.writer(outfile)
 csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
                      'read', 'depth', 'A_freq', 'C_freq',
-                     'G_freq', 'T_freq', 'call'])
+                     'G_freq', 'T_freq', 'call', 'sample_dir'])
 
 # this dict contains cords to splice so ft---><---RT == reference
 aln_slicer_dict = {'AAT1a': (224, 166),
@@ -209,6 +217,8 @@ for sample in sample_dirs:
                     filter_per.insert(0, sample)
                     filter_per.insert(4, " ")
                     final_data = filter_per[:6] + filter_per[-5:]
+                    # add info about this batch
+                    final_data.append(sample_dir)
                     csv_writer.writerow(final_data)
                 pos_counter += 1
 
