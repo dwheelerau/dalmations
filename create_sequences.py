@@ -144,7 +144,7 @@ for fil in sample_files:
     # FJ9-S_S16 WARNING - this requres this format?
     percent_single = int(row[0])
     percent_mix = 100 - percent_single
-    single_sample_name = fil.split('_&_')[0].split('-')[0]
+    single_sample_name = fil.split('_&_')[0]
     sample_name = single_sample_name.split('-')[0]
     confidence_score = make_confidence_score(scores)
     single_sample_id = "%s:SC:%s:%.1f" % (sample_name, percent_single,
