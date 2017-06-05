@@ -106,7 +106,7 @@ MIX_STRAIN = sys.argv[2]
 # MIX_STRAIN = "P1-50-50_S35"
 
 data_dict = {}
-datafile = './final_results/final_table_python.csv'
+datafile = './final_results/final_table_python.varfix.csv'
 with open(datafile) as f:
     csv_reader = csv.reader(f)
     for row in csv_reader:
