@@ -27,15 +27,6 @@ IUPAC_dict = {'A': 'A',
               'ACGT': 'N'}
 
 
-refcord_dict = {'AAT1a': (21, 370),
-                'ACC1': (20, 382),
-                'ADP1': (22, 375),
-                'MPI': (21, 377),
-                'SYA1': (20, 363),
-                'VPS13': (20, 395),
-                'ZWF1b': (22, 385)}
-
-
 def chunks(l, n):
     '''Yield successive n-sized chunks from l'''
     # http://stackoverflow.com/questions/312443
@@ -91,6 +82,8 @@ with open('./reference_mlst/mlst.fa') as f:
             continue
         elif len(line) > 1:
             seq_dict[key] = list(line.strip())
+
+###START HERE###
 
 # it might be better to run this on single files through
 # sys.argv and just loop through file list instead
