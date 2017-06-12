@@ -104,7 +104,8 @@ SINGLE_STRAIN = sys.argv[1]
 # SINGLE_STRAIN = "FJ9-S_S16"
 MIX_STRAIN = sys.argv[2]
 # MIX_STRAIN = "P1-50-50_S35"
-
+print SINGLE_STRAIN
+print MIX_STRAIN
 data_dict = {}
 # this is the orginal file and default produce by aln scrip but
 # it had some errors 
@@ -129,7 +130,10 @@ with open(datafile) as f:
 
 def genotyper(single_call, mix_call, geneotypes):
     strain2 = geneotypes.split(";")[1]
-    assert len(mix_call) == 3
+    try:
+        assert len(mix_call) == 3
+    except AssertionError:
+        print mix_call
     if single_call.find("/") > 0:
         call1, call2 = single_call.split("/")
     else:

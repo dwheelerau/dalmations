@@ -1,8 +1,7 @@
 #!/usr/bin/env python2
-
-import copy
-import os
 import csv
+
+
 ##
 # use genotpyes to extract sequence files
 ##
@@ -10,6 +9,8 @@ import csv
 # cords = refcord_dict['AAT1a']
 # seq[cords[0]: cords[1]-1] # note minus one
 # data dictionaries
+
+
 IUPAC_dict = {'A': 'A',
               'C': 'C',
               'G': 'G',
@@ -41,17 +42,10 @@ def write_seq(key, seq, linelen=80):
     return fasta
 
 
-def make_confidence_score(scores):
-    scores.sort()
-    ave = sum(scores) / len(scores)
-    max_ = scores[-1]
-    result = ave * max_
-    return result
-
-
 def evolve_ref(modification):
     # ie 'T/A' or 'T/A/C' need to sort
     modification = modification.split('/')
+    non_diploid_flag = None
     letters = []
     for letter in modification:
         # deal with AGG type geneotypes for triploids
@@ -60,69 +54,37 @@ def evolve_ref(modification):
                 letters.append(l)
         else:
             letters.append(letter)
-
+    if len(letters) > 2:
+        non_diploid_flag = 1
     letters = list(set(letters))
     letters.sort()
     letters = "".join(letters)
     modifications = IUPAC_dict[letters]
-    return modifications
+    if non_diploid_flag == 1:
+        return modifications.lower()
+    else:
+        return modifications
 
 
-def remove_primers(gene, seq):
-    cords = refcord_dict[gene]
-    seq = seq[cords[0]: cords[1] - 1]
-    return seq
-
-
-seq_dict = {}
-with open('./reference_mlst/mlst.fa') as f:
-    for line in f:
-        if line[0] == '>':
-            key = line.strip()[1:]
-            continue
-        elif len(line) > 1:
-            seq_dict[key] = list(line.strip())
-
-###START HERE###
-
-# it might be better to run this on single files through
-# sys.argv and just loop through file list instead
-genotype_dir = "./final_genotypes"
-sample_files = []
-for f in os.listdir(genotype_dir):
-    if f.endswith(".csv"):
-        sample_files.append(f)
-
-concat_order = seq_dict.keys()
-# by alphabet
-concat_order.sort()
-
-# make a dict of all mlst posns for single sample calls which
-# are not in the summary tables (these only contain non-ref mix
-# calls). Modify the var nts using the same fn. These contain no primers.
-all_seq_calls = {}
-# THis is a fix!
-#with open('./final_results/final_table_python.csv') as f:
+sample_dict = {}
 with open('./final_results/final_table_python.varfix.csv') as f:
     csv_reader = csv.reader(f)
     csv_reader.next()  # dump the header
     for row in csv_reader:
         sample = row[0]
-        call = evolve_ref(row[-2])  # if non-ref will be in this col
-        if sample in all_seq_calls:
-            all_seq_calls[sample].append(call)
+        call = evolve_ref(row[10])
+        if sample in sample_dict:
+            sample_dict[sample].append(call)
         else:
-            all_seq_calls[sample] = [call]  # a list of posns
+            sample_dict[sample] = [call]
 
-# make the reference sequence just once
-# TODO: this probably is not what I want
-refseq = [remove_primers(gene, "".join(seq_dict[gene]))
-          for gene in concat_order]
-refseq = write_seq("refMLST", "".join(refseq))
-seq_outfile = open('./final_sequences/sequenes.fa', 'w')
-seq_outfile.write(refseq)
+with open('./final_results/all_sequence_files.fas', 'w') as f:
+    for sample in sample_dict:
+        seq = ''.join(sample_dict[sample])
+        fasta = write_seq(sample, seq)
+        f.write(fasta)
 
-
+'''
 for fil in sample_files:
     print fil
     result_dict = {}
@@ -160,3 +122,4 @@ for fil in sample_files:
     mixseq = write_seq(mix_sample_id, "".join(mixseq))
     seq_outfile.write(mixseq)
 seq_outfile.close()
+'''
