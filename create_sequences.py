@@ -60,6 +60,7 @@ def make_confidence_score(scores):
 
 def evolve_ref(modification):
     # ie 'T/A' or 'T/A/C' need to sort
+    non_diploid_flag = None
     modification = modification.split('/')
     letters = []
     for letter in modification:
@@ -70,11 +71,17 @@ def evolve_ref(modification):
         else:
             letters.append(letter)
 
+    if len(letters) > 2:
+        non_diploid_flag = 1
     letters = list(set(letters))
     letters.sort()
     letters = "".join(letters)
     modifications = IUPAC_dict[letters]
-    return modifications
+    if non_diploid_flag == 1:
+        # lowercase geneotypes that are not diploid
+        return modifications.lower()
+    else:
+        return modifications
 
 
 def remove_primers(gene, seq):
@@ -109,7 +116,7 @@ concat_order.sort()
 # calls). Modify the var nts using the same fn. These contain no primers.
 all_seq_calls = {}
 # THis is a fix!
-#with open('./final_results/final_table_python.csv') as f:
+# with open('./final_results/final_table_python.csv') as f:
 with open('./final_results/final_table_python.varfix.csv') as f:
     csv_reader = csv.reader(f)
     csv_reader.next()  # dump the header
@@ -148,9 +155,9 @@ for fil in sample_files:
     percent_mix = 100 - percent_single
     single_sample_name = fil.split('_&_')[0]
     # this doesnt work with unknow as their format is:12-0056
-    #sample_name = single_sample_name.split('-')[0]
+    # sample_name = single_sample_name.split('-')[0]
     # just use the first part
-    sample_name = single_sample_name # tmp fix
+    sample_name = single_sample_name  # tmp fix
     confidence_score = make_confidence_score(scores)
     single_sample_id = "%s:SC:%s:%.1f" % (sample_name, percent_single,
                                           confidence_score)
