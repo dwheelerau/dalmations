@@ -146,11 +146,11 @@ def genotyper(single_call, mix_call, geneotypes):
     return strain2
 
 
-def calculate_diff(possible_genotypes, allele1_obs, allele2_obs):
+def calculate_diff(possible_genotypes, allele1_obs, allele2_obs, per):
     """O-E get get the smallest difference"""
     smallest_difference = (1000000.0, [])
     for row in possible_genotypes:
-        allele1_exp, allele2_exp = freq_dict[percent][row]
+        allele1_exp, allele2_exp = freq_dict[per][row]
         difference = abs(
             allele1_obs - allele1_exp) + abs(allele2_obs - allele2_exp)
         if difference < smallest_difference[0]:
@@ -166,7 +166,7 @@ percent_log = {}
 
 for percent in range(100):
     percent = 100 - percent
-    pass10 = 0
+    pass5 = 0
 
     # start looping through MLST one gene at a time
     remainder_counter = 0
@@ -239,15 +239,17 @@ for percent in range(100):
                             alt_genotypes.append(row)
 
             smallest_difference = calculate_diff(possible_genotypes,
-                                                 allele1_obs, allele2_obs)
+                                                 allele1_obs, allele2_obs,
+                                                 percent)
 
             # PASS: if smallest difference is WIGGLE%
             if smallest_difference[0] <= WIGGLE:
-                pass10 += 1
+                pass5 += 1
             else:
                 # try some rarer genotypes to see if can get better result
                 any_better = calculate_diff(alt_genotypes,
-                                            allele1_obs, allele2_obs)
+                                            allele1_obs, allele2_obs,
+                                            percent)
                 if any_better[0] < smallest_difference[0]:
                     smallest_difference = any_better
             if smallest_difference[1] > 7:
@@ -286,8 +288,8 @@ for percent in range(100):
             genotype_counts.append((genotype, count))
 
     # this is the summary of the entire MLST for this percentage mix
-    results.append((percent, pass10, remainder_counter))
-    final_scores = (percent, pass10, remainder_counter, genotype_counts)
+    results.append((percent, pass5, remainder_counter))
+    final_scores = (percent, pass5, remainder_counter, genotype_counts)
     percent_log[percent] = [final_scores, mlst_log]
 
 # now process the results, sort by most wins, then by least remander
