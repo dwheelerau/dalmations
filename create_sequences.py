@@ -43,10 +43,10 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
-def write_seq(key, seq, linelen=80):
+def write_seq(key, seq, linelen=80, desc=''):
     '''wrangle a fasta seq from a key and sequence string'''
     seq = "".join([letter + '\n' for letter in chunks(seq, linelen)])
-    fasta = ">%s\n%s" % (key, seq)
+    fasta = ">%s %s\n%s" % (key, desc, seq)
     return fasta
 
 
@@ -117,7 +117,8 @@ concat_order.sort()
 all_seq_calls = {}
 # THis is a fix!
 # with open('./final_results/final_table_python.csv') as f:
-with open('./final_results/final_table_python.varfix.csv') as f:
+#with open('./final_results/final_table_python.varfix.csv') as f:
+with open('./final_results/final_table_python.varfix.cln.csv') as f:
     csv_reader = csv.reader(f)
     csv_reader.next()  # dump the header
     for row in csv_reader:
@@ -171,6 +172,6 @@ for fil in sample_files:
     # make the concatinated MLSTs mix col
     mixseq = [remove_primers(gene, "".join(seq_dict_mix[gene]))
               for gene in concat_order]
-    mixseq = write_seq(mix_sample_id, "".join(mixseq))
+    mixseq = write_seq(mix_sample_id, "".join(mixseq), desc=fil)
     seq_outfile.write(mixseq)
 seq_outfile.close()

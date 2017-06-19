@@ -111,7 +111,8 @@ data_dict = {}
 # it had some errors 
 # datafile = './final_results/final_table_python.csv'
 # this one is fixed
-datafile = './final_results/final_table_python.varfix.csv'
+# datafile = './final_results/final_table_python.varfix.csv'
+datafile = './final_results/final_table_python.varfix.cln.csv'
 with open(datafile) as f:
     csv_reader = csv.reader(f)
     for row in csv_reader:
