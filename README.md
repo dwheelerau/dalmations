@@ -7,7 +7,7 @@ To cite var_scanner:
 XXXX *et al*:DIO:XXXXX  
 
 ## Requirements  
-This scripts are writen in pure python and should only require python 2.7 install on the machine.  
+This scripts are writen in pure python and should only require python 2.7 installed on the machine.  
 
 ## Installation  
 Create a base directory and clone the repo into.  
@@ -24,28 +24,42 @@ mkdir genotype_data/
 ## File and folder/structure required  
 The following file/folder structure is required to run var_scanner. These should exist if you followed the installion instructions shown above:  
 <pre>
-BASE_DIR  -  samples/  # contains demultiplexed samples in directories named after the sample name
-          -  final_genotpyes/  # data Xxxx
-          -  final_sequences/ # data xxx
-          -  genotype_data/  # data xxx
-          -  reference_mlst/  # reference MLST sequence used for alignment
-          -  create_sequences.py  # script to create infered fasta files for alignment
-          -  extract_seq_from_sheet.py  # script to extract sequences from data sheet
-          -  run_aligner.py  # alignment script
-          -  demultplex.py  # demultiplex script that saves sequence files in folders named after the sample names
-          -  genotyper_iter.py  # genotyper script
-       
+BASE_DIR/samples/  # contains demultiplexed samples in directories named after the sample name
+        /final_genotpyes/  # data Xxxx
+        /final_sequences/ # data xxx
+        /genotype_data/  # data xxx
+        /reference_mlst/  # reference MLST sequence used for alignment
+        /create_sequences.py  # script to create infered fasta files for alignment
+        /extract_seq_from_sheet.py  # script to extract sequences from data sheet
+        /run_aligner.py  # alignment script
+        /demultplex.py  # demultiplex script that saves sequence files in folders named after the sample names
+        /genotyper_iter.py  # genotyper script
 </pre>
 
 ## Running var_scanner (gui version)
-The GUI is under current development.  
+The GUI is under current development. Stay tuned..
 
 ## Running var_scanner (non-gui version)
 
-1. Either use the included demultplex.py script to demultplex your samples into directories named after the sample and place these in the BASE_DIR/sample directory. ie 
+1. Either use the included demultplex.py script to demultplex your samples into directories named after the sample and place these in the BASE_DIR/sample_name/MLST_name.fastq directory. This would be an example for a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2).  
+<pre>
+BASE_DIR/samples/1161NK_S75/AAT1apft.fastq  
+BASE_DIR/samples/1161NK_S75/AAT1aprt.fastq  
+BASE_DIR/samples/1161NK_S75/SYA1pft.fastq  
+BASE_DIR/samples/1161NK_S75/SYA1prt.fastq  
+BASE_DIR/samples/1161NK_S75/ACC1pft.fastq  
+BASE_DIR/samples/1161NK_S75/ACC1prt.fastq   
+BASE_DIR/samples/1161NK_S75/VPS13pft.fastq  
+BASE_DIR/samples/1161NK_S75/VPS13prt.fastq   
+BASE_DIR/samples/1161NK_S75/ADP1pft.fastq  
+BASE_DIR/samples/1161NK_S75/ADP1prt.fastq   
+BASE_DIR/samples/1161NK_S75/ZWF1bpft.fastq  
+BASE_DIR/samples/1161NK_S75/ZWF1bprt.fastq  
+BASE_DIR/samples/1161NK_S75/MPIpft.fastq    
+BASE_DIR/samples/1161NK_S75/MPIprt.fastq
+</pre>
 
-
-If sequences need demultiplexing then run the demultiplex.py.
+If sequences need demultiplexing then run the ```demultiplex.py``` using the following command:   
 
 
 usage:  
