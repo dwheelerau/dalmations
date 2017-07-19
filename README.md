@@ -92,6 +92,6 @@ usage:
 The final output will be XXXXXX.  
 
 ## Disclaimer
-This is free software and no waruntee what so ever is given.
+This is free software and no warranty what so ever is given.
 
         
