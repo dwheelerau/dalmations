@@ -59,13 +59,33 @@ BASE_DIR/samples/1161NK_S75/MPIpft.fastq
 BASE_DIR/samples/1161NK_S75/MPIprt.fastq
 </pre>
 
-If sequences need demultiplexing then run the ```demultiplex.py``` using the following command:   
+If sequences need demultiplexing then run the `demultiplex.py` using the following command:   
 
-
+```bash
 usage:  
-python demultplex.py 12-0039_S10_L001_R2_001.fastq \
-  forward_primers.txt reverse_primers.txt | tee -a log.txt
+    python demultplex.py 12-0039_S10_L001_R2_001.fastq \
+        forward_primers.txt reverse_primers.txt | tee -a log.txt
+```
 
-I removed the len(14) for loop that only reported non-ref calls.
-This was because we wanted all the tables to be the same number
-of rows.
+The `forward_primers.txt` and `reverse_primers.txt` files are included in this repo.  
+**TODO: check primers are in the repo**
+
+2.  Run the `run_aligner.py` script.  
+
+```bash
+usage:
+    python run_aligner.py XXX
+```
+
+3.  Run the `genotyper_iter.py` script.  
+
+```bash
+usage:
+    python genotyper_iter.py XXX  
+```
+
+The final output will be XXXXXX.  
+
+
+
+        
