@@ -75,21 +75,32 @@ usage:
 The `forward_primers.txt` and `reverse_primers.txt` files are included in this repo.  
 **TODO: check primers are in the repo**
 
-2.  Run the `run_aligner.py` script.  
+2.  Run the `run_aligner.py` script (assuming the samples to analyse are saved in the samples directory.  
 
 ```bash
 usage:
-    python run_aligner.py XXX
+    python run_aligner.py <samples>
+    
+example:
+    python run_aligner.py samples
 ```
+If the above script works correctly each of the sample folders should now contain files ending in `.aln`, `.csv`, `.data`. The final table of genotype frequencies should be found in the `final_results` directory in a file called `final_table_python.csv`.   
 
 3.  Run the `genotyper_iter.py` script.  
 
+In the example below, SINGLE_COLONY_NAME and MIX_COLONY_NAME would correspond to sample folders found in the sample directory; they should also be found in the first column of the `final_table_python.csv`.  
+
 ```bash
 usage:
-    python genotyper_iter.py XXX  
+    python genotyper_iter.py <SINGLE_COLONY_NAME> <MIX_COLONY_NAME>  
+
+example:
+    python genotyper_iter.py FJ9-S_S16 P1-50-50_S35    
 ```
 
-The final output will be XXXXXX.  
+4.  Run the `create_sequences.py` script to generate the derived MLST sequence for each sample.  
+The final sequence file is saved in `final_sequences/sequences.fa`.  
+
 
 ## Disclaimer
 This is free software and no warranty what so ever is given.
