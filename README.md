@@ -10,9 +10,11 @@ XXXX *et al*:DIO:XXXXX
 This scripts are writen in pure python and should only require python 2.7 install on the machine.  
 
 ## Installation  
-Create a base directory and clone the repo into.
-mkdir var_scanner && cd var_scanner  
-git clone XXXXX  
+Create a base directory and clone the repo into.  
+```bash
+mkdir var_scanner && cd var_scanner   
+git clone XXXXX   
+```
 
 # setup the directories
 mkdir final_genotpyes/
