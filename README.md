@@ -1,13 +1,15 @@
 # var_scanner
 
 ## Introduction  
-Multi-locus sequence typing (MLST) is a highly discriminating *Candida albicans* strain typing method. It is usually applied to one colony per patient sample. However, multiple strains can coexist in the same site in a patient. We therefore developed 100+1 NGS-MLST, a next generation sequencing (NGS) modification of the existing *C. albicans* MLST method. It analyzes DNA extracted from a pool of 100 colonies from a sample plus DNA from one colony and bioinformatically infers the genotypes present and their frequency. It does so at a sequencing cost, per patient sample, four times lower than that of conventional MLST.  For the directly typed single colonies its discriminating power is 0.998, comparable to that of conventional MLST. Its predictions of the ratio of different strains in a sample were fairly accurate - within 14±16% of the ratio between the numbers of colonies from two known strains combined to generate DNA pools for testing the method’s accuracy. Details of our proof of principle experiment using 100+1 NGS-MLST can be found in the our recent publication XXXX. 
+Multi-locus sequence typing (MLST) is a highly discriminating *Candida albicans* strain typing method. It is usually applied to one colony per patient sample. However, multiple strains can coexist in the same site in a patient. We therefore developed 100+1 NGS-MLST (var_scanner), a next generation sequencing (NGS) modification of the existing *C. albicans* MLST method. It analyzes DNA extracted from a pool of 100 colonies from a sample plus DNA from one colony and bioinformatically infers the genotypes present and their frequency. It does so at a sequencing cost, per patient sample, four times lower than that of conventional MLST.  For the directly typed single colonies its discriminating power is 0.998, comparable to that of conventional MLST. Its predictions of the ratio of different strains in a sample were fairly accurate - within 14±16% of the ratio between the numbers of colonies from two known strains combined to generate DNA pools for testing the method’s accuracy.  
+
+Details of our proof of principle experiment using 100+1 NGS-MLST can be found in the our recent publication XXXX.
 
 To cite var_scanner:
 XXXX *et al*:DIO:XXXXX  
 
 ## Requirements  
-This scripts are writen in pure python and should only require python 2.7 installed on the machine.  
+This scripts are writen in pure python and only require python 2.7 installed on the machine.  
 
 ## Installation  
 Create a base directory and clone the repo into.  
@@ -86,6 +88,7 @@ usage:
 
 The final output will be XXXXXX.  
 
-
+## Disclaimer
+This is free software and no waruntee what so ever is given.
 
         
