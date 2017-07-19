@@ -116,9 +116,7 @@ concat_order.sort()
 # calls). Modify the var nts using the same fn. These contain no primers.
 all_seq_calls = {}
 # THis is a fix!
-# with open('./final_results/final_table_python.csv') as f:
-#with open('./final_results/final_table_python.varfix.csv') as f:
-with open('./final_results/final_table_python.varfix.cln.csv') as f:
+with open('./final_results/final_table_python.csv') as f:
     csv_reader = csv.reader(f)
     csv_reader.next()  # dump the header
     for row in csv_reader:
@@ -134,7 +132,7 @@ with open('./final_results/final_table_python.varfix.cln.csv') as f:
 refseq = [remove_primers(gene, "".join(seq_dict[gene]))
           for gene in concat_order]
 refseq = write_seq("refMLST", "".join(refseq))
-seq_outfile = open('./final_sequences/sequenes.fa', 'w')
+seq_outfile = open('./final_sequences/sequences.fa', 'w')
 seq_outfile.write(refseq)
 
 
