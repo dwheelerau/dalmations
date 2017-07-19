@@ -101,8 +101,13 @@ example:
 4.  Run the `create_sequences.py` script to generate the derived MLST sequence for each sample.  
 The final sequence file is saved in `final_sequences/sequences.fa`.  
 
+```bash
+usage:
+    python create_sequences.py
+```
+
 
 ## Disclaimer
-This is free software and no warranty what so ever is given.
+This is free software and is provided with no warranty what-so-ever.
 
         
