@@ -23,7 +23,7 @@ mkdir genotype_data/
 
 ## File and folder/structure required  
 The following file/folder structure is required to run var_scanner. These should exist if you followed the installion instructions shown above:  
-
+<pre>
 BASE_DIR  -  samples/  # contains demultiplexed samples in directories named after the sample name
           -  final_genotpyes/  # data Xxxx
           -  final_sequences/ # data xxx
@@ -34,8 +34,8 @@ BASE_DIR  -  samples/  # contains demultiplexed samples in directories named aft
           -  run_aligner.py  # alignment script
           -  demultplex.py  # demultiplex script that saves sequence files in folders named after the sample names
           -  genotyper_iter.py  # genotyper script
-          
-
+       
+</pre>
 
 ## Running var_scanner (gui version)
 The GUI is under current development.  
