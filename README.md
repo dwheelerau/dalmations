@@ -19,9 +19,11 @@ git clone XXXXX
 ```
 
 # setup the directories
+```bash
 mkdir final_genotpyes/
 mkdir final_sequences/
 mkdir genotype_data/
+```
 
 ## File and folder/structure required  
 The following file/folder structure is required to run var_scanner. These should exist if you followed the installion instructions shown above:  
