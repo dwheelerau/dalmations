@@ -9,7 +9,8 @@ To cite var_scanner:
 XXXX *et al*:DIO:XXXXX  
 
 ## Requirements  
-This scripts are writen in pure python and only require python 2.7 installed on the machine.  
+This software has been tested on Ubuntu 14.04 and 16.06. This scripts are writen in pure python and only require python 2.7 installed on the machine. The software should also run on Mac and windows computers (using cygwin) as long as python 2.7 is installed (but this has not been tested).
+
 
 ## Installation  
 Create a base directory and clone the repo into.  
