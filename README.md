@@ -21,7 +21,7 @@ git clone XXXXX
 
 # setup the directories
 ```bash
-mkdir final_genotpyes/
+mkdir final_genotypes/
 mkdir final_sequences/
 mkdir genotype_data/
 ```
