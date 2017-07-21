@@ -15,30 +15,32 @@ This software has been tested on Ubuntu 14.04 and 16.06. This scripts are writen
 ## Installation  
 Create a base directory and clone the repo into.  
 ```bash
-mkdir var_scanner && cd var_scanner   
-git clone XXXXX   
+git clone git@github.com:dwheelerau/var_scanner.git
+cd var_scanner
 ```
 
 # setup the directories
 ```bash
 mkdir final_genotypes/
 mkdir final_sequences/
+mkdir final_results/
 mkdir genotype_data/
+mkdir samples/
 ```
 
 ## File and folder/structure required  
 The following file/folder structure is required to run var_scanner. These should exist if you followed the installion instructions shown above:  
 <pre>
 BASE_DIR/samples/  # contains demultiplexed samples in directories named after the sample name
-        /final_genotpyes/  # data Xxxx
-        /final_sequences/ # data xxx
-        /genotype_data/  # data xxx
+        /final_genotpyes/  # output dir
+        /final_sequences/ # output dir
+        /genotype_data/  # output dir
         /reference_mlst/  # reference MLST sequence used for alignment
-        /create_sequences.py  # script to create infered fasta files for alignment
-        /extract_seq_from_sheet.py  # script to extract sequences from data sheet
-        /run_aligner.py  # alignment script
-        /demultplex.py  # demultiplex script that saves sequence files in folders named after the sample names
-        /genotyper_iter.py  # genotyper script
+        create_sequences.py  # script to create infered fasta files for alignment
+        extract_seq_from_sheet.py  # script to extract sequences from data sheet
+        run_aligner.py  # alignment script
+        demultplex.py  # demultiplex script that saves sequence files in folders named after the sample names
+        genotyper_iter.py  # genotyper script
 </pre>
 
 ## Running var_scanner (gui version)
@@ -46,29 +48,29 @@ The GUI is under current development. Stay tuned..
 
 ## Running var_scanner (non-gui version)
 
-1. Either use the included demultplex.py script to demultplex your samples into directories named after the sample and place these in the BASE_DIR/sample_name/MLST_name.fastq directory. This would be an example for a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2).  
+1. Either use the included demultplex.py script to demultplex your samples into the `samples` directory, with the child directories named after the sample. For example, a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2), would have the following folder/file structure.  
 <pre>
-BASE_DIR/samples/1161NK_S75/AAT1apft.fastq  
-BASE_DIR/samples/1161NK_S75/AAT1aprt.fastq  
-BASE_DIR/samples/1161NK_S75/SYA1pft.fastq  
-BASE_DIR/samples/1161NK_S75/SYA1prt.fastq  
-BASE_DIR/samples/1161NK_S75/ACC1pft.fastq  
-BASE_DIR/samples/1161NK_S75/ACC1prt.fastq   
-BASE_DIR/samples/1161NK_S75/VPS13pft.fastq  
-BASE_DIR/samples/1161NK_S75/VPS13prt.fastq   
-BASE_DIR/samples/1161NK_S75/ADP1pft.fastq  
-BASE_DIR/samples/1161NK_S75/ADP1prt.fastq   
-BASE_DIR/samples/1161NK_S75/ZWF1bpft.fastq  
-BASE_DIR/samples/1161NK_S75/ZWF1bprt.fastq  
-BASE_DIR/samples/1161NK_S75/MPIpft.fastq    
-BASE_DIR/samples/1161NK_S75/MPIprt.fastq
+var_scanner/samples/1161NK_S75/AAT1apft.fastq  
+var_scanner/samples/1161NK_S75/AAT1aprt.fastq  
+var_scanner/samples/1161NK_S75/SYA1pft.fastq  
+var_scanner/samples/1161NK_S75/SYA1prt.fastq  
+var_scanner/samples/1161NK_S75/ACC1pft.fastq  
+var_scanner/samples/1161NK_S75/ACC1prt.fastq   
+var_scanner/samples/1161NK_S75/VPS13pft.fastq  
+var_scanner/samples/1161NK_S75/VPS13prt.fastq   
+var_scanner/samples/1161NK_S75/ADP1pft.fastq  
+var_scanner/samples/1161NK_S75/ADP1prt.fastq   
+var_scanner/samples/1161NK_S75/ZWF1bpft.fastq  
+var_scanner/samples/1161NK_S75/ZWF1bprt.fastq  
+var_scanner/samples/1161NK_S75/MPIpft.fastq    
+var_scanner/samples/1161NK_S75/MPIprt.fastq
 </pre>
 
 If sequences need demultiplexing then run the `demultiplex.py` using the following command:   
 
 ```bash
 usage:  
-    python demultplex.py 12-0039_S10_L001_R2_001.fastq \
+    python2 demultplex.py 12-0039_S10_L001_R2_001.fastq \
         forward_primers.txt reverse_primers.txt | tee -a log.txt
 ```
 
@@ -79,10 +81,10 @@ The `forward_primers.txt` and `reverse_primers.txt` files are included in this r
 
 ```bash
 usage:
-    python run_aligner.py <samples>
+    python2 run_aligner.py <samples>
     
 example:
-    python run_aligner.py samples
+    python2 run_aligner.py samples
 ```
 If the above script works correctly each of the sample folders should now contain files ending in `.aln`, `.csv`, `.data`. The final table of genotype frequencies should be found in the `final_results` directory in a file called `final_table_python.csv`.   
 
@@ -92,18 +94,32 @@ In the example below, SINGLE_COLONY_NAME and MIX_COLONY_NAME would correspond to
 
 ```bash
 usage:
-    python genotyper_iter.py <SINGLE_COLONY_NAME> <MIX_COLONY_NAME>  
+    python2 genotyper_iter.py <SINGLE_COLONY_NAME> <MIX_COLONY_NAME>  
 
 example:
-    python genotyper_iter.py FJ9-S_S16 P1-50-50_S35    
+    python2 genotyper_iter.py FJ9-S_S16 P1-50-50_S35    
 ```
+
+For convenience, if you have multiple pairs that you would like to process, place the pairs into a tab-separated text file, as follows:
+<pre>
+SINGLE_COLONY_NAME1     MIX_COLONY_NAME1
+SINGLE_COLONY_NAME2     MIX_COLONY_NAME2
+SINGLE_COLONY_NAME3     MIX_COLONY_NAME3
+</pre>
+
+Then process these automatically using the included shell script `run_genotyper.sh` using the following command:
+
+```bash
+./run_genotyper.sh pair.txt
+```
+Where `pair.txt` repressents the tab-separated file that you saved the pairs.
 
 4.  Run the `create_sequences.py` script to generate the derived MLST sequence for each sample.  
 The final sequence file is saved in `final_sequences/sequences.fa`.  
 
 ```bash
 usage:
-    python create_sequences.py
+    python2 create_sequences.py
 ```
 
 
