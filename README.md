@@ -77,16 +77,12 @@ usage:
 ```
 
 The `forward_primers.txt` and `reverse_primers.txt` files are included in this repo.  
-**TODO: check primers are in the repo**
 
-2.  Run the `run_aligner.py` script (assuming the samples to analyse are saved in the samples directory.  
+2.  Run the `run_aligner.py` script.  
 
 ```bash
 usage:
-    python2 run_aligner.py <samples>
-    
-example:
-    python2 run_aligner.py samples
+    python2 run_aligner.py samples/
 ```
 If the above script works correctly each of the sample folders should now contain files ending in `.aln`, `.csv`, `.data`. The final table of genotype frequencies should be found in the `final_results` directory in a file called `final_table_python.csv`.   
 
@@ -114,16 +110,26 @@ Then process these automatically using the included shell script `run_genotyper.
 ```bash
 ./run_genotyper.sh pair.txt
 ```
+
 Where `pair.txt` repressents the tab-separated file that you saved the pairs.
 
 4.  Run the `create_sequences.py` script to generate the derived MLST sequence for each sample.  
-The final sequence file is saved in `final_sequences/sequences.fa`.  
 
 ```bash
 usage:
     python2 create_sequences.py
 ```
+The final sequence file is saved in `final_sequences/sequences.fa`.  
 
+## Important output files  
+* `final_sequences/sequences.fa` which contains the dervied single and mix colony concatinated MLST sequences. These sequences can be compared to previous results using alignments or via phylogenetic trees.  
+
+* `final_results/final_table_python.csv` the allele calls for each sample  
+* `genotype_data/*.csv` comma separated file containing XXXXX (pairs)  
+* `final_genotypes/*.csv` comma separated file containing XXXXX (pairs)  
+* `samples/SAMPLENAME/SAMPLENAME.aln` XXXXX  
+* `samples/SAMPLENAME/SAMPLENAME.aln_data` XXXXX  
+* `samples/SAMPLENAME/SAMPLENAME.aln_info.csv` XXXXX  
 
 ## Disclaimer
 This is free software and is provided with no warranty what-so-ever.
