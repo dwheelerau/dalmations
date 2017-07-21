@@ -31,16 +31,18 @@ mkdir samples/
 ## File and folder/structure required  
 The following file/folder structure is required to run var_scanner. These should exist if you followed the installion instructions shown above:  
 <pre>
-BASE_DIR/samples/  # contains demultiplexed samples in directories named after the sample name
-        /final_genotpyes/  # output dir
-        /final_sequences/ # output dir
-        /genotype_data/  # output dir
-        /reference_mlst/  # reference MLST sequence used for alignment
-        create_sequences.py  # script to create infered fasta files for alignment
-        extract_seq_from_sheet.py  # script to extract sequences from data sheet
-        run_aligner.py  # alignment script
-        demultplex.py  # demultiplex script that saves sequence files in folders named after the sample names
-        genotyper_iter.py  # genotyper script
+BASE_DIR--samples--sample1_data
+                 --sample2_data
+                 --sample...
+        --final_genotpyes 
+        --final_sequences 
+        --genotype_data  
+        --reference_mlst--mlst.fa
+        --reate_sequences.py  
+        --extract_seq_from_sheet.py 
+        --run_aligner.py  
+        --demultplex.py  
+        --genotyper_iter.py 
 </pre>
 
 ## Running var_scanner (gui version)
