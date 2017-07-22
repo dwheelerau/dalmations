@@ -14,5 +14,6 @@ demultiplex/
 NZGL01799/
 samplesNZGL01799/
 testing/
+test_dataset/
 !reference_mlst/
 !reference_mlst/*
