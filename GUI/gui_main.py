@@ -51,7 +51,6 @@ class Block(QtGui.QWidget):
         self.initBlock()
 
     def initBlock(self):
-
         loadLab = QtGui.QLabel('Load')
         loadLab.setAlignment(Qt.AlignCenter)
         dataLab = QtGui.QLabel('Data')
