@@ -23,7 +23,6 @@ except AssertionError:
     print "usage: python2 genotyper_iter.py <SINGLE_COL_NAME> <MIX_COL_NAME>"
     exit(1)
 
-print 'processing - tmp : %s %s' % (sys.argv[1], sys.argv[2])
 index_key = {}
 counter = 0
 # contains genotype frequencies in binary format

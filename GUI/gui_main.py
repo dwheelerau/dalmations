@@ -86,10 +86,7 @@ class Block(QtGui.QWidget):
         self.setLayout(grid)
 
     def loadButtonClk(self):
-        # this does not work because it does not wait until the script
-        # is finished. I need to pop up a dialog saying 'running'
-        # and paus the workthrough until the step1 script is finsihed
-        # then pop up another dialog etc
+        # I need to pop up a dialog saying 'running'
         sdir = QtGui.QFileDialog.getExistingDirectory(
             self, "Samples directory")
         # get pairs file for processing step 2
@@ -102,17 +99,22 @@ class Block(QtGui.QWidget):
         # this part runs step 1
         args_step1 = ['../run_aligner.py', sdir]
         print 'running step1'
-        Popen(args_step1)
+        p = Popen(args_step1)
+        p.wait()
         print 'running step2'
         # this step runs before run_aligner has a chance to finish
         for pair in targets:
             args_step2 = ['../genotyper_iter.py', pair[0], pair[1]]
-            Popen(args_step2)
+            p = Popen(args_step2)
+            p.wait()
         print 'done step2'
 
     def dataButtonClk(self):
         # subprocess.Popen("./test.py", arg)
-        Popen("./test.py")
+        print 'starting script'
+        p = Popen('./test.py')
+        p.wait()
+        print 'finished function this should be last'
 
     def logButtonClk(self):
         # subprocess.Popen("./test.py", arg)
