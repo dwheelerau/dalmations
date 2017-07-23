@@ -47,35 +47,75 @@ class Block(QtGui.QWidget):
 
     def __init__(self, parent):
         super(Block, self).__init__(parent)
+        # file paths
+        self.sdir = None
+        self.fPairPath = None
 
         self.initBlock()
 
     def initBlock(self):
-        loadLab = QtGui.QLabel('Load')
+        # labels
+        loadLab = QtGui.QLabel('<b>1. </b>Please provide a folder of samples')
         loadLab.setAlignment(Qt.AlignCenter)
-        dataLab = QtGui.QLabel('Data')
+        alnLab = QtGui.QLabel('<b>2. </b>Run alignment')
+        alnLab.setAlignment(Qt.AlignCenter)
+        pairLab = QtGui.QLabel('<b>3. </b>Please provide a file of sample pairs')
+        pairLab.setAlignment(Qt.AlignCenter)
+        seqLab = QtGui.QLabel('<b>4. </b>Create sequences')
+        seqLab.setAlignment(Qt.AlignCenter)
+        dataLab = QtGui.QLabel('<b>5. </b>Data')
         dataLab.setAlignment(Qt.AlignCenter)
-        logLab = QtGui.QLabel('Log')
+        logLab = QtGui.QLabel('<b>6. </b>Log')
         logLab.setAlignment(Qt.AlignCenter)
 
+        # layout
         grid = QtGui.QGridLayout()
         # some options for spacing of elements
         # grid.setSpacing(10)
         # grid.setColumnStretch(0,1)
 
+        # add objects
         grid.addWidget(loadLab, 0, 0)
-        loadButton = QtGui.QPushButton('Load')
+        loadButton = QtGui.QPushButton('Samples directory')
         grid.addWidget(loadButton, 1, 0)
         loadButton.clicked.connect(self.loadButtonClk)
 
-        grid.addWidget(dataLab, 0, 1)
-        dataButton = QtGui.QPushButton('Data')
-        grid.addWidget(dataButton, 1, 1)
+        self.sampleFileLab = QtGui.QLabel('')
+        grid.addWidget(self.sampleFileLab, 2, 0)
+
+        grid.addWidget(alnLab, 3, 0)
+        loadGoButton = QtGui.QPushButton('Run alignment!')
+        grid.addWidget(loadGoButton, 4, 0)
+        loadGoButton.clicked.connect(self.loadGoButtonClk)
+        self.alignLab = QtGui.QLabel('')
+        grid.addWidget(self.alignLab, 5, 0)
+
+        grid.addWidget(pairLab, 0, 1)
+        pairButton = QtGui.QPushButton('Pairs file')
+        grid.addWidget(pairButton, 1, 1)
+        pairButton.clicked.connect(self.pairButtonClk)
+        self.pairFileLab = QtGui.QLabel('')
+        self.pairProgLab = QtGui.QLabel('')
+        grid.addWidget(self.pairFileLab, 2, 1)
+        grid.addWidget(self.pairProgLab, 3, 1)
+
+
+        # col 2
+        grid.addWidget(seqLab, 0, 2)
+        seqButton = QtGui.QPushButton('Make sequences')
+        grid.addWidget(seqButton, 1, 2)
+        seqButton.clicked.connect(self.seqButtonClk)
+        self.seqProgLab = QtGui.QLabel('')
+        grid.addWidget(self.seqProgLab, 2, 2)
+
+        grid.addWidget(dataLab, 0, 3)
+        dataButton = QtGui.QPushButton('View data')
+        grid.addWidget(dataButton, 1, 3)
         dataButton.clicked.connect(self.dataButtonClk)
 
-        grid.addWidget(logLab, 0, 2)
+        grid.addWidget(logLab, 2, 3)
         logButton = QtGui.QPushButton('Log')
-        grid.addWidget(logButton, 1, 2)
+        grid.addWidget(logButton, 3, 3)
         logButton.clicked.connect(self.logButtonClk)
 
         # this stretches over 5 rows
@@ -86,27 +126,49 @@ class Block(QtGui.QWidget):
 
     def loadButtonClk(self):
         # I need to pop up a dialog saying 'running'
-        sdir = QtGui.QFileDialog.getExistingDirectory(
+        self.sdir = QtGui.QFileDialog.getExistingDirectory(
             self, "Samples directory")
-        # get pairs file for processing step 2
-        fPairPath = QtGui.QFileDialog.getOpenFileName(self, "Pairs file")
-        with open(fPairPath) as f:
+        self.sampleFileLab.setText(
+            'Samples dir: ' + os.path.basename(str(self.sdir)))
+
+    def loadGoButtonClk(self):
+        # this part runs step 1
+        if self.sdir:
+            self.alignLab.setText('Running...')
+            args_step1 = ['../run_aligner.py', self.sdir]
+            print 'running step1'
+            p = Popen(args_step1)
+            # this waits until process is finished
+            p.wait()
+            self.alignLab.setText('Done with alignment!')
+        else:
+            print "need to handle an error here"
+            sys.exit(1)
+
+    def pairButtonClk(self):
+        # need to handle this error with a message saying please select
+        # a valid file to continue.
+        # IOError: [Errno 2] No such file or directory: 
+        self.fPairPath = QtGui.QFileDialog.getOpenFileName(self, "Pairs file")
+        self.pairFileLab.setText(
+            'Pairs file: ' + os.path.basename(str(self.fPairPath)))
+        with open(self.fPairPath) as f:
             targets = []
             for line in f:
                 bits = line.strip().split('\t')
                 targets.append((bits[0], bits[1]))
-        # this part runs step 1
-        args_step1 = ['../run_aligner.py', sdir]
-        print 'running step1'
-        p = Popen(args_step1)
-        p.wait()
         print 'running step2'
-        # this step runs before run_aligner has a chance to finish
         for pair in targets:
             args_step2 = ['../genotyper_iter.py', pair[0], pair[1]]
             p = Popen(args_step2)
             p.wait()
-        print 'done step2'
+        self.pairProgLab.setText('Done processing pairs!')
+
+    def seqButtonClk(self):
+        args_step3 = ['../create_sequences.py']
+        p = Popen(args_step3)
+        p.wait()
+        self.seqProgLab.setText('Sequences saved in final_sequences directory')
 
     def dataButtonClk(self):
         # subprocess.Popen("./test.py", arg)

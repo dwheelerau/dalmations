@@ -89,6 +89,10 @@ def remove_primers(gene, seq):
     seq = seq[cords[0]: cords[1] - 1]
     return seq
 
+# make sure we are in the base directory in case run from GUI
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 seq_dict = {}
 with open('./reference_mlst/mlst.fa') as f:
