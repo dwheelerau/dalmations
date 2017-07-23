@@ -59,22 +59,12 @@ class Block(QtGui.QWidget):
         logLab = QtGui.QLabel('Log')
         logLab.setAlignment(Qt.AlignCenter)
 
-        titleEdit = QtGui.QLineEdit()
-        authorEdit = QtGui.QLineEdit()
-        reviewEdit = QtGui.QTextEdit()
-
         grid = QtGui.QGridLayout()
-        #grid.setSpacing(10)
-        #grid.setColumnStretch(0,1)
-
-        #grid.addWidget(demultLab, 0, 0)
-        # grid.addWidget(titleEdit, 1, 1)
-        #demultButton = QtGui.QPushButton('De-multiplex')
-        #grid.addWidget(demultButton, 1, 0)
-        #demultButton.clicked.connect(self.demultButtonClk)
+        # some options for spacing of elements
+        # grid.setSpacing(10)
+        # grid.setColumnStretch(0,1)
 
         grid.addWidget(loadLab, 0, 0)
-        #grid.addWidget(authorEdit, 2, 1)
         loadButton = QtGui.QPushButton('Load')
         grid.addWidget(loadButton, 1, 0)
         loadButton.clicked.connect(self.loadButtonClk)
@@ -89,19 +79,36 @@ class Block(QtGui.QWidget):
         grid.addWidget(logButton, 1, 2)
         logButton.clicked.connect(self.logButtonClk)
 
-        # this stredtches over 5 rows
-        #grid.addWidget(review, 3, 0)
-        #grid.addWidget(reviewEdit, 3, 1, 5, 1)
+        # this stretches over 5 rows
+        # grid.addWidget(review, 3, 0)
+        # grid.addWidget(reviewEdit, 3, 1, 5, 1)
 
         self.setLayout(grid)
 
     def loadButtonClk(self):
-        # subprocess.Popen("./test.py", arg)
-        ddir = QtGui.QFileDialog.getExistingDirectory(self, "Get Dir PAth")
-        # ddir is a QString containing the path to the directory you
-        # selected
-        args = ['./test.py', ddir]
-        Popen(args)
+        # this does not work because it does not wait until the script
+        # is finished. I need to pop up a dialog saying 'running'
+        # and paus the workthrough until the step1 script is finsihed
+        # then pop up another dialog etc
+        sdir = QtGui.QFileDialog.getExistingDirectory(
+            self, "Samples directory")
+        # get pairs file for processing step 2
+        fPairPath = QtGui.QFileDialog.getOpenFileName(self, "Pairs file")
+        with open(fPairPath) as f:
+            targets = []
+            for line in f:
+                bits = line.strip().split('\t')
+                targets.append((bits[0], bits[1]))
+        # this part runs step 1
+        args_step1 = ['../run_aligner.py', sdir]
+        print 'running step1'
+        Popen(args_step1)
+        print 'running step2'
+        # this step runs before run_aligner has a chance to finish
+        for pair in targets:
+            args_step2 = ['../genotyper_iter.py', pair[0], pair[1]]
+            Popen(args_step2)
+        print 'done step2'
 
     def dataButtonClk(self):
         # subprocess.Popen("./test.py", arg)

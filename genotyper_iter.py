@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import csv
 import sys
+import os
 
 # this is the index, each row repressents a different genotypic outcome
 # I run each outcome against the freq of A going from 0 to 100.
@@ -11,12 +12,18 @@ import sys
 # 1. hock this up to a GUI that allows strain selections
 # 2. ATM only non-ref alleles in the mix are explored
 
+# make sure we are in the base directory in case run from GUI
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 try:
     assert len(sys.argv) == 3
 except AssertionError:
     print "usage: python2 genotyper_iter.py <SINGLE_COL_NAME> <MIX_COL_NAME>"
     exit(1)
 
+print 'processing - tmp : %s %s' % (sys.argv[1], sys.argv[2])
 index_key = {}
 counter = 0
 # contains genotype frequencies in binary format
@@ -109,10 +116,7 @@ print MIX_STRAIN
 data_dict = {}
 # this is the orginal file and default produce by aln scrip but
 # it had some errors 
-# datafile = './final_results/final_table_python.csv'
-# this one is fixed
-# datafile = './final_results/final_table_python.varfix.csv'
-datafile = './final_results/final_table_python.varfix.cln.csv'
+datafile = './final_results/final_table_python.csv'
 with open(datafile) as f:
     csv_reader = csv.reader(f)
     for row in csv_reader:

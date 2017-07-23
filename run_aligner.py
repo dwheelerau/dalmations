@@ -96,6 +96,13 @@ def filter_data(data):
         data.append(result)
     return data
 
+# need to change to the current directory in case of running GUI
+# https://stackoverflow.com/questions/1432924/python-change-the-
+# scripts-working-directory-to-the-scripts-own-directory
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 # colect reference sequences in a dictionary
 ref_dict = {}
