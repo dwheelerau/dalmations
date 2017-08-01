@@ -139,9 +139,11 @@ refseq = write_seq("refMLST", "".join(refseq))
 seq_outfile = open('./final_sequences/sequences.fa', 'w')
 seq_outfile.write(refseq)
 
+# a place to store sequences that have already been made
+single_seq_used = []
 
 for fil in sample_files:
-    print fil
+    print(fil)
     result_dict = {}
     target_csv = "%s/%s" % (genotype_dir, fil)
     with open(target_csv) as f:
@@ -168,9 +170,11 @@ for fil in sample_files:
     mix_sample_id = "%s:IND:%s:%.1f" % (sample_name, percent_mix,
                                         confidence_score)
     # make the concatinated MLSTs single col
-    singleseq = all_seq_calls[single_sample_name]
-    singleseq = write_seq(single_sample_id, "".join(singleseq))
-    seq_outfile.write(singleseq)
+    if sample_name not in single_seq_used:
+        singleseq = all_seq_calls[single_sample_name]
+        singleseq = write_seq(single_sample_id, "".join(singleseq))
+        seq_outfile.write(singleseq)
+        single_seq_used.append(sample_name)
     # make the concatinated MLSTs mix col
     mixseq = [remove_primers(gene, "".join(seq_dict_mix[gene]))
               for gene in concat_order]

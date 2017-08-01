@@ -107,21 +107,22 @@ class Block(QtGui.QWidget):
         self.seqProgLab = QtGui.QLabel('')
         grid.addWidget(self.seqProgLab, 2, 2)
 
-        grid.addWidget(dataLab, 0, 3)
-        dataButton = QtGui.QPushButton('View data')
-        grid.addWidget(dataButton, 1, 3)
-        dataButton.clicked.connect(self.dataButtonClk)
+        # grid.addWidget(dataLab, 0, 3)
+        # dataButton = QtGui.QPushButton('View data')
+        # grid.addWidget(dataButton, 1, 3)
+        # dataButton.clicked.connect(self.dataButtonClk)
 
-        grid.addWidget(logLab, 2, 3)
-        logButton = QtGui.QPushButton('Log')
-        grid.addWidget(logButton, 3, 3)
-        logButton.clicked.connect(self.logButtonClk)
+        # grid.addWidget(logLab, 2, 3)
+        # logButton = QtGui.QPushButton('Log')
+        # grid.addWidget(logButton, 3, 3)
+        # logButton.clicked.connect(self.logButtonClk)
 
         # this stretches over 5 rows
         # grid.addWidget(review, 3, 0)
         # grid.addWidget(reviewEdit, 3, 1, 5, 1)
 
         self.setLayout(grid)
+        self.cwd = os.getcwd()
 
     def loadButtonClk(self):
         # I need to pop up a dialog saying 'running'
@@ -175,16 +176,16 @@ class Block(QtGui.QWidget):
         p.wait()
         self.seqProgLab.setText('Sequences saved in final_sequences directory')
 
-    def dataButtonClk(self):
+    # def dataButtonClk(self):
         # subprocess.Popen("./test.py", arg)
-        print('starting script')
-        p = Popen(os.path.join(sys.path[0], 'test.py'))
-        p.wait()
-        print('finished function this should be last')
+        # print('starting script')
+        # p = Popen(os.path.join(sys.path[0], 'test.py'))
+        # p.wait()
+        # print('finished function this should be last')
 
-    def logButtonClk(self):
+    # def logButtonClk(self):
         # subprocess.Popen("./test.py", arg)
-        Popen(os.path.join(sys.path[0], 'test.py'))
+        # Popen(os.path.join(sys.path[0], 'test.py'))
 
 
 def main():
