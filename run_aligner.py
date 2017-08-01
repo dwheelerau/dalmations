@@ -37,7 +37,7 @@ def rev_comp(seq_string):
                 try:
                     assert letter == "\n"
                 except AssertionError:
-                    print "Warning, non-normal nucleotide found: %s" % letter
+                    print('Warning, non-normal nucleotide found: %s' % letter)
                 rc.append(letter)
     assert len(rc) == len(seq_string)
     return "".join(rc)
@@ -128,16 +128,16 @@ target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
 try:
     sample_dir = sys.argv[1]
 except IndexError:
-    print 'Missing samples directory that contains the sequence files for'
-    print ' your samples?'
-    print 'usage: python2 run_aligner.py <sample_dir>'
+    print('Missing samples directory that contains the sequence files for')
+    print(' your samples?')
+    print('usage: python2 run_aligner.py <sample_dir>')
     sys.exit(1)
 
 try:
     sample_dirs = next(os.walk(sample_dir))[1]
 except StopIteration:
-    print 'Is the samples directory %s empty?' % sample_dir
-    print 'usage: python2 run2.py <sample_dir>'
+    print('Is the samples directory %s empty?' % sample_dir)
+    print('usage: python2 run2.py <sample_dir>')
     sys.exit(1)
 
 # add header overwrite and write header
@@ -179,15 +179,14 @@ primer_dict = {'AAT1a': (21, 370),
 for sample in sample_dirs:
     print "Processing %s" % sample
     for pair in target_files:
-        outdir = "%s/%s/" % (sample_dir, sample)  # sample/DIR/
         # do text based alnment
         locus = pair[0].split('.fastq')[0][:-3]
-        targetf = outdir + pair[0]
+        targetf = os.path.join(sample_dir, sample, pair[0])
         print(targetf)
         # get gene name so can slice seqs for proper aln
         fseq_length, rseq_length = aln_slicer_dict[locus]
         seqf = [sf[:fseq_length] + "\n" for sf in read_fastq(targetf)]
-        targetr = outdir + pair[1]
+        targetr = os.path.join(sample_dir, sample, pair[1])
         print(targetr)
         seqr = [r[:rseq_length] + "\n" for r in read_fastq(targetr)]
         seqrc = [rev_comp(read) for read in seqr]

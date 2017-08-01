@@ -134,10 +134,11 @@ class Block(QtGui.QWidget):
         # this part runs step 1
         if self.sdir:
             self.alignLab.setText('Running...')
-            args_step1 = [os.path.join(sys.path[0],
-                                       'run_aligner.py'), self.sdir]
+            args_step1 = ' '.join([os.path.join(sys.path[0],
+                                                'run_aligner.py'),
+                                   str(self.sdir)])
             print('running step1')
-            p = Popen(args_step1)
+            p = Popen(args_step1, shell=True)
             # this waits until process is finished
             p.wait()
             self.alignLab.setText('Done with alignment!')
@@ -152,23 +153,25 @@ class Block(QtGui.QWidget):
         self.fPairPath = QtGui.QFileDialog.getOpenFileName(self, "Pairs file")
         self.pairFileLab.setText(
             'Pairs file: ' + os.path.basename(str(self.fPairPath)))
-        with open(self.fPairPath) as f:
+        with open(str(self.fPairPath)) as f:
             targets = []
             for line in f:
                 bits = line.strip().split('\t')
                 targets.append((bits[0], bits[1]))
         print('running step2')
         for pair in targets:
-            args_step2 = [os.path.join(sys.path[0], 'genotyper_iter.py'),
-                          pair[0], pair[1]]
+            args_step2 = ' '.join([os.path.join(sys.path[0],
+                                                'genotyper_iter.py'),
+                                   pair[0], pair[1]])
 
-            p = Popen(args_step2)
+            p = Popen(args_step2, shell=True)
             p.wait()
         self.pairProgLab.setText('Done processing pairs!')
 
     def seqButtonClk(self):
-        args_step3 = [os.path.join(sys.path[0], 'create_sequences.py')]
-        p = Popen(args_step3)
+        args_step3 = ' '.join([os.path.join(sys.path[0],
+                                            'create_sequences.py')])
+        p = Popen(args_step3, shell=True)
         p.wait()
         self.seqProgLab.setText('Sequences saved in final_sequences directory')
 

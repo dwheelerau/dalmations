@@ -20,7 +20,7 @@ os.chdir(dname)
 try:
     assert len(sys.argv) == 3
 except AssertionError:
-    print "usage: python2 genotyper_iter.py <SINGLE_COL_NAME> <MIX_COL_NAME>"
+    print('usage: python2 genotyper_iter.py <SINGLE_COL_NAME> <MIX_COL_NAME>')
     exit(1)
 
 index_key = {}
@@ -110,11 +110,12 @@ SINGLE_STRAIN = sys.argv[1]
 # SINGLE_STRAIN = "FJ9-S_S16"
 MIX_STRAIN = sys.argv[2]
 # MIX_STRAIN = "P1-50-50_S35"
-print SINGLE_STRAIN
-print MIX_STRAIN
+print(SINGLE_STRAIN)
+print(MIX_STRAIN)
 data_dict = {}
+
 # this is the orginal file and default produce by aln scrip but
-# it had some errors 
+# it had some errors
 datafile = './final_results/final_table_python.csv'
 with open(datafile) as f:
     csv_reader = csv.reader(f)
@@ -137,7 +138,7 @@ def genotyper(single_call, mix_call, geneotypes):
     try:
         assert len(mix_call) == 3
     except AssertionError:
-        print mix_call
+        print(mix_call)
     if single_call.find("/") > 0:
         call1, call2 = single_call.split("/")
     else:
@@ -181,7 +182,7 @@ for percent in range(100):
     try:
         genes = sorted(data_dict[MIX_STRAIN].keys())
     except KeyError:
-        print "can't find %s in %s" % (MIX_STRAIN, datafile)
+        print("can't find %s in %s" % (MIX_STRAIN, datafile))
         exit(1)
     for gene in genes:
         gene_log = []
@@ -198,7 +199,7 @@ for percent in range(100):
                 single_colony_call = data_dict[
                     SINGLE_STRAIN][gene][pos][0].split('/')
             except KeyError:
-                print "can't find %s in %s" % (SINGLE_STRAIN, datafile)
+                print("can't find %s in %s" % (SINGLE_STRAIN, datafile))
                 exit(1)
             mixed_colony_data = [
                 float(num) for num in data_dict[MIX_STRAIN][gene][pos][1]]
