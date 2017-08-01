@@ -59,7 +59,8 @@ class Block(QtGui.QWidget):
         loadLab.setAlignment(Qt.AlignCenter)
         alnLab = QtGui.QLabel('<b>2. </b>Run alignment')
         alnLab.setAlignment(Qt.AlignCenter)
-        pairLab = QtGui.QLabel('<b>3. </b>Please provide a file of sample pairs')
+        pairLab = QtGui.QLabel(
+            '<b>3. </b>Please provide a file of sample pairs')
         pairLab.setAlignment(Qt.AlignCenter)
         seqLab = QtGui.QLabel('<b>4. </b>Create sequences')
         seqLab.setAlignment(Qt.AlignCenter)
@@ -99,8 +100,6 @@ class Block(QtGui.QWidget):
         grid.addWidget(self.pairFileLab, 2, 1)
         grid.addWidget(self.pairProgLab, 3, 1)
 
-
-        # col 2
         grid.addWidget(seqLab, 0, 2)
         seqButton = QtGui.QPushButton('Make sequences')
         grid.addWidget(seqButton, 1, 2)
@@ -135,20 +134,21 @@ class Block(QtGui.QWidget):
         # this part runs step 1
         if self.sdir:
             self.alignLab.setText('Running...')
-            args_step1 = ['../run_aligner.py', self.sdir]
-            print 'running step1'
+            args_step1 = [os.path.join(sys.path[0],
+                                       'run_aligner.py'), self.sdir]
+            print('running step1')
             p = Popen(args_step1)
             # this waits until process is finished
             p.wait()
             self.alignLab.setText('Done with alignment!')
         else:
-            print "need to handle an error here"
+            print("need to handle an error here")
             sys.exit(1)
 
     def pairButtonClk(self):
         # need to handle this error with a message saying please select
         # a valid file to continue.
-        # IOError: [Errno 2] No such file or directory: 
+        # IOError: [Errno 2] No such file or directory:
         self.fPairPath = QtGui.QFileDialog.getOpenFileName(self, "Pairs file")
         self.pairFileLab.setText(
             'Pairs file: ' + os.path.basename(str(self.fPairPath)))
@@ -157,29 +157,31 @@ class Block(QtGui.QWidget):
             for line in f:
                 bits = line.strip().split('\t')
                 targets.append((bits[0], bits[1]))
-        print 'running step2'
+        print('running step2')
         for pair in targets:
-            args_step2 = ['../genotyper_iter.py', pair[0], pair[1]]
+            args_step2 = [os.path.join(sys.path[0], 'genotyper_iter.py'),
+                          pair[0], pair[1]]
+
             p = Popen(args_step2)
             p.wait()
         self.pairProgLab.setText('Done processing pairs!')
 
     def seqButtonClk(self):
-        args_step3 = ['../create_sequences.py']
+        args_step3 = [os.path.join(sys.path[0], 'create_sequences.py')]
         p = Popen(args_step3)
         p.wait()
         self.seqProgLab.setText('Sequences saved in final_sequences directory')
 
     def dataButtonClk(self):
         # subprocess.Popen("./test.py", arg)
-        print 'starting script'
-        p = Popen('./test.py')
+        print('starting script')
+        p = Popen(os.path.join(sys.path[0], 'test.py'))
         p.wait()
-        print 'finished function this should be last'
+        print('finished function this should be last')
 
     def logButtonClk(self):
         # subprocess.Popen("./test.py", arg)
-        Popen("./test.py")
+        Popen(os.path.join(sys.path[0], 'test.py'))
 
 
 def main():

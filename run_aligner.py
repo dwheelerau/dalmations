@@ -107,7 +107,7 @@ os.chdir(dname)
 # colect reference sequences in a dictionary
 ref_dict = {}
 gene = ""
-with open('./reference_mlst/mlst.fa') as f:
+with open(os.path.join(sys.path[0], 'reference_mlst', 'mlst.fa')) as f:
     data = f.read().strip().split('\n')
     for line in data:
         if line[0] == ">":
@@ -141,7 +141,8 @@ except StopIteration:
     sys.exit(1)
 
 # add header overwrite and write header
-outfile = open('final_results/final_table_python.csv', 'w')
+outfile = open(
+    os.path.join(sys.path[0], 'final_results', 'final_table_python.csv'), 'w')
 csv_writer = csv.writer(outfile)
 csv_writer.writerow(['Sample', 'loci', 'pos', 'ref',
                      'read', 'depth', 'A_freq', 'C_freq',
@@ -182,20 +183,22 @@ for sample in sample_dirs:
         # do text based alnment
         locus = pair[0].split('.fastq')[0][:-3]
         targetf = outdir + pair[0]
+        print(targetf)
         # get gene name so can slice seqs for proper aln
         fseq_length, rseq_length = aln_slicer_dict[locus]
         seqf = [sf[:fseq_length] + "\n" for sf in read_fastq(targetf)]
         targetr = outdir + pair[1]
+        print(targetr)
         seqr = [r[:rseq_length] + "\n" for r in read_fastq(targetr)]
         seqrc = [rev_comp(read) for read in seqr]
         alnf = targetf.replace("fastq", "aln")
-        with open(alnf, "w") as f:
+        with open(os.path.join(sys.argv[0], alnf), "w") as f:
             for seq in seqf:
                 f.write(seq)
         # I need to slice the alignment before doing the RC
         # otherwise they are all different lenghts
         alnr = targetr.replace("fastq", "aln")
-        with open(alnr, "w") as f:
+        with open(os.path.join(sys.path[0], alnr), "w") as f:
             for seq in seqrc:
                 f.write(seq)
 
@@ -204,13 +207,13 @@ for sample in sample_dirs:
                     for part in zip(seqf, seqrc)
                     if len(part[0][:-1] + part[1][:-1]) == reflen_dict[locus]]
         aln_data = alnf.replace("pft.aln", ".aln_data")
-        with open(aln_data, 'w') as f:
+        with open(os.path.join(sys.path[0], aln_data), 'w') as f:
             for seq in aln_seqs:
                 f.write(seq)
         # transpose cols into lists ['aaaaa','tttttt','ggggggg']
         aln_cols = map(list, zip(*aln_seqs))[:-1]
         aln_info = alnf.replace("pft.aln", ".aln_info.csv")
-        with open(aln_info, "w") as f:
+        with open(os.path.join(sys.path[0], aln_info), "w") as f:
             aln_info_writer = csv.writer(f)
             pos_counter = 1
             primers = primer_dict[locus]
