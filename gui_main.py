@@ -16,7 +16,7 @@ class Outer(QtGui.QMainWindow):
 
     def initUI(self):
 
-        exitAction = QtGui.QAction(QtGui.QIcon('web.png'), '&Exit', self)
+        exitAction = QtGui.QAction(QtGui.QIcon('logo.png'), '&Exit', self)
         exitAction.setShortcut('Ctrl+Q')
         exitAction.setStatusTip('Exit application')
         exitAction.triggered.connect(QtGui.qApp.quit)
@@ -191,6 +191,8 @@ class Block(QtGui.QWidget):
 def main():
 
     app = QtGui.QApplication(sys.argv)
+    app.setWindowIcon(QtGui.QIcon('logo.png'))
+
     ex = Outer()
     sys.exit(app.exec_())
 
