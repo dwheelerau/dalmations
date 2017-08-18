@@ -95,10 +95,10 @@ def check_genotype(calls):
     calls_int = [int(c) for c in calls]
     calls_int.sort(reverse=True)
     # this should be >85 if 100/0
-    if calls_int[0] >= 93:
+    if calls_int[0] >= 95:
         return 0
     # this should be >45 if 55/45 or 50/50 ie second value is smallest
-    elif calls_int[1] >= 43:
+    elif calls_int[1] >= 45:
         return 0
     else:
         print(calls_int)
