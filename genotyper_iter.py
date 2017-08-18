@@ -110,8 +110,8 @@ SINGLE_STRAIN = sys.argv[1]
 # SINGLE_STRAIN = "FJ9-S_S16"
 MIX_STRAIN = sys.argv[2]
 # MIX_STRAIN = "P1-50-50_S35"
-print(SINGLE_STRAIN)
-print(MIX_STRAIN)
+print("Single colony sample: %s" % SINGLE_STRAIN)
+print("Mix sample: %s" % MIX_STRAIN)
 data_dict = {}
 
 # this is the orginal file and default produce by aln scrip but
@@ -167,8 +167,9 @@ def calculate_diff(possible_genotypes, allele1_obs, allele2_obs, per):
 nucleotides = ["A", "C", "G", "T"]
 results = []
 
-percent_log = {}
 
+percent_log = {}
+sc_errors= []
 for percent in range(100):
     percent = 100 - percent
     pass5 = 0
@@ -194,10 +195,30 @@ for percent in range(100):
 
         for pos in non_ref_var:  # data_dict[MIX_STRAIN][gene]
             usefull_allele_counter += 1
+            sc_flag = 0  # this tests the continue
             # set Single colony ID
             try:
                 single_colony_call = data_dict[
                     SINGLE_STRAIN][gene][pos][0].split('/')
+                # could put logic here to skip bad single colony calls
+                single_colony_data = [
+                    float(num) for num in data_dict[SINGLE_STRAIN][gene][pos][1]]
+                single_colony_data.sort(reverse=True)
+                # the logic below will skip mix strain estimation if the SC is
+                # unreliable ie not a normal diploid
+                if single_colony_data[0] >= 95:
+                    pass  # this is a normal haploid SC
+                elif single_colony_data[1] >= 45:
+                    pass  # this is a normal diploid SC
+                else:
+                    sc_flag = 1
+                    sc_errors.append("%s\t%s\t%s\t%s\n" % (
+                        SINGLE_STRAIN,
+                        gene, pos,
+                        data_dict[
+                            SINGLE_STRAIN][gene][pos]))
+                    print('Warning! Strange SC genotype found, check Single_colony_errors.txt for more details')
+                    continue  # this is a dodgy call, skip rest of loop
             except KeyError:
                 print("can't find %s in %s" % (SINGLE_STRAIN, datafile))
                 exit(1)
@@ -279,6 +300,7 @@ for percent in range(100):
                         smallest_difference[0],
                         strain2_genotype]
             gene_log.append(jan_data)
+            assert sc_flag == 0
 
         mlst_log.append(gene_log)
 
@@ -356,3 +378,10 @@ for result in results:
                 script_writer.writerow(gene)
 jan_output.close()
 script_output_h.close()
+# these will be strange SC genotype calls that are skipped
+error_file = open('Single_colony_errors.txt', 'w')
+if sc_errors:
+    sc_errors = list(set(sc_errors))
+    for e in sc_errors:
+        error_file.write(e)
+error_file.close()

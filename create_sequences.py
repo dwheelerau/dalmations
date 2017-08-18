@@ -101,7 +101,6 @@ def check_genotype(calls):
     elif calls_int[1] >= 45:
         return 0
     else:
-        print(calls_int)
         return 1
 
 # make sure we are in the base directory in case run from GUI
@@ -165,7 +164,6 @@ seq_outfile.write(refseq)
 single_seq_used = []
 
 for fil in sample_files:
-    print(fil)
     result_dict = {}
     target_csv = "%s/%s" % (genotype_dir, fil)
     with open(target_csv) as f:
