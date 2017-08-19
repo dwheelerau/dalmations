@@ -7,7 +7,6 @@ import csv
 # use genotpyes to extract sequence files
 ##
 # this is to remove primer sequences
-# cords = refcord_dict['AAT1a']
 # seq[cords[0]: cords[1]-1] # note minus one
 # data dictionaries
 IUPAC_dict = {'A': 'A',
