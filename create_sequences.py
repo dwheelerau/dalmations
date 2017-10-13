@@ -217,10 +217,11 @@ for fil in sample_files:
     # sample_name = single_sample_name.split('-')[0]
     # just use the first part
     sample_name = single_sample_name  # tmp fix
-    # confidence_score = make_confidence_score(scores)
+    confidence_score = make_confidence_score(scores)
     # single_sample_id = "%s:SC:%s:%.1f" % (sample_name, percent_single)  #,
     #                                      # confidence_score)
-    mix_sample_id = "%s:IND:%s" % (sample_name, percent_mix)
+    # Jan wanted the mix name to be used
+    mix_sample_id = "%s:IND:%s:%s" % (mix_sample_name, percent_mix, confidence_score)
     # single_sample_id = "%s:SC:%s:%.1f" % (sample_name, percent_single)  #,
                                         # confidence_score)
     single_sample_id = "%s:SC:%s" % (sample_name, percent_single)
