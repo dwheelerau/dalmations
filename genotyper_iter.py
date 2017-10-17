@@ -2,6 +2,7 @@
 import csv
 import sys
 import os
+import time
 
 # this is the index, each row repressents a different genotypic outcome
 # I run each outcome against the freq of A going from 0 to 100.
@@ -188,7 +189,7 @@ for percent in range(100):
     for gene in genes:
         gene_log = []
 
-        # start loop through each gene
+        # start loop through each gene, only looks at heterozg in mix!
         non_ref_var = [ntpos for ntpos in data_dict[MIX_STRAIN][gene]
                        if data_dict[MIX_STRAIN][gene][ntpos][0].find('/') > 0]
         non_ref_var.sort(key=int)
@@ -218,7 +219,8 @@ for percent in range(100):
                         data_dict[
                             SINGLE_STRAIN][gene][pos]))
                     print('Warning! Strange SC genotype found, check Single_colony_errors.txt for more details')
-                    continue  # this is a dodgy call, skip rest of loop
+                    # I could comment this out so it no longer skips the call
+                    #continue  # this is a dodgy call, skip rest of loop
             except KeyError:
                 print("can't find %s in %s" % (SINGLE_STRAIN, datafile))
                 exit(1)
@@ -300,7 +302,9 @@ for percent in range(100):
                         smallest_difference[0],
                         strain2_genotype]
             gene_log.append(jan_data)
-            assert sc_flag == 0
+            # this is no longer the case as I am now putting X for these nts
+            # before I would skip them, thus this check
+            #assert sc_flag == 0
 
         mlst_log.append(gene_log)
 
@@ -379,9 +383,14 @@ for result in results:
 jan_output.close()
 script_output_h.close()
 # these will be strange SC genotype calls that are skipped
-error_file = open('Single_colony_errors.txt', 'w')
+error_file = open('Single_colony_errors.txt', 'a')
+# add the date and time as a flag for old errors
+now = time.strftime("%H:%M:%S")
+today = time.strftime("%d/%m/%Y")
+
 if sc_errors:
     sc_errors = list(set(sc_errors))
+    error_file.write("Errors found %s on %s (are they old?)\n" % (now, today))
     for e in sc_errors:
         error_file.write(e)
 error_file.close()

@@ -1,6 +1,5 @@
 #!/usr/bin/env python2
 
-import copy
 import os
 import csv
 ##
@@ -78,8 +77,8 @@ def evolve_ref(modification):
     modifications = IUPAC_dict[letters]
     if non_diploid_flag == 1:
         # lowercase geneotypes that are not diploid
-        #return modifications.lower()
-        return 'X'
+        return modifications.lower()
+        #return 'X'
     else:
         return modifications
 
