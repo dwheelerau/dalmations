@@ -220,7 +220,7 @@ for percent in range(100):
                             SINGLE_STRAIN][gene][pos]))
                     print('Warning! Strange SC genotype found, check Single_colony_errors.txt for more details')
                     # I could comment this out so it no longer skips the call
-                    #continue  # this is a dodgy call, skip rest of loop
+                    continue  # this is a dodgy call, skip rest of loop
             except KeyError:
                 print("can't find %s in %s" % (SINGLE_STRAIN, datafile))
                 exit(1)
@@ -304,7 +304,7 @@ for percent in range(100):
             gene_log.append(jan_data)
             # this is no longer the case as I am now putting X for these nts
             # before I would skip them, thus this check
-            #assert sc_flag == 0
+            assert sc_flag == 0
 
         mlst_log.append(gene_log)
 
