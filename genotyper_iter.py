@@ -22,6 +22,7 @@ try:
     assert len(sys.argv) == 3
 except AssertionError:
     print('usage: python2 genotyper_iter.py <SINGLE_COL_NAME> <MIX_COL_NAME>')
+    print(sys.argv[1:])
     exit(1)
 
 index_key = {}

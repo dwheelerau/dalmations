@@ -127,6 +127,7 @@ target_files = [('AAT1apft.fastq', 'AAT1aprt.fastq'),
 # sample_dir = "samples_test"
 try:
     sample_dir = sys.argv[1]
+    print(sample_dir)
 except IndexError:
     print('Missing samples directory that contains the sequence files for')
     print(' your samples?')
@@ -191,13 +192,13 @@ for sample in sample_dirs:
         seqr = [r[:rseq_length] + "\n" for r in read_fastq(targetr)]
         seqrc = [rev_comp(read) for read in seqr]
         alnf = targetf.replace("fastq", "aln")
-        with open(os.path.join(sys.argv[0], alnf), "w") as f:
+        with open(os.path.join(alnf), "w") as f:
             for seq in seqf:
                 f.write(seq)
         # I need to slice the alignment before doing the RC
         # otherwise they are all different lenghts
         alnr = targetr.replace("fastq", "aln")
-        with open(os.path.join(sys.path[0], alnr), "w") as f:
+        with open(os.path.join(alnr), "w") as f:
             for seq in seqrc:
                 f.write(seq)
 
@@ -206,13 +207,13 @@ for sample in sample_dirs:
                     for part in zip(seqf, seqrc)
                     if len(part[0][:-1] + part[1][:-1]) == reflen_dict[locus]]
         aln_data = alnf.replace("pft.aln", ".aln_data")
-        with open(os.path.join(sys.path[0], aln_data), 'w') as f:
+        with open(os.path.join(aln_data), 'w') as f:
             for seq in aln_seqs:
                 f.write(seq)
         # transpose cols into lists ['aaaaa','tttttt','ggggggg']
         aln_cols = map(list, zip(*aln_seqs))[:-1]
         aln_info = alnf.replace("pft.aln", ".aln_info.csv")
-        with open(os.path.join(sys.path[0], aln_info), "w") as f:
+        with open(os.path.join(aln_info), "w") as f:
             aln_info_writer = csv.writer(f)
             pos_counter = 1
             primers = primer_dict[locus]
