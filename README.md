@@ -9,7 +9,7 @@ To cite var_scanner:
 XXXX *et al*:DIO:XXXXX  
 
 ## Requirements  
-This software has been tested on Ubuntu 14.04 and 16.06. This scripts are writen in pure python and only require python 2.7 installed on the machine. The software should also run on Mac and windows computers (using cygwin) as long as python 2.7 is installed (but this has not been tested).
+This software has been tested on Ubuntu 14.04 and 16.06. This scripts are writen in pure python and only require python 2.7 installed on the machine. The software might run on Mac and windows as long as python 2.7 is installed, but this has not been tested.
 
 
 ## Installation  
@@ -46,7 +46,7 @@ BASE_DIR--samples--sample1_data
 </pre>
 
 ## Running var_scanner (gui version)
-The GUI is under current development. Stay tuned..
+The GUI is under current development (see github branch). Stay tuned.....
 
 ## Running var_scanner (non-gui version)
 
