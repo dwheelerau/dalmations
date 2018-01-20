@@ -50,7 +50,7 @@ The GUI is under current development (see github branch). Stay tuned.....
 
 ## Running var_scanner (non-gui version)
 
-1. Either use the included demultplex.py script to demultplex your samples into the `samples` directory (in this case the BASE DIRECTORY is called var_scanner), with the child directories named after the sample. For example, a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2), would have the following folder/file structure.  
+1. Either use the included demultplex.py script to demultplex your samples into the `samples` directory (in this case the BASE DIRECTORY is called var_scanner), with the child directories named after the sample. For example, a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2), would have the following folder/file structure. Example samples can be downloaded from here: https://drive.google.com/file/d/1OeY9gozKw8WAKW0PVCctRYTpEI1AOskM/view?usp=sharing   
 <pre>
 var_scanner/samples/1161NK_S75/AAT1apft.fastq  
 var_scanner/samples/1161NK_S75/AAT1aprt.fastq  
