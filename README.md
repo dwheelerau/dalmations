@@ -125,13 +125,6 @@ The final sequence file is saved in `final_sequences/sequences.fa`.
 * `final_sequences/sequences.fa` which contains the dervied single and mix colony concatinated MLST sequences. These sequences can be compared to previous results using alignments or via phylogenetic trees.  
 
 * `final_results/final_table_python.csv` the allele calls for each sample  
-* `genotype_data/*.csv` comma separated file containing XXXXX (pairs)  
-* `final_genotypes/*.csv` comma separated file containing XXXXX (pairs)  
-* `samples/SAMPLENAME/SAMPLENAME.aln` XXXXX  
-* `samples/SAMPLENAME/SAMPLENAME.aln_data` XXXXX  
-* `samples/SAMPLENAME/SAMPLENAME.aln_info.csv` XXXXX  
 
 ## Disclaimer
 This is free software and is provided with no warranty what-so-ever.
-
-        
