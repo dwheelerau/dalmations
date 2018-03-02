@@ -126,5 +126,6 @@ The final sequence file is saved in `final_sequences/sequences.fa`.
 
 * `final_results/final_table_python.csv` the allele calls for each sample  
 
-## Disclaimer
-This is free software and is provided with no warranty what-so-ever.
+## License
+This software is released under an MIT open source license. Please see
+LICENSE.txt for details.
