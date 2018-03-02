@@ -135,8 +135,10 @@ tar xzf test_samples/hp11vw-S_S20.tar.gz -C samples/
 tar xzf test_samples/P1-5050_S83.tar.gz -C samples/  
 ```
 
-2. Follow the instructions above  
+2. Follow the instructions above from step 2.  
 
+The results of running these samples are provided in the ```final_results```
+and ```final_sequences``` directories found in ```test_samples```.  
 ## License
 This software is released under an MIT open source license. Please see
 LICENSE.txt for details.
