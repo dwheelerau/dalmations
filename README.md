@@ -1,11 +1,11 @@
-# var_scanner
+# dalmations
 
 ## Introduction  
-Multi-locus sequence typing (MLST) is a highly discriminating *Candida albicans* strain typing method. It is usually applied to one colony per patient sample. However, multiple strains can coexist in the same site in a patient. We therefore developed 100+1 NGS-MLST (var_scanner), a next generation sequencing (NGS) modification of the existing *C. albicans* MLST method. It analyzes DNA extracted from a pool of 100 colonies from a sample plus DNA from one colony and bioinformatically infers the genotypes present and their frequency. It does so at a sequencing cost, per patient sample, four times lower than that of conventional MLST.  For the directly typed single colonies its discriminating power is 0.998, comparable to that of conventional MLST. Its predictions of the ratio of different strains in a sample were fairly accurate - within 14±16% of the ratio between the numbers of colonies from two known strains combined to generate DNA pools for testing the method’s accuracy.  
+Multi-locus sequence typing (MLST) is a highly discriminating *Candida albicans* strain typing method. It is usually applied to one colony per patient sample. However, multiple strains can coexist in the same site in a patient. We therefore developed 100+1 NGS-MLST (dalmations), a next generation sequencing (NGS) modification of the existing *C. albicans* MLST method. It analyzes DNA extracted from a pool of 100 colonies from a sample plus DNA from one colony and bioinformatically infers the genotypes present and their frequency. It does so at a sequencing cost, per patient sample, four times lower than that of conventional MLST.  For the directly typed single colonies its discriminating power is 0.998, comparable to that of conventional MLST. Its predictions of the ratio of different strains in a sample were fairly accurate - within 14±16% of the ratio between the numbers of colonies from two known strains combined to generate DNA pools for testing the method’s accuracy.  
 
 Details of our proof of principle experiment using 100+1 NGS-MLST can be found in the our recent publication XXXX.
 
-To cite var_scanner:
+To cite dalmations:
 XXXX *et al*:DIO:XXXXX  
 
 ## Requirements  
@@ -15,8 +15,8 @@ This software has been tested on Ubuntu 14.04 and 16.06. This scripts are writte
 ## Installation  
 Create a base directory and clone the repo into.  
 ```bash
-git clone git@github.com:dwheelerau/var_scanner.git
-cd var_scanner
+git clone https://github.com/dwheelerau/dalmations
+cd dalmations
 ```
 
 # setup the directories
@@ -29,7 +29,7 @@ mkdir samples/
 ```
 
 ## File and folder/structure required  
-The following file/folder structure is required to run var_scanner. These should exist if you followed the installion instructions shown above:  
+The following file/folder structure is required to run dalmations. These should exist if you followed the installion instructions shown above:  
 <pre>
 BASE_DIR--samples--sample1_data
                  --sample2_data
@@ -45,27 +45,27 @@ BASE_DIR--samples--sample1_data
         --genotyper_iter.py 
 </pre>
 
-## Running var_scanner (gui version)
+## Running dalmations (gui version)
 The GUI is under current development (see github branch). Stay tuned.....
 
-## Running var_scanner (non-gui version)
+## Running dalmations (non-gui version)
 
-1. Either use the included demultplex.py script to demultplex your samples into the `samples` directory (in this case the BASE DIRECTORY is called var_scanner), with the child directories named after the sample. For example, a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2), would have the following folder/file structure. Example samples can be downloaded from here: https://drive.google.com/file/d/1OeY9gozKw8WAKW0PVCctRYTpEI1AOskM/view?usp=sharing   
+1. Either use the included demultplex.py script to demultplex your samples into the `samples` directory (in this case the BASE DIRECTORY is called dalmations), with the child directories named after the sample. For example, a sample called `1161NK_S75`, which was sequenced using the 7 MLST primer combinations in paired end mode (ft = R1 and rt = R2), would have the following folder/file structure. Example samples can be downloaded from here: https://drive.google.com/file/d/1OeY9gozKw8WAKW0PVCctRYTpEI1AOskM/view?usp=sharing   
 <pre>
-var_scanner/samples/1161NK_S75/AAT1apft.fastq  
-var_scanner/samples/1161NK_S75/AAT1aprt.fastq  
-var_scanner/samples/1161NK_S75/SYA1pft.fastq  
-var_scanner/samples/1161NK_S75/SYA1prt.fastq  
-var_scanner/samples/1161NK_S75/ACC1pft.fastq  
-var_scanner/samples/1161NK_S75/ACC1prt.fastq   
-var_scanner/samples/1161NK_S75/VPS13pft.fastq  
-var_scanner/samples/1161NK_S75/VPS13prt.fastq   
-var_scanner/samples/1161NK_S75/ADP1pft.fastq  
-var_scanner/samples/1161NK_S75/ADP1prt.fastq   
-var_scanner/samples/1161NK_S75/ZWF1bpft.fastq  
-var_scanner/samples/1161NK_S75/ZWF1bprt.fastq  
-var_scanner/samples/1161NK_S75/MPIpft.fastq    
-var_scanner/samples/1161NK_S75/MPIprt.fastq
+dalmations/samples/1161NK_S75/AAT1apft.fastq  
+dalmations/samples/1161NK_S75/AAT1aprt.fastq  
+dalmations/samples/1161NK_S75/SYA1pft.fastq  
+dalmations/samples/1161NK_S75/SYA1prt.fastq  
+dalmations/samples/1161NK_S75/ACC1pft.fastq  
+dalmations/samples/1161NK_S75/ACC1prt.fastq   
+dalmations/samples/1161NK_S75/VPS13pft.fastq  
+dalmations/samples/1161NK_S75/VPS13prt.fastq   
+dalmations/samples/1161NK_S75/ADP1pft.fastq  
+dalmations/samples/1161NK_S75/ADP1prt.fastq   
+dalmations/samples/1161NK_S75/ZWF1bpft.fastq  
+dalmations/samples/1161NK_S75/ZWF1bprt.fastq  
+dalmations/samples/1161NK_S75/MPIpft.fastq    
+dalmations/samples/1161NK_S75/MPIprt.fastq
 </pre>
 
 If sequences need demultiplexing then run the `demultiplex.py` using the following command:   
@@ -125,6 +125,17 @@ The final sequence file is saved in `final_sequences/sequences.fa`.
 * `final_sequences/sequences.fa` which contains the dervied single and mix colony concatinated MLST sequences. These sequences can be compared to previous results using alignments or via phylogenetic trees.  
 
 * `final_results/final_table_python.csv` the allele calls for each sample  
+
+## Test data
+The ```test_samples``` directory contains test data that can be used to test
+this package.  
+1. Uncompress test data to the samples directory  
+```bash
+tar xzf test_samples/hp11vw-S_S20.tar.gz -C samples/  
+tar xzf test_samples/P1-5050_S83.tar.gz -C samples/  
+```
+
+2. Follow the instructions above  
 
 ## License
 This software is released under an MIT open source license. Please see
