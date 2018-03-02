@@ -17,3 +17,5 @@ testing/
 test_dataset/
 !reference_mlst/
 !reference_mlst/*
+!test_samples/
+!test_samples/*
